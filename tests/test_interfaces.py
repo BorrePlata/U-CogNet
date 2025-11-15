@@ -15,6 +15,18 @@ def test_mock_input_handler():
     frame = handler.get_frame()
     assert frame.data.shape == (480, 640, 3)
 
+def test_opencv_input_handler():
+    # Test básico, asume que hay webcam o video
+    try:
+        from ucognet.modules.input.opencv_camera import OpenCVInputHandler
+        handler = OpenCVInputHandler(source=0)  # Webcam
+        assert isinstance(handler, InputHandler)
+        frame = handler.get_frame()
+        assert frame.data.ndim == 3  # Imagen
+        handler.release()
+    except (ValueError, RuntimeError):
+        pytest.skip("No webcam disponible")
+
 def test_mock_vision_detector():
     detector = MockVisionDetector()
     assert isinstance(detector, VisionDetector)
