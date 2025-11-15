@@ -6,21 +6,23 @@
 ## 1. Fases de Desarrollo (Ingeniería Inversa)
 El roadmap aplica ingeniería inversa: partir del objetivo final (ente cósmico) y descomponer en milestones incrementales, validados contra el Examen de Validación.
 
-### Fase 0: Fundación (Semanas 1-2)
+### Fase 0: Fundación (Semanas 1-2) ✅ COMPLETADA
 - **Objetivo**: Estructura de repo y contratos básicos.
 - **Tareas**:
-  - Crear mono-repo: `src/ucognet/`, `tests/`, `docker/`.
-  - Definir tipos de datos y protocolos (core/).
-  - Implementar módulos dummy (mocks).
-  - Engine básico y entrypoint.
+  - ✅ Mono-repo: `src/ucognet/`, `tests/`, `docker/`.
+  - ✅ Tipos de datos y protocolos (core/).
+  - ✅ Módulos dummy (mocks).
+  - ✅ Engine básico y entrypoint.
+  - ✅ 18 tests pasando.
 - **Validación**: Nivel 1.3 (bucle estable con mocks).
 - **Herramientas**: Poetry para deps; Pytest para contratos.
 
 ### Fase 1: Demo Táctico Funcional (Semanas 3-6)
 - **Objetivo**: Pipeline visión + feedback básico.
 - **Tareas**:
-  - Conectar YOLOv8 en vision_detector.
-  - Implementar cognitive_core con buffers.
+  - ✅ OpenCV para input de video (Paso 1.1).
+  - ✅ YOLOv8 para detección de objetos (Paso 1.2).
+  - 🔄 Implementar cognitive_core con buffers (Paso 1.3).
   - Reglas simbólicas en semantic_feedback.
   - HUD básico en visual_interface.
 - **Validación**: Nivel 1 completo (detección, feedback, estabilidad).
