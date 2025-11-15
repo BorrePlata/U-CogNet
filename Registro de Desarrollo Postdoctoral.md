@@ -49,7 +49,13 @@ Basado en el repositorio Git, el historial de commits refleja evolución increme
   - **Archivos Afectados**: tests/ directory (17 tests); actualización de interfaces con @runtime_checkable.
   - **Validación**: 17/17 tests pasan; cobertura 100% en componentes críticos; tiempo de ejecución <3s.
 
-**Total Commits**: 4. **Cobertura**: Fase 0 completa + tests; progreso hacia Fase 1.
+- **Commit b3eeb57** (15 Nov 2025): "Implement Paso 1.1: Integrar OpenCV en InputHandler para captura de video/webcam"
+  - **Descripción**: Desarrollo de OpenCVInputHandler para captura real de frames desde webcam/video, reemplazando mocks.
+  - **Impacto**: Transición a input real; valida integración con OpenCV; prepara para visión táctica.
+  - **Archivos Afectados**: src/ucognet/modules/input/opencv_camera.py; tests/test_interfaces.py (nuevo test).
+  - **Validación**: Test pasa (skip si no hay cam); 17/17 tests total; integración sin errores.
+
+**Total Commits**: 6. **Cobertura**: Fase 0 completa + tests + inicio Fase 1.
 
 ---
 
