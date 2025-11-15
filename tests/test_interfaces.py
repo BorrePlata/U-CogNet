@@ -9,6 +9,7 @@ from ucognet.modules.eval.mock_evaluator import MockEvaluator
 from ucognet.modules.train.mock_trainer import MockTrainerLoop
 from ucognet.modules.tda.mock_tda import MockTDAManager
 from ucognet.modules.ui.mock_ui import MockVisualInterface
+from ucognet.modules.ui.opencv_ui import OpenCVVisualInterface
 
 def test_mock_input_handler():
     handler = MockInputHandler()
@@ -121,3 +122,9 @@ def test_mock_visual_interface():
     frame = Frame(None, 0.0, {})
     state = SystemState(None, TopologyConfig([], {}, {}), {})
     interface.render(frame, [], "test", state)  # Should not raise
+
+def test_opencv_visual_interface():
+    interface = OpenCVVisualInterface()
+    assert isinstance(interface, VisualInterface)
+    # Close immediately to avoid hanging
+    interface.close()
