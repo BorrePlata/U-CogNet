@@ -7,11 +7,12 @@ U-CogNet es un **sistema cognitivo artificial universal, modular y adaptativo**,
 
 ## Estado Actual del Desarrollo
 - ✅ **Fase 0**: Fundación completa (tipos, interfaces, engine, mocks, tests).
-- 🔄 **Fase 1**: Integración I/O real.
+- 🔄 **Fase 1**: Demo Táctico Funcional.
   - ✅ Paso 1.1: OpenCV para input de video.
   - ✅ Paso 1.2: YOLOv8 para detección de objetos.
-  - 🔄 Paso 1.3: CognitiveCore con buffers.
-- 📊 **Tests**: 18 tests pasando (100% coverage en módulos implementados).
+  - ✅ Paso 1.3: CognitiveCore con buffers.
+  - 🔄 Paso 1.4: Reglas simbólicas en SemanticFeedback.
+- 📊 **Tests**: 19 tests pasando (100% coverage en módulos implementados).
 - 🐳 **Infra**: Poetry para deps, GPU-ready (RTX 4060).
 
 ## Características Clave

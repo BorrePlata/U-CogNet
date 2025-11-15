@@ -3,6 +3,7 @@ from ucognet.core.interfaces import InputHandler, VisionDetector, CognitiveCore,
 from ucognet.modules.input.mock_input import MockInputHandler
 from ucognet.modules.vision.mock_vision import MockVisionDetector
 from ucognet.modules.cognitive.mock_core import MockCognitiveCore
+from ucognet.modules.cognitive.cognitive_core import CognitiveCoreImpl
 from ucognet.modules.semantic.mock_feedback import MockSemanticFeedback
 from ucognet.modules.eval.mock_evaluator import MockEvaluator
 from ucognet.modules.train.mock_trainer import MockTrainerLoop
@@ -53,6 +54,36 @@ def test_mock_cognitive_core():
     core.store(event)
     context = core.get_context()
     assert len(context.recent_events) == 1
+
+def test_cognitive_core_impl():
+    core = CognitiveCoreImpl(max_recent_events=10)
+    assert isinstance(core, CognitiveCore)
+    
+    from ucognet.core.types import Event, Frame, Detection
+    import numpy as np
+    
+    # Crear un evento con detección de alta confianza
+    frame = Frame(data=np.zeros((480, 640, 3), dtype=np.uint8), timestamp=1.0, metadata={})
+    detection = Detection(class_id=0, class_name="person", confidence=0.9, bbox=[10, 20, 30, 40])
+    event = Event(frame=frame, detections=[detection], timestamp=1.0)
+    
+    # Almacenar evento
+    core.store(event)
+    
+    # Verificar contexto
+    context = core.get_context()
+    assert len(context.recent_events) == 1
+    assert context.recent_events[0] == event
+    assert len(context.episodic_memory) == 1  # Debe almacenarse por alta confianza
+    
+    # Agregar evento con baja confianza
+    low_conf_detection = Detection(class_id=1, class_name="car", confidence=0.5, bbox=[50, 60, 70, 80])
+    low_event = Event(frame=frame, detections=[low_conf_detection], timestamp=2.0)
+    core.store(low_event)
+    
+    context = core.get_context()
+    assert len(context.recent_events) == 2
+    assert len(context.episodic_memory) == 1  # Solo el evento de alta confianza
 
 def test_mock_semantic_feedback():
     feedback = MockSemanticFeedback()
