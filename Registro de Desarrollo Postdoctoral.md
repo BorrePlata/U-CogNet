@@ -55,7 +55,13 @@ Basado en el repositorio Git, el historial de commits refleja evolución increme
   - **Archivos Afectados**: src/ucognet/modules/input/opencv_camera.py; tests/test_interfaces.py (nuevo test).
   - **Validación**: Test pasa (skip si no hay cam); 17/17 tests total; integración sin errores.
 
-**Total Commits**: 6. **Cobertura**: Fase 0 completa + tests + inicio Fase 1.
+- **Commit bdcdd4d** (15 Nov 2025): "Add test video dummy and update OpenCV test: validar input de video files"
+  - **Descripción**: Creación de video dummy local con OpenCV; actualización de test para validar lectura de archivos MP4.
+  - **Impacto**: Valida input de video sin depender de internet/cam; prepara para integración completa.
+  - **Archivos Afectados**: test_video.mp4; tests/test_interfaces.py.
+  - **Validación**: Test pasa; 18/18 tests total; OpenCVInputHandler funcional con videos.
+
+**Total Commits**: 7. **Cobertura**: Fase 0 + tests + Paso 1.1 validado con video.
 
 ---
 
