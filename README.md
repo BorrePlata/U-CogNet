@@ -16,6 +16,7 @@ U-CogNet es un **sistema cognitivo artificial universal, modular y adaptativo**,
 - 📊 **Tests**: 19 tests pasando (100% coverage en módulos implementados).
 - 🎯 **Detecciones**: Sistema detectando objetos en video real con visualización OpenCV.
 - 🖥️ **Visualización**: Interfaz gráfica mostrando detecciones en tiempo real (presiona 'q' para salir).
+- 🤖 **MediaPipe**: Modular y desactivado por defecto (activar con `use_mediapipe=True` para pose/rostro/manos).
 - 🐳 **Infra**: Poetry para deps, GPU-ready (RTX 4060).
 
 ## Características Clave
