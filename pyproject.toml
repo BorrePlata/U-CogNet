@@ -4,11 +4,16 @@ version = "0.1.0"
 description = "Sistema Cognitivo Artificial Universal"
 authors = ["AGI U-CogNet <agi@ucognet.com>"]
 
+[[tool.poetry.packages]]
+include = "ucognet"
+from = "src"
+
 [tool.poetry.dependencies]
 python = "^3.11"
 pydantic = "^2.0"
 numpy = "^1.24"
 opencv-python = "^4.8"
+ultralytics = "^8.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"

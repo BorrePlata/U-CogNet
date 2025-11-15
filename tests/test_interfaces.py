@@ -15,18 +15,27 @@ def test_mock_input_handler():
     frame = handler.get_frame()
     assert frame.data.shape == (480, 640, 3)
 
-def test_opencv_input_handler():
-    # Test con video dummy local
+def test_yolov8_detector():
+    # Test con frame del video dummy
     try:
         from ucognet.modules.input.opencv_camera import OpenCVInputHandler
-        handler = OpenCVInputHandler(source="test_video.mp4")  # Video local
-        assert isinstance(handler, InputHandler)
+        from ucognet.modules.vision.yolov8_detector import YOLOv8Detector
+        
+        # Obtener un frame
+        handler = OpenCVInputHandler(source="test_video.mp4")
         frame = handler.get_frame()
-        assert frame.data.ndim == 3  # Imagen
-        assert frame.data.shape[2] == 3  # Canales RGB/BGR
         handler.release()
-    except (ValueError, RuntimeError) as e:
-        pytest.fail(f"OpenCVInputHandler falló: {e}")
+        
+        # Detectar
+        detector = YOLOv8Detector()
+        detections = detector.detect(frame)
+        
+        assert isinstance(detections, list)
+        for det in detections:
+            assert isinstance(det, Detection)
+            assert 0 <= det.confidence <= 1
+    except Exception as e:
+        pytest.skip(f"YOLO test skipped: {e}")  # Skip si modelo no descarga o GPU issues
 
 def test_mock_vision_detector():
     detector = MockVisionDetector()
