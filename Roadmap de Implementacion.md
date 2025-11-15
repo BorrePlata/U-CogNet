@@ -23,8 +23,8 @@ El roadmap aplica ingeniería inversa: partir del objetivo final (ente cósmico)
   - ✅ OpenCV para input de video (Paso 1.1).
   - ✅ YOLOv8 para detección de objetos (Paso 1.2).
   - ✅ CognitiveCore con buffers (Paso 1.3).
-  - 🔄 Reglas simbólicas en semantic_feedback (Paso 1.4).
-  - HUD básico en visual_interface.
+  - ✅ VisualInterface con detección de armas (Paso 1.4).
+  - Reglas simbólicas en semantic_feedback.
 - **Validación**: Nivel 1 completo (detección, feedback, estabilidad).
 - **Milestone**: Demo presentable a SEMAR.
 

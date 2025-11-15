@@ -9,11 +9,13 @@ U-CogNet es un **sistema cognitivo artificial universal, modular y adaptativo**,
 - ✅ **Fase 0**: Fundación completa (tipos, interfaces, engine, mocks, tests).
 - 🔄 **Fase 1**: Demo Táctico Funcional.
   - ✅ Paso 1.1: OpenCV para input de video.
-  - ✅ Paso 1.2: YOLOv8 para detección de objetos (detectando personas/mochilas).
+  - ✅ Paso 1.2: YOLOv8 para detección de objetos (detectando personas, mochilas, sillas).
   - ✅ Paso 1.3: CognitiveCore con buffers.
-  - 🔄 Paso 1.4: Reglas simbólicas en SemanticFeedback.
+  - ✅ Paso 1.4: VisualInterface con visualización en tiempo real.
+  - ✅ **Detección de armas**: Sistema identifica clases peligrosas (knife, scissors, baseball bat).
 - 📊 **Tests**: 19 tests pasando (100% coverage en módulos implementados).
-- 🎯 **Detecciones**: Sistema detectando objetos en video real (personas, mochilas).
+- 🎯 **Detecciones**: Sistema detectando objetos en video real con visualización OpenCV.
+- 🖥️ **Visualización**: Interfaz gráfica mostrando detecciones en tiempo real (presiona 'q' para salir).
 - 🐳 **Infra**: Poetry para deps, GPU-ready (RTX 4060).
 
 ## Características Clave

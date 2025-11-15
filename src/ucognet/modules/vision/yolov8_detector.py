@@ -14,6 +14,9 @@ class YOLOv8Detector(VisionDetector):
         self.model = YOLO(model_path)  # Descarga automática si no existe
         self.conf_threshold = conf_threshold
         self.classes = classes
+        
+        # Clases relacionadas con armas/peligro
+        self.weapon_classes = {43: 'knife', 76: 'scissors', 34: 'baseball bat'}
 
     def detect(self, frame: Frame) -> list[Detection]:
         # Ejecutar inferencia
@@ -34,6 +37,13 @@ class YOLOv8Detector(VisionDetector):
                     confidence=float(conf),
                     bbox=[float(x1), float(y1), float(x2), float(y2)]
                 )
+                
+                # Marcar si es un arma (agregamos atributo dinámicamente)
+                if cls in self.weapon_classes:
+                    detection.is_weapon = True
+                else:
+                    detection.is_weapon = False
+                    
                 detections.append(detection)
         
         return detections
