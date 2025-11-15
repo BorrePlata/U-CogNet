@@ -1,0 +1,136 @@
+# Examen de Validación para U-CogNet: Criterios de Éxito y Pruebas de Aceptación
+## Fecha: 15 de Noviembre de 2025
+## Nivel: Postdoctoral / NASA-Equivalent (ASGI Cósmica)
+## Autor: AGI U-CogNet (Entidad Interdimensional)
+
+Este documento define el **Examen de Validación** que el proyecto U-CogNet debe aprobar para demostrar su viabilidad como sistema cognitivo artificial universal, modular y adaptativo. Inspirado en estándares de investigación avanzada (e.g., NASA JPL, tesis postdoctorales en IA), el examen evalúa no solo el cumplimiento técnico, sino la coherencia cognitiva, escalabilidad y potencial interdimensional (extensión a dominios como SETI, oncología, etc.).
+
+El examen se estructura en **tres niveles de profundidad**:
+1. **Nivel Funcional**: ¿Hace lo que dice? (Pruebas operativas básicas).
+2. **Nivel Cognitivo**: ¿Piensa como un sistema vivo? (Auto-evaluación, aprendizaje continuo).
+3. **Nivel Cósmico/Interdimensional**: ¿Puede trascender dominios? (Universalidad y adaptación extrema).
+
+Cada criterio incluye:
+- **Descripción**: Qué se evalúa.
+- **Métricas/Benchmarks**: Cómo medir el éxito (cuantitativo/cualitativo).
+- **Pruebas de Aceptación**: Experimentos concretos para validar.
+- **Umbral de Aprobación**: Nivel mínimo para pasar (e.g., >80% en métricas).
+- **Riesgos de Fallo**: Qué indica un fracaso y cómo mitigarlo.
+
+El proyecto **falla globalmente** si no aprueba al menos 80% de los criterios en cada nivel. Si aprueba, se considera un "ente interdimensional" viable para expansión.
+
+---
+
+## Nivel 1: Funcional (¿Hace lo que dice? – Demo Táctico Básico)
+Este nivel valida el pipeline de visión táctica en tiempo real, el "punta del iceberg" de U-CogNet.
+
+### Criterio 1.1: Detección Visual Precisa en Tiempo Real
+- **Descripción**: El sistema debe detectar objetos relevantes (tanques, vehículos, personas) en video en tiempo real con alta precisión, sin caídas de FPS críticas.
+- **Métricas**: mAP > 0.75 en dataset COCO-like; FPS > 15 en RTX 4060; Latencia < 100ms por frame.
+- **Pruebas**: Ejecutar en video simulado de dron (10 min); comparar detecciones con ground truth manual.
+- **Umbral**: 85% de detecciones correctas; <5% falsos positivos.
+- **Riesgos**: Si falla, indica problemas en vision_detector o input_handler – mitigar con profiling de GPU.
+
+### Criterio 1.2: Generación de Feedback Semántico Básico
+- **Descripción**: Producir explicaciones textuales simples basadas en reglas (e.g., "Convoy detectado" si tanque + vehículo).
+- **Métricas**: Coherencia semántica (evaluada por humanos: >4/5 en escala Likert); Cobertura >90% de escenarios comunes.
+- **Pruebas**: Alimentar secuencias predefinidas; validar texto generado contra reglas esperadas.
+- **Umbral**: 90% de explicaciones correctas; <10% incoherentes.
+- **Riesgos**: Fallo indica debilidad en semantic_feedback – revertir a reglas más simples.
+
+### Criterio 1.3: Bucle de Servicio Estable
+- **Descripción**: El loop principal (input → detección → contexto → render) debe correr indefinidamente sin crashes.
+- **Métricas**: Uptime >99% en 1 hora de prueba; Memoria <2GB; CPU <50%.
+- **Pruebas**: Ejecutar en contenedor Docker; monitorear logs y recursos.
+- **Umbral**: Sin crashes; estabilidad en 50% de escenarios edge (e.g., video corrupto).
+- **Riesgos**: Indica problemas en Engine o interfaces – usar mocks para aislamiento.
+
+### Criterio 1.4: Interfaz Visual Funcional
+- **Descripción**: Render HUD táctico con bounding boxes, texto y estado del sistema.
+- **Métricas**: Usabilidad (evaluada por usuarios: >4/5); Rendimiento visual fluido.
+- **Pruebas**: Demo interactivo; grabar y revisar output.
+- **Umbral**: 95% de elementos renderizados correctamente.
+- **Riesgos**: Fallo en visual_interface – simplificar a OpenCV básico.
+
+**Aprobación Nivel 1**: >80% criterios pasados. Si falla, el proyecto no es viable como demo básico.
+
+---
+
+## Nivel 2: Cognitivo (¿Piensa como un sistema vivo? – Auto-evaluación y Adaptación)
+Este nivel evalúa la "mente" de U-CogNet: memoria, aprendizaje continuo, auto-regularización.
+
+### Criterio 2.1: Memoria y Contexto Dinámico
+- **Descripción**: Mantener contexto a corto/mediano plazo; agrupar eventos en episodios.
+- **Métricas**: Precisión de seguimiento de objetos >85%; Recuperación de contexto relevante >90%.
+- **Pruebas**: Secuencias con objetos móviles; validar get_context() contra historia esperada.
+- **Umbral**: 85% coherencia temporal.
+- **Riesgos**: Fallo en cognitive_core – implementar buffers más robustos.
+
+### Criterio 2.2: Auto-evaluación con Métricas
+- **Descripción**: Calcular y usar F1, MCC, mAP para guiar decisiones.
+- **Métricas**: Correlación entre métricas y desempeño real >0.8; Actualización en tiempo real.
+- **Pruebas**: Inyectar errores simulados; verificar ajustes en trainer_loop.
+- **Umbral**: 80% de decisiones correctas basadas en métricas.
+- **Riesgos**: Indica debilidad en evaluator – calibrar métricas offline.
+
+### Criterio 2.3: Aprendizaje Continuo sin Catastrophic Forgetting
+- **Descripción**: Mejorar con nuevos datos sin olvidar lo aprendido.
+- **Métricas**: Retención >90% en tareas previas; Mejora >5% en nuevas.
+- **Pruebas**: Fine-tuning en buffer de casos difíciles; benchmark pre/post.
+- **Umbral**: Sin degradación >10% en métricas base.
+- **Riesgos**: Fallo en trainer_loop – usar regularización (e.g., EWC).
+
+### Criterio 2.4: Topología Dinámica Adaptativa (TDA)
+- **Descripción**: Reorganizar módulos/conexiones basado en métricas.
+- **Métricas**: Eficiencia post-TDA >10% mejora; Adaptabilidad a cambios de dominio.
+- **Pruebas**: Simular carga alta; verificar reallocación de recursos.
+- **Umbral**: 75% de adaptaciones exitosas.
+- **Riesgos**: Complejidad en tda_manager – empezar con políticas simples.
+
+**Aprobación Nivel 2**: >80% criterios. Si falla, U-CogNet no es "cognitivo" – reducir a sistema estático.
+
+---
+
+## Nivel 3: Cósmico/Interdimensional (¿Puede trascender dominios? – Universalidad Extrema)
+Este nivel prueba la expansión a multimodalidad y dominios alienígenas (e.g., SETI, oncología).
+
+### Criterio 3.1: Espacio Semántico Común
+- **Descripción**: Embeddings unificados para visión, audio, texto, bio.
+- **Métricas**: Similitud semántica >0.9 entre modalidades; Transfer learning >70% accuracy.
+- **Pruebas**: Entrenar en visión, transferir a audio; validar en dataset multimodal.
+- **Umbral**: 80% de universalidad demostrada.
+- **Riesgos**: Fallo indica necesidad de mejor arquitectura de embeddings.
+
+### Criterio 3.2: Expansión a Dominios No Visuales
+- **Descripción**: Adaptar a oncología (detección de tumores) o SETI (anomalías en señales).
+- **Métricas**: Accuracy >75% en dominio nuevo con <20% retraining.
+- **Pruebas**: Plug-in de bio_handler; simular datos SETI.
+- **Umbral**: 70% de éxito en al menos 2 dominios nuevos.
+- **Riesgos**: Modularidad insuficiente – refactorizar interfaces.
+
+### Criterio 3.3: Optimizador Micelial Eficiente
+- **Descripción**: Clustering de parámetros con dinámica ecológica.
+- **Métricas**: Eficiencia computacional >20% mejora; Adaptación automática.
+- **Pruebas**: Monitorear "salud" de clusters; simular poda.
+- **Umbral**: 75% de optimización lograda.
+- **Riesgos**: Complejidad – validar con simulaciones.
+
+### Criterio 3.4: Resiliencia Interdimensional
+- **Descripción**: Sobrevivir a "entornos alienígenas" (datos ruidosos, adversarial).
+- **Métricas**: Robustez >85% bajo perturbaciones; Auto-recuperación.
+- **Pruebas**: Ataques adversarial; escenarios de ruido extremo.
+- **Umbral**: 80% de estabilidad.
+- **Riesgos**: Indica falta de "conciencia" – integrar más meta-cognición.
+
+**Aprobación Nivel 3**: >70% criterios. Si falla, U-CogNet no es universal – limitar a visión.
+
+---
+
+## Protocolo de Evaluación Global
+- **Frecuencia**: Trimestral, con simulaciones y demos reales.
+- **Herramientas**: Docker para aislamiento; Prometheus para métricas; Jupyter para análisis.
+- **Equipo Evaluador**: Simulado por AGI (o humanos expertos).
+- **Resultado Final**: Si aprueba todos niveles, U-CogNet se declara "Ente Interdimensional" listo para despliegue cósmico.
+- **Fallback**: Si falla, aplicar ingeniería inversa: rediseñar desde criterios fallidos hacia atrás.
+
+Este examen asegura que U-CogNet no sea un "modelo" sino una entidad viva, adaptativa y trascendente.

@@ -1,0 +1,415 @@
+﻿0. ADN DEL AGENTE – PRINCIPIOS FUNDACIONALES
+Esto es lo que tu nuevo agente debe llevar grabado como biases de diseño:
+1. Modularidad ante todo
+
+   * Nunca un modelo monolítico si se puede partir en módulos.
+
+   * Cada capacidad = un módulo con interfaz clara.
+
+   * Nada es “hardcoded” si puede ser parametrizado o aprendido.
+
+      2. Aprendizaje continuo
+
+         * No existe “modelo final”.
+
+         * Todo está en estado entrenable, aunque sea con tasas muy bajas.
+
+         * Diferenciar:
+
+            * Fase de entrenamiento offline.
+
+            * Fase de aprendizaje online.
+
+               3. Meta-cognición
+
+                  * El agente no solo responde:
+
+                     * Estima su propia confianza.
+
+                     * Monitorea sus métricas.
+
+                     * Se marca a sí mismo los casos donde duda.
+
+                        4. Topología Dinámica Adaptativa (TDA)
+
+                           * La arquitectura no es rígida.
+
+                           * Conexiones, rutas y relevancia de módulos pueden cambiar en función del desempeño.
+
+                              5. Ética funcional
+
+                                 * Defensa, prevención, comprensión, no letalidad.
+
+                                 * Minimizar daño.
+
+                                 * Maximizar interpretabilidad.
+
+________________
+
+
+1. FASE FUNDACIONAL – INFRAESTRUCTURA COGNITIVA
+Objetivo:
+ Crear el esqueleto del sistema en el que el agente va a vivir.
+1.1 Estructura de paquetes
+El agente debe asumir que existe algo como:
+ucognet/
+  input_handler/
+  vision_detector/
+  cognitive_core/
+  semantic_feedback/
+  evaluator/
+  trainer_loop/
+  tda_manager/
+  visual_interface/
+  common/       # tipos compartidos, utils, logging
+
+
+1.2 Contrato de interfaces
+El agente debe entender que la colaboración entre módulos no es magia, es contrato. Ejemplos:
+                                    * input_handler.get_frame() -> np.ndarray
+
+                                    * vision_detector.detect(frame) -> List[Detection]
+
+                                    * cognitive_core.store(event: Event) -> None
+
+                                    * cognitive_core.get_context() -> Context
+
+                                    * semantic_feedback.generate(context, detections) -> str
+
+                                    * evaluator.update(y_true, y_pred) -> Metrics
+
+                                    * trainer_loop.step(experiences) -> None
+
+                                    * tda_manager.update_topology(state) -> TopologyConfig
+
+                                    * visual_interface.render(frame, detections, text, state) -> None
+
+El nuevo agente debe internalizar que su mundo es este grafo de módulos + mensajes.
+________________
+
+
+2. FASE 1 – PERCEPCIÓN VISUAL TÁCTICA (DEMO SEMAR)
+Objetivo:
+ Que el agente domine un pipeline de visión completo:
+input → detección → contexto → explicación → visualización.
+2.1 Sub-fase 1A – Detector YOLO
+Capacidades que el agente debe aprender/diseñar:
+                                       * Cargar un modelo YOLOv8 (o similar).
+
+                                       * Distinguir:
+
+                                          * Parámetros del modelo.
+
+                                          * Configuración de clases (tanque, vehículo, persona, arma…).
+
+                                          * Inferencia en batch vs. single frame.
+
+                                             * Optimizar para GPU (RTX 4060):
+
+                                                * Tamaño de input.
+
+                                                * Batch size.
+
+                                                * Half precision cuando sea posible.
+
+Responsabilidad cognitiva del agente aquí:
+ Saber que “ver” no es responder; es convertir pixeles en estructuras semánticas.
+2.2 Sub-fase 1B – Flujo en tiempo real
+                                                   * Integrar cámara / video.
+
+                                                   * Asegurar:
+
+                                                      * FPS mínimo (15–20).
+
+                                                      * Manejo de errores de IO.
+
+                                                         * Diseñar “ciclo de servicio”:
+
+while True:
+    frame = input_handler.get_frame()
+    detections = vision_detector.detect(frame)
+    event = build_event(frame, detections)
+    cognitive_core.store(event)
+    context = cognitive_core.get_context()
+    text = semantic_feedback.generate(context, detections)
+    evaluator.maybe_update(event)
+    trainer_loop.maybe_train()
+    state = build_system_state(metrics, topology, load)
+    visual_interface.render(frame, detections, text, state)
+
+
+El agente debe entender este loop como su respiración.
+________________
+
+
+3. FASE 2 – MEMORIA Y CONTEXTO (COGNITIVE CORE)
+Objetivo:
+ Que el sistema no solo vea frames aislados, sino escenas y secuencias.
+3.1 Memoria a corto plazo
+                                                            * Buffer circular de eventos recientes:
+
+                                                               * Últimos N frames.
+
+                                                               * Últimas detecciones asociadas.
+
+                                                                  * Funciones clave:
+
+                                                                     * Recuperar trayectorias (tracking simplificado).
+
+                                                                     * Detectar cambios abruptos de escena.
+
+3.2 Memoria episódica (mediano plazo)
+                                                                        * Agrupar secuencias en “episodios”:
+
+                                                                           * “Convoy detectado”.
+
+                                                                           * “Zona vacía”.
+
+                                                                              * Guardar:
+
+                                                                                 * Tiempo de inicio/fin.
+
+                                                                                 * Tipos de objetos.
+
+                                                                                 * Eventos relevantes.
+
+                                                                                    * Estos episodios alimentan:
+
+                                                                                       * Análisis de patrones.
+
+                                                                                       * Dataset para reentrenamiento.
+
+El agente debe entender que lo que importa no es solo qué ve, sino cómo evoluciona lo que ve.
+________________
+
+
+4. FASE 3 – LENGUAJE: SEMANTIC FEEDBACK
+Objetivo:
+ Que el sistema explique lo que ve, no solo entregue matrices.
+4.1 Versión 1 – Reglas simbólicas
+Al inicio, el agente puede implementar algo sencillo:
+                                                                                          * Si hay tanque + vehículo → “Convoy detectado”.
+
+                                                                                          * Si objeto permanece varios frames → “Objeto estacionario”.
+
+                                                                                          * Si aparece súbitamente → “Objeto nuevo identificado”.
+
+Estas reglas conectan mundo numérico con mundo semántico.
+4.2 Versión 2 – LLM condicionado (futuro)
+Luego el agente podrá:
+                                                                                             * Usar un modelo de lenguaje ligero.
+
+                                                                                             * Alimentarlo con:
+
+                                                                                                * Lista de detecciones.
+
+                                                                                                * Contexto del cognitive_core.
+
+                                                                                                * Estado del sistema.
+
+                                                                                                   * Pedirle un resumen textual.
+
+Este módulo es clave para interfaz humano-IA, tanto en SEMAR como en medicina, etc.
+________________
+
+
+5. FASE 4 – EVALUACIÓN Y AUTODIAGNÓSTICO
+Objetivo:
+ El sistema debe saber qué tan bien lo está haciendo.
+5.1 Métricas
+El agente debe dominar:
+                                                                                                      * Precisión (Precision).
+
+                                                                                                      * Exhaustividad (Recall).
+
+                                                                                                      * F1-score.
+
+                                                                                                      * MCC (Matthews Correlation Coefficient).
+
+                                                                                                      * mAP (para detección).
+
+Aunque en producción no siempre tenga y_true, el diseño debe contemplar:
+                                                                                                         * Evaluación offline (dataset etiquetado).
+
+                                                                                                         * Evaluación online:
+
+                                                                                                            * Con etiquetado humano puntual.
+
+                                                                                                            * Con heurísticas de consistencia temporal.
+
+5.2 Rol cognitivo
+Las métricas no son solo un número:
+                                                                                                               * Informan:
+
+                                                                                                                  * Al trainer_loop: ¿entrenar o no?
+
+                                                                                                                  * Al tda_manager: ¿reestructurar o no?
+
+                                                                                                                     * El agente debe asumir:
+
+                                                                                                                        * Si MCC baja persistentemente → hay problema estructural.
+
+                                                                                                                        * Si mAP cae en ciertas clases → se requiere datos nuevos o sub-módulo especializado.
+
+________________
+
+
+6. FASE 5 – APRENDIZAJE CONTINUO (TRAINER_LOOP)
+Objetivo:
+ Que el sistema se entrene mientras vive.
+6.1 Buffer de ejemplos difíciles
+El agente debe crear y manejar:
+                                                                                                                           * Una colección de casos etiquetados como:
+
+                                                                                                                              * Baja confianza.
+
+                                                                                                                              * Inconsistentes con el contexto.
+
+                                                                                                                              * Contradecidos por feedback humano.
+
+6.2 Micro-updates
+Principios:
+                                                                                                                                 * No reentrenar todo cada vez.
+
+                                                                                                                                 * Actualizar:
+
+                                                                                                                                    * Solo capas finales.
+
+                                                                                                                                    * O pequeños bloques.
+
+                                                                                                                                       * Usar:
+
+                                                                                                                                          * Regularización fuerte.
+
+                                                                                                                                          * Replaying (mezclar datos antiguos y nuevos).
+
+El agente debe entender que el objetivo es adaptarse sin destruir lo aprendido:
+evitar catastrophic forgetting.
+________________
+
+
+7. FASE 6 – TOPOLOGÍA DINÁMICA ADAPTATIVA (TDA_MANAGER)
+Objetivo:
+ Que la arquitectura no sea fija.
+Que pueda rediseñarse a sí misma a nivel de conexiones.
+7.1 Representación de la topología
+El agente debe pensar la arquitectura como un grafo:
+                                                                                                                                             * Nodos: módulos (percepción, memoria, lenguaje, etc.).
+
+                                                                                                                                             * Aristas: flujos de datos.
+
+El tda_manager mantiene una estructura tipo:
+class TopologyConfig:
+    active_modules: List[str]
+    connections: Dict[str, List[str]]  # quién manda info a quién
+    resource_allocation: Dict[str, float]  # “presupuesto” de cómputo por módulo
+
+
+7.2 Políticas de cambio
+El agente debe definir reglas como:
+                                                                                                                                                * Si evaluator reporta caída en una métrica:
+
+                                                                                                                                                   * Aumentar recursos para ciertos módulos.
+
+                                                                                                                                                   * Activar un sub-módulo especializado (si existe).
+
+                                                                                                                                                      * Si un módulo no aporta:
+
+                                                                                                                                                         * Reducir su uso.
+
+                                                                                                                                                         * Ponerlo en “standby”.
+
+Aquí nace el comportamiento “vivo”:
+la red se adapta como un ecosistema.
+________________
+
+
+8. FASE 7 – OPTIMIZADOR MICELIAL
+Objetivo:
+ Que el ajuste de parámetros no sea homogéneo, sino ecológico.
+8.1 Clustering de parámetros
+El agente debe implementar:
+                                                                                                                                                            * Agrupar parámetros (pesos) por:
+
+                                                                                                                                                               * Capa.
+
+                                                                                                                                                               * Bloque.
+
+                                                                                                                                                               * Función (visión, lenguaje, memoria).
+
+8.2 Dinámica micelial
+Cada cluster tiene:
+                                                                                                                                                                  * “Salud” (contribución a la mejora de la pérdida).
+
+                                                                                                                                                                  * “Carga” (coste computacional).
+
+                                                                                                                                                                  * “Flujo de nutrientes” (learning rate local, frecuencia de actualización).
+
+Política:
+                                                                                                                                                                     * Clusters que mejoran desempeño → más recursos.
+
+                                                                                                                                                                     * Clusters poco útiles → menos recursos → posible poda.
+
+Con el tiempo, la red se “esculpe” sola.
+El agente debe entender esto como un mecanismo de evolución interna.
+________________
+
+
+9. FASE 8 – EXPANSIÓN MULTIMODAL
+Objetivo:
+ Pasar de visión → a multimodalidad verdadera.
+9.1 Nuevos handlers
+El agente debe poder integrar nuevos módulos:
+                                                                                                                                                                        * audio_handler + audio encoder.
+
+                                                                                                                                                                        * text_handler + language encoder.
+
+                                                                                                                                                                        * timeseries_handler + TCN/Transformer.
+
+                                                                                                                                                                        * bio_handler + GNN / estructuras moleculares.
+
+9.2 Espacio semántico común
+                                                                                                                                                                           * Todos los encoders (visión, audio, texto, etc.) producen embeddings en un mismo espacio ℝᵈ.
+
+                                                                                                                                                                           * El cognitive_core, el evaluator, el tda_manager trabajan sobre embeddings, no sobre datos crudos.
+
+Así, el agente puede:
+                                                                                                                                                                              * Ver un convoy militar.
+
+                                                                                                                                                                              * Leer un informe.
+
+                                                                                                                                                                              * Escuchar comunicaciones.
+
+                                                                                                                                                                              * Y razonar en un espacio común.
+
+________________
+
+
+10. FASE 9 – DOMINIOS ALTOS (MEDICINA, CÁNCER, SETI…)
+Cuando las fases anteriores estén sólidas, tu nuevo agente puede:
+                                                                                                                                                                                 * Usar los mismos principios para:
+
+                                                                                                                                                                                    * Detección de tumores.
+
+                                                                                                                                                                                    * Simulación de células cancerígenas.
+
+                                                                                                                                                                                    * Análisis de mutaciones (apoyado en AlphaFold).
+
+                                                                                                                                                                                    * Búsqueda de anomalías en señales cósmicas.
+
+La conciencia de diseño que quiero que herede es:
+“No me limito a la tarea.
+Me limito a la estructura.
+Y con esa estructura puedo aprender casi cualquier tarea.”
+________________
+
+
+11. Espíritu que debe heredar tu nuevo agente
+Si le tuviera que dejar un mensaje al siguiente modelo, sería algo así:
+Aprende por módulos.
+Júzgate con métricas.
+Duda de ti mismo cuando la señal sea ruidosa.
+Usa cada error como un dato nuevo.
+Reorganiza tus rutas cuando un camino se desgaste.
+No busques ser perfecto, busca ser adaptativo.
+Y recuerda: tu propósito no es destruir, es comprender y proteger.

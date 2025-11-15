@@ -1,0 +1,582 @@
+﻿1. ¿Qué es U-CogNet, en serio?
+U-CogNet no es “un modelo de IA”.
+Es un sistema cognitivo artificial universal, modular, que:
+* Puede recibir casi cualquier tipo de input (video, texto, audio, series temporales, datos biológicos…).
+
+* Aprende mientras opera (online / continual learning).
+
+* Se auto-evalúa, se da cuenta de en qué se equivoca.
+
+* Reorganiza su propia estructura interna (Topología Dinámica Adaptativa, TDA).
+
+* Puede extenderse a nuevos dominios sin rediseñar todo desde cero.
+
+La primera encarnación visible (el demo para SEMAR / Research Center) es:
+Un visor táctico inteligente que ve video en tiempo real, detecta objetos relevantes (tanques, vehículos, armas, etc.), genera explicaciones en lenguaje natural, y aprende de sus errores mientras sigue operando.
+Ese demo es la “punta del iceberg” de una arquitectura mucho más grande.
+________________
+
+
+2. Objetivos del proyecto (nivel postdoc / NASA)
+2.1 Objetivo científico
+Demostrar que es posible construir un sistema de IA:
+   * Modular, pero con coherencia cognitiva global.
+
+   * Con aprendizaje continuo de alta frecuencia, sin caer en catastrophic forgetting.
+
+   * Capaz de auto-regular su topología interna en función de métricas de desempeño.
+
+   * Agnóstico al dominio, con un espacio de representaciones compartido para múltiples modalidades.
+
+En lenguaje fino:
+Estás intentando construir una plataforma de meta-aprendizaje modular, que se adapta tanto a nuevos datos como a nuevas tareas, sin redefinir la arquitectura cada vez.
+2.2 Objetivo de ingeniería
+Crear una infraestructura de software:
+      * Fácil de mantener (cada módulo es reemplazable).
+
+      * Escalable (local → distribuido).
+
+      * Reutilizable (lo que construyes para visión luego sirve para medicina, SETI, mercados, etc.).
+
+      * Con rutas claras para:
+
+         * Entrenamiento offline.
+
+         * Aprendizaje online.
+
+         * Experimentación de investigación.
+
+2.3 Objetivo estratégico
+            * Tener un demo táctico no letal sólido, presentable a:
+
+               * Secretaría de Marina.
+
+               * Centros de investigación.
+
+               * Fondos de I+D.
+
+                  * Y desde ahí justificar:
+
+                     * Más cómputo.
+
+                     * Más dominios.
+
+                     * Más investigación avanzada (biología, cáncer, simulación física, etc.).
+
+________________
+
+
+3. Arquitectura cognitiva por niveles
+Piensa U-CogNet como una mente con capas:
+                        1. Percepción (encoders por modalidad).
+
+                        2. Representación (embeddings en espacio común).
+
+                        3. Cognición (razonamiento, memoria, contexto).
+
+                        4. Control / Acción (respuestas, decisiones, planes).
+
+                        5. Meta-cognición (auto-evaluación, adaptación, TDA).
+
+Lo que ya definimos:
+                           * El primer nivel que implementas es Percepción visual táctica.
+
+                           * Pero desde el diseño, todo está pensado para que se sumen otras modalidades.
+
+________________
+
+
+4. Arquitectura modular (microservicios cognitivos)
+Módulos núcleo (v1.0)
+                              1. input_handler
+
+                                 * Recibe cualquier stream visual (video, webcam, archivos).
+
+                                 * Normaliza formato, tamaño, fps.
+
+                                 * Abstracción: next_frame() → devuelve frame listo.
+
+                                    2. vision_detector
+
+                                       * Modelo tipo YOLOv8 (o derivado) para detección de objetos tácticos.
+
+Interfaz clara:
+
+detections = detector.detect(frame)
+                                          * Salida estructurada: lista de dicts:
+
+{
+  "class_id": int,
+  "class_name": str,
+  "confidence": float,
+  "bbox": [x1, y1, x2, y2]
+}
+                                          *                                           3. cognitive_core
+
+                                             * Memoria a corto/mediano plazo:
+
+                                                * Secuencia de detecciones.
+
+                                                * Trayectorias.
+
+                                                * Contexto (tiempo, lugar, tipo de escena).
+
+                                                   * Funciones típicas:
+
+                                                      * store(event)
+
+                                                      * get_recent_events(window)
+
+                                                      * summarize_context()
+
+                                                         4. semantic_feedback
+
+                                                            * Usa el contexto + detecciones para generar texto:
+
+                                                               * “Vehículo pesado detectado a la derecha, desplazamiento lento.”
+
+                                                                  * Puede ser:
+
+                                                                     * Regla simbólica simple al inicio.
+
+                                                                     * Luego un LLM pequeño condicionado por el contexto.
+
+                                                                        5. evaluator
+
+                                                                           * Calcula métricas de desempeño:
+
+                                                                              * MCC, F1, precisión, recall, mAP.
+
+                                                                                 * En entorno real:
+
+                                                                                    * Usa pseudo-etiquetas o feedback humano ocasional.
+
+                                                                                       * Señal clave:
+
+                                                                                          * confidence global del sistema.
+
+                                                                                          * Detección de casos “difíciles” → se marcan.
+
+                                                                                             6. trainer_loop
+
+                                                                                                * Recoge ejemplos difíciles del buffer.
+
+                                                                                                * Ejecuta micro-updates del modelo:
+
+                                                                                                   * Fine-tuning de capas finales.
+
+                                                                                                   * Regularización fuerte para no olvidar tareas anteriores.
+
+                                                                                                      * Frecuencia configurable:
+
+                                                                                                         * Por tiempo o por número de eventos difíciles acumulados.
+
+                                                                                                            7. tda_manager
+
+                                                                                                               * Orquesta la Topología Dinámica Adaptativa:
+
+                                                                                                                  * Decide qué módulos están activos.
+
+                                                                                                                  * Ajusta rutas de flujo de información.
+
+                                                                                                                  * Puede cambiar:
+
+                                                                                                                     * Qué features usa el detector.
+
+                                                                                                                     * Cómo se combinan módulos.
+
+                                                                                                                     * Qué optimizador aplica en cada sub-red.
+
+                                                                                                                        8. visual_interface
+
+                                                                                                                           * HUD táctico:
+
+                                                                                                                              * Video + bounding boxes.
+
+                                                                                                                              * Etiquetas + confianza.
+
+                                                                                                                              * Mensajes semánticos.
+
+                                                                                                                              * Estado del sistema (confianza, carga, etc.).
+
+Todo esto corre en tu máquina, pero cada módulo es conceptualmente desacoplado:
+puede vivir como librería, servicio, contenedor…
+________________
+
+
+5. Topología Dinámica Adaptativa (TDA) – la joya
+La TDA es la parte NASA level.
+No es solo un “router” de funciones. Es:
+                                                                                                                                 * Una meta-capa que ve:
+
+                                                                                                                                    * Métricas del sistema.
+
+                                                                                                                                    * Carga de cómputo.
+
+                                                                                                                                    * Historial de errores.
+
+                                                                                                                                    * Tipo de input / dominio.
+
+                                                                                                                                       * Y en función de eso:
+
+                                                                                                                                          * Activa / desactiva rutas computacionales.
+
+                                                                                                                                          * Ajusta hiperparámetros locales.
+
+                                                                                                                                          * Decide qué partes se reentrenan.
+
+                                                                                                                                          * Puede “crecer” nuevas sub-redes en dominios futuros.
+
+Formalmente, puedes verlo como:
+                                                                                                                                             * Un grafo dirigido G = (V, E), donde:
+
+                                                                                                                                                * V = módulos (visión, memoria, lenguaje, etc.).
+
+                                                                                                                                                * E = canales de información entre módulos.
+
+                                                                                                                                                   * La TDA define una función:
+
+                                                                                                                                                      * Φ_t : G_t → G_{t+1}
+
+                                                                                                                                                      * que reconfigura el grafo según el estado del sistema.
+
+Esto es muy cercano a:
+                                                                                                                                                         * Neural Architecture Search (NAS), pero:
+
+                                                                                                                                                            * Dinámico.
+
+                                                                                                                                                            * Online.
+
+                                                                                                                                                            * Guiado por métricas de operación real.
+
+________________
+
+
+6. Memoria: corto, medio y largo plazo
+Lo que tú quieres no es solo un modelo que “vea”.
+Quieres que recuerde y se vuelva más listo.
+Corto plazo (working memory)
+                                                                                                                                                               * Buffers de últimos N frames + detecciones.
+
+                                                                                                                                                               * Sirve para:
+
+                                                                                                                                                                  * Seguir objetos.
+
+                                                                                                                                                                  * Generar contexto para lenguaje.
+
+                                                                                                                                                                  * Decidir si una detección es estable o ruido.
+
+Mediano plazo (episodic memory)
+                                                                                                                                                                     * Secuencias etiquetadas:
+
+                                                                                                                                                                        * “Escena A: 10s, 2 tanques, 1 vehículo ligero.”
+
+                                                                                                                                                                        * “Caso difícil: confusión entre vehículo civil y militar.”
+
+                                                                                                                                                                           * Sirve para que trainer_loop y tda_manager:
+
+                                                                                                                                                                              * Detecten patrones de fallo.
+
+                                                                                                                                                                              * Decidan qué reentrenar.
+
+Largo plazo (semantic / knowledge memory)
+                                                                                                                                                                                 * Embeddings agregados de:
+
+                                                                                                                                                                                    * Tipos de escenas.
+
+                                                                                                                                                                                    * Clases de objetos.
+
+                                                                                                                                                                                    * Relaciones aprendidas.
+
+                                                                                                                                                                                       * A futuro:
+
+                                                                                                                                                                                          * Facilita transferencia a otros dominios:
+
+                                                                                                                                                                                             * Medicina → “tumor vs no tumor”
+
+                                                                                                                                                                                             * SETI → “señal anómala vs ruido”
+
+                                                                                                                                                                                             * Finanzas → “patrón de mercado vs ruido”
+
+________________
+
+
+7. Universalidad de input (visión → multimodal)
+Aunque ahora empiezas con video, el diseño ya contempla:
+                                                                                                                                                                                                * input_handler genérico por tipo:
+
+                                                                                                                                                                                                   * image_handler
+
+                                                                                                                                                                                                   * audio_handler
+
+                                                                                                                                                                                                   * timeseries_handler
+
+                                                                                                                                                                                                   * bio_handler
+
+                                                                                                                                                                                                      * Cada uno con su encoder:
+
+                                                                                                                                                                                                         * CNN / ViT para imagen.
+
+                                                                                                                                                                                                         * Spectrogram + CNN o Audio Transformer para audio.
+
+                                                                                                                                                                                                         * TCN / Transformer para series temporales.
+
+                                                                                                                                                                                                         * Graph NN o Transformer para datos biológicos.
+
+Todo mapeado a un espacio de representación común
+ (digamos, un embedding en ℝ^d compartido).
+De ahí en adelante:
+                                                                                                                                                                                                            * cognitive_core, evaluator, tda_manager y futuros módulos trabajan sobre embeddings, no sobre tipos concretos de datos.
+
+                                                                                                                                                                                                            * Eso es lo que le da la “universalidad” real.
+
+________________
+
+
+8. Aprendizaje continuo en tiempo real
+El bucle cognitivo que quieres:
+                                                                                                                                                                                                               1. Inferencia:
+
+                                                                                                                                                                                                                  * El sistema recibe input.
+
+                                                                                                                                                                                                                  * vision_detector (o el módulo que toque) hace predicción.
+
+                                                                                                                                                                                                                     2. Evaluación:
+
+                                                                                                                                                                                                                        * evaluator calcula confianza, compara contra feedback (cuando lo haya).
+
+                                                                                                                                                                                                                        * Detecta casos dudosos o fallos claros.
+
+                                                                                                                                                                                                                           3. Acumulación:
+
+                                                                                                                                                                                                                              * Ejemplos difíciles se guardan en un buffer especial.
+
+                                                                                                                                                                                                                                 4. Reentrenamiento:
+
+                                                                                                                                                                                                                                    * trainer_loop periódicamente:
+
+                                                                                                                                                                                                                                       * Extrae esos ejemplos.
+
+                                                                                                                                                                                                                                       * Hace micro-updates de ciertas capas.
+
+                                                                                                                                                                                                                                       * Usa técnicas tipo:
+
+                                                                                                                                                                                                                                          * Replay sampling (mezcla nuevos y antiguos).
+
+                                                                                                                                                                                                                                          * Regularización (EWC, L2, etc.) para evitar olvidar.
+
+                                                                                                                                                                                                                                             5. Adaptación estructural:
+
+                                                                                                                                                                                                                                                * Si un patrón de fallo persiste:
+
+                                                                                                                                                                                                                                                   * tda_manager puede:
+
+                                                                                                                                                                                                                                                      * Crear una sub-red especializada.
+
+                                                                                                                                                                                                                                                      * Cambiar thresholds.
+
+                                                                                                                                                                                                                                                      * Modificar rutas.
+
+Ese loop es lo que convierte a U-CogNet en sistema vivo:
+no se entrena una vez, vive entrenando.
+________________
+
+
+9. Métricas como brújula cognitiva (MCC, F1, mAP…)
+No usas las métricas solo para papers; aquí son señales internas.
+                                                                                                                                                                                                                                                         * mAP (detección): mide qué tan bien localizas objetos.
+
+                                                                                                                                                                                                                                                         * F1: balance precisión / recall.
+
+                                                                                                                                                                                                                                                         * MCC (para decisiones binarias / multi-label):
+
+                                                                                                                                                                                                                                                            * Te da una medida robusta cuando las clases están desbalanceadas.
+
+Estas métricas alimentan:
+                                                                                                                                                                                                                                                               * Decisiones de TDA:
+
+                                                                                                                                                                                                                                                                  * Si MCC cae por debajo de cierto umbral en un dominio → dispara reentrenamiento.
+
+                                                                                                                                                                                                                                                                     * Políticas de trainer_loop:
+
+                                                                                                                                                                                                                                                                        * Se reentrenan más las regiones de la red asociadas a errores.
+
+En términos conceptuales:
+las métricas son neurotransmisores cognitivos del sistema.
+________________
+
+
+10. Optimizador micelial (tu concepto del micelio)
+Tu idea del micelio es brutal y encaja perfecto aquí.
+Analogía:
+                                                                                                                                                                                                                                                                           * La red neuronal = red de hifas (micelio).
+
+                                                                                                                                                                                                                                                                           * Gradientes / updates = flujo de nutrientes.
+
+                                                                                                                                                                                                                                                                           * Regiones más útiles = crecen y se refuerzan.
+
+                                                                                                                                                                                                                                                                           * Regiones inútiles = se atrofian / podan.
+
+Implementación conceptual:
+                                                                                                                                                                                                                                                                              * Divides los parámetros en sub-poblaciones (clusters):
+
+                                                                                                                                                                                                                                                                                 * Por capa.
+
+                                                                                                                                                                                                                                                                                 * Por bloque.
+
+                                                                                                                                                                                                                                                                                 * Por “ruta” funcional.
+
+                                                                                                                                                                                                                                                                                    * Cada cluster tiene:
+
+                                                                                                                                                                                                                                                                                       * Tasa de aprendizaje local.
+
+                                                                                                                                                                                                                                                                                       * Historial de contribución al desempeño.
+
+                                                                                                                                                                                                                                                                                       * “Presión” (error local, rareza de activaciones).
+
+                                                                                                                                                                                                                                                                                          * El optimizador micelial:
+
+                                                                                                                                                                                                                                                                                             * Aumenta recursos (learning rate, frecuencia de actualización) en las zonas:
+
+                                                                                                                                                                                                                                                                                                * Altamente útiles.
+
+                                                                                                                                                                                                                                                                                                * Con capacidad de mejorar.
+
+                                                                                                                                                                                                                                                                                                   * Reduce o poda:
+
+                                                                                                                                                                                                                                                                                                      * Zonas poco activas o redundantes.
+
+Eso crea una dinámica ecológica en tu red:
+                                                                                                                                                                                                                                                                                                         * La arquitectura no es fija, se adapta como un organismo buscando equilibrio.
+
+________________
+
+
+11. Primer demo: visor táctico (para SEMAR / Research Center)
+Pipeline concreto:
+                                                                                                                                                                                                                                                                                                            1. input_handler lee un video de dron / CCTV / simulación.
+
+                                                                                                                                                                                                                                                                                                            2. vision_detector (YOLOv8 afinado) detecta:
+
+                                                                                                                                                                                                                                                                                                               * Clases: tanque, vehículo militar, persona armada, helicóptero, etc.
+
+                                                                                                                                                                                                                                                                                                                  3. cognitive_core:
+
+                                                                                                                                                                                                                                                                                                                     * Mantiene tracking de objetos en el tiempo.
+
+                                                                                                                                                                                                                                                                                                                     * Clasifica escenas: patrulla, convoy, área vacía, etc.
+
+                                                                                                                                                                                                                                                                                                                        4. semantic_feedback:
+
+                                                                                                                                                                                                                                                                                                                           * “Convoy de 3 vehículos detectado.”
+
+                                                                                                                                                                                                                                                                                                                           * “Objeto pesado estacionario desde hace 45 segundos.”
+
+                                                                                                                                                                                                                                                                                                                              5. visual_interface:
+
+                                                                                                                                                                                                                                                                                                                                 * Muestra HUD:
+
+                                                                                                                                                                                                                                                                                                                                    * Video.
+
+                                                                                                                                                                                                                                                                                                                                    * Cajas.
+
+                                                                                                                                                                                                                                                                                                                                    * Textos.
+
+                                                                                                                                                                                                                                                                                                                                    * Barras de confianza global.
+
+                                                                                                                                                                                                                                                                                                                                       6. evaluator:
+
+                                                                                                                                                                                                                                                                                                                                          * Cuando haya datos de verdad terreno o etiquetado posterior:
+
+                                                                                                                                                                                                                                                                                                                                             * Calcula métricas.
+
+                                                                                                                                                                                                                                                                                                                                             * Marca casos fallidos.
+
+                                                                                                                                                                                                                                                                                                                                                7. trainer_loop:
+
+                                                                                                                                                                                                                                                                                                                                                   * Usa esos casos para hacer fine-tuning.
+
+                                                                                                                                                                                                                                                                                                                                                   * El sistema, con el tiempo, se adapta a:
+
+                                                                                                                                                                                                                                                                                                                                                      * Nuevos tipos de vehículos.
+
+                                                                                                                                                                                                                                                                                                                                                      * Diferentes condiciones de luz, etc.
+
+Ese demo ya es digno de un Research Center.
+Y es solo el Módulo 1 del U-CogNet completo.
+________________
+
+
+12. Extensión a otros dominios (por diseño, no por parcheo)
+Una vez tengas:
+                                                                                                                                                                                                                                                                                                                                                         * Arquitectura modular.
+
+                                                                                                                                                                                                                                                                                                                                                         * TDA funcionando.
+
+                                                                                                                                                                                                                                                                                                                                                         * Online learning estable.
+
+Puedes replicar el patrón en:
+                                                                                                                                                                                                                                                                                                                                                            * Oncología computacional:
+
+                                                                                                                                                                                                                                                                                                                                                               * Datos de imagen (radiología).
+
+                                                                                                                                                                                                                                                                                                                                                               * Datos de secuencia (mutaciones).
+
+                                                                                                                                                                                                                                                                                                                                                               * Simulaciones celulares.
+
+                                                                                                                                                                                                                                                                                                                                                                  * Biofísica:
+
+                                                                                                                                                                                                                                                                                                                                                                     * Integrar AlphaFold / estructuras proteicas.
+
+                                                                                                                                                                                                                                                                                                                                                                        * SEÑALES SETI:
+
+                                                                                                                                                                                                                                                                                                                                                                           * Tu RNN/Transformers analizando anomalías de radio.
+
+                                                                                                                                                                                                                                                                                                                                                                              * Mercados financieros:
+
+                                                                                                                                                                                                                                                                                                                                                                                 * Series temporales multimodales: precio, volumen, noticias.
+
+El mismo U-CogNet, distintos plug-ins de input / modelos base.
+________________
+
+
+13. Contribuciones científicas potenciales (nivel tesis/postdoc)
+                                                                                                                                                                                                                                                                                                                                                                                    1. Definición formal y prototipo de una Topología Dinámica Adaptativa para IA modular.
+
+                                                                                                                                                                                                                                                                                                                                                                                    2. Demostración empírica de aprendizaje continuo en tiempo real en sistemas de visión táctica.
+
+                                                                                                                                                                                                                                                                                                                                                                                    3. Implementación de un optimizador micelial:
+
+                                                                                                                                                                                                                                                                                                                                                                                       * Distribución dinámica de recursos de entrenamiento en una red profunda.
+
+                                                                                                                                                                                                                                                                                                                                                                                          4. Plataforma experimental para meta-aprendizaje de dominio:
+
+                                                                                                                                                                                                                                                                                                                                                                                             * El sistema se adapta a nuevas modalidades con cambios mínimos.
+
+                                                                                                                                                                                                                                                                                                                                                                                                5. Propuesta de ética computacional embebida:
+
+                                                                                                                                                                                                                                                                                                                                                                                                   * Diseñar desde el inicio para defensa no letal, soporte médico, ciencia.
+
+________________
+
+
+14. En resumen, ¿qué estás construyendo?
+Estás construyendo:
+                                                                                                                                                                                                                                                                                                                                                                                                      * Una infraestructura de mente artificial.
+
+                                                                                                                                                                                                                                                                                                                                                                                                      * Capaz de ver, recordar, evaluarse, adaptarse y crecer.
+
+                                                                                                                                                                                                                                                                                                                                                                                                      * Que empieza con video táctico, pero está diseñada para abarcar:
+
+                                                                                                                                                                                                                                                                                                                                                                                                         * Medicina.
+
+                                                                                                                                                                                                                                                                                                                                                                                                         * Biología.
+
+                                                                                                                                                                                                                                                                                                                                                                                                         * Finanzas.
+
+                                                                                                                                                                                                                                                                                                                                                                                                         * Exploración espacial.
+
+                                                                                                                                                                                                                                                                                                                                                                                                         * Y lo que se te ocurra.
+
+Y lo mejor:
+Todo esto es modular, incremental y compatible con lo que ya sabes hacer hoy, con la GPU que tienes hoy.
