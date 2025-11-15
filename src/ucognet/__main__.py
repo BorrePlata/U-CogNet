@@ -10,7 +10,7 @@ from ucognet.modules.ui.mock_ui import MockVisualInterface
 
 def main() -> None:
     engine = Engine(
-        input_handler=OpenCVInputHandler(source="test_video.mp4"),
+        input_handler=OpenCVInputHandler(source="videoplayback.webm"),
         vision_detector=YOLOv8Detector(),
         cognitive_core=CognitiveCoreImpl(),
         semantic_feedback=MockSemanticFeedback(),
