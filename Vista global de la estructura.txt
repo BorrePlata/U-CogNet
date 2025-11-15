@@ -1,0 +1,683 @@
+﻿1. Vista global de la estructura (por capas)
+Piensa U-CogNet como una pila de capas, de abajo hacia arriba:
+1. Infraestructura / Paquetes (esqueleto de código)
+
+   * ucognet/
+
+      * input_handler/
+
+      * vision_detector/
+
+      * cognitive_core/
+
+      * semantic_feedback/
+
+      * evaluator/
+
+      * trainer_loop/
+
+      * tda_manager/
+
+      * visual_interface/
+
+      * common/ (tipos compartidos, utils, logging)
+
+         2. Pipeline táctico en tiempo real (la respiración del sistema)
+ Bucle principal:
+
+            * input_handler → obtiene frame (get_frame()).
+
+            * vision_detector → detecciones (detect(frame)).
+
+            * Construyes un event y lo mandas a cognitive_core.
+
+            * cognitive_core → contexto reciente (get_context()).
+
+            * semantic_feedback → texto/explicación.
+
+            * evaluator → actualiza métricas cuando hay labels.
+
+            * trainer_loop → decide si entrenar con ejemplos difíciles.
+
+            * tda_manager → ajusta topología y recursos.
+
+            * visual_interface → render del HUD táctico.
+
+               3. Módulos cognitivos núcleo (v1.0 – visión táctica)
+
+                  * Percepción: input_handler, vision_detector
+
+                  * Memoria / Contexto: cognitive_core (corto, medio, largo plazo)
+
+                  * Lenguaje: semantic_feedback
+
+                  * Autoevaluación: evaluator
+
+                  * Aprendizaje continuo: trainer_loop
+
+                  * Topología Dinámica Adaptativa: tda_manager
+
+                  * Interfaz humano-máquina: visual_interface
+
+                     4. Meta-capa adaptativa y ética
+
+                        * TDA (reconfigura el grafo de módulos).
+
+                        * Optimizador micelial (redistribuye recursos de aprendizaje).
+
+                        * Políticas de uso: defensa no letal, ciencia, medicina, etc.
+
+                           5. Expansión multimodal futura
+
+                              * Nuevos handlers: audio_handler, text_handler, timeseries_handler, bio_handler, etc.
+
+                              * Encoders por modalidad → embedding común en ℝᵈ.
+
+                              * El mismo cognitive_core, evaluator, tda_manager trabajando sobre embeddings, no sobre datos crudos.
+
+________________
+
+
+2. Diagrama estructural tipo árbol (texto)
+Para visualizarlo rápido, algo así:
+U-CogNet
+└── ucognet/
+    ├── input_handler/
+    │   └── get_frame() -> Frame
+    │
+    ├── vision_detector/
+    │   └── detect(frame) -> List[Detection]
+    │
+    ├── cognitive_core/
+    │   ├── store(event: Event)
+    │   ├── get_context(window) -> Context
+    │   ├── memoria_corto_plazo
+    │   ├── memoria_episodica (mediano plazo)
+    │   └── memoria_semantica (largo plazo)
+    │
+    ├── semantic_feedback/
+    │   ├── v1_reglas_simbolicas
+    │   └── v2_llm_ligero (futuro)
+    │
+    ├── evaluator/
+    │   ├── precision, recall, F1
+    │   ├── MCC
+    │   └── mAP
+    │
+    ├── trainer_loop/
+    │   ├── buffer_casos_dificiles
+    │   ├── micro_updates(capas_finales)
+    │   └── replay + regularización
+    │
+    ├── tda_manager/
+    │   ├── TopologyConfig
+    │   │   ├── active_modules
+    │   │   ├── connections (grafo de flujo)
+    │   │   └── resource_allocation
+    │   ├── políticas_de_cambio (basadas en métricas)
+    │   └── optimizador_micelial (clusters de parámetros)
+    │
+    ├── visual_interface/
+    │   ├── HUD de video + bounding boxes
+    │   ├── texto semántico
+    │   └── estado del sistema (confianza, carga, etc.)
+    │
+    └── common/
+        ├── tipos (Frame, Detection, Event, Context, Metrics, SystemState)
+        ├── logging
+        └── utils
+
+
+Y el loop de servicio que los conecta:
+while True:
+    frame       = input_handler.get_frame()
+    detections  = vision_detector.detect(frame)
+    event       = build_event(frame, detections)
+
+
+    cognitive_core.store(event)
+    context     = cognitive_core.get_context()
+
+
+    text        = semantic_feedback.generate(context, detections)
+
+
+    metrics     = evaluator.maybe_update(event)      # si hay labels / feedback
+    trainer_loop.maybe_train()                       # usa buffer de casos difíciles
+
+
+    topology    = tda_manager.update_topology(state_from(metrics, load, history))
+
+
+    visual_interface.render(frame, detections, text, state=(metrics, topology))
+
+
+________________
+
+
+3. Diagrama en Mermaid (para Notion / Obsidian / Markdown)
+Te dejo un diagrama de flujo principal del proyecto en Mermaid para que lo pegues donde quieras:
+flowchart LR
+    subgraph Percepcion["Percepción Visual"]
+        IH[input_handler<br/>get_frame()]
+        VD[vision_detector<br/>detect(frame)]
+    end
+
+
+    subgraph Memoria["Cognitive Core / Memoria"]
+        CC[cognitive_core<br/>store(event)<br/>get_context()]
+    end
+
+
+    subgraph Lenguaje["Lenguaje"]
+        SF[semantic_feedback<br/>generate(context, detections)]
+    end
+
+
+    subgraph AutoEval["Autoevaluación y Aprendizaje"]
+        EV[evaluator<br/>precision/recall/F1/MCC/mAP]
+        TL[trainer_loop<br/>micro-updates<br/>buffer_dificiles]
+    end
+
+
+    subgraph Meta["Meta-capa Adaptativa"]
+        TDA[tda_manager<br/>TopologyConfig<br/>optimizador micelial]
+    end
+
+
+    subgraph UI["Interfaz Humano-IA"]
+        VI[visual_interface<br/>HUD táctico]
+    end
+
+
+    IH --> VD --> CC --> SF --> VI
+    CC --> EV
+    EV --> TL
+    EV --> TDA
+    TL --> VD
+    TDA --> VD
+    TDA --> CC
+    TDA --> VI
+
+
+Y si quieres ver la versión multimodal futura, aquí va otro:
+flowchart LR
+    subgraph Inputs["Handlers de Entrada"]
+        VH[image/video_handler]
+        AH[audio_handler]
+        TH[text_handler]
+        SH[timeseries_handler]
+        BH[bio_handler]
+    end
+
+
+    subgraph Encoders["Encoders → Embedding común ℝ^d"]
+        VE[Vision Encoder]
+        AE[Audio Encoder]
+        TE[Text Encoder]
+        SE[Series Encoder]
+        BE[Bio Encoder]
+    end
+
+
+    subgraph Core["Núcleo Cognitivo"]
+        CC[cognitive_core]
+        EV[evaluator]
+        TL[trainer_loop]
+        TDA[tda_manager]
+    end
+
+
+    UI[visual_interface / otras interfaces]
+
+
+    VH --> VE
+    AH --> AE
+    TH --> TE
+    SH --> SE
+    BH --> BE
+
+
+    VE --> CC
+    AE --> CC
+    TE --> CC
+    SE --> CC
+    BE --> CC
+
+
+    CC --> EV --> TL
+    EV --> TDA
+    CC --> UI
+
+
+________________
+
+
+Si quieres, en el siguiente paso podemos:
+                                 * Bajar esto a estructura real de carpetas y archivos .py,
+
+                                 * O diseñar los tipos concretos (Event, Context, Metrics, TopologyConfig) para que todo el grafo quede fuertemente tipado y limpio.
+
+Tú dices hacia dónde lo empujamos ahora: ¿código, docs técnicas o diagrama más detallado de TDA/optimizador micelial?
+Dijiste:
+Con conocimiento nivel post doctoral de desarrollo de software y escalabilidad y mantenimiento, cuáles son los pasos que necesitamos seguir? me gustaría poder levantarlo con docker
+AGI U-CogNet dijo:
+Pensado en 21s
+Buenísima pregunta, parce, ahora sí nos vamos a poner modo “arquitecto serio” 😄
+Te propongo esto en dos niveles:
+                                    1. Roadmap de pasos (alto nivel, mentalidad postdoc).
+
+                                    2. Cómo aterrizarlo en Docker / docker-compose desde el día 1.
+
+________________
+
+
+1. Roadmap de pasos para un U-CogNet mantenible, escalable y dockerizable
+Paso 0 – Decisión de forma del proyecto
+Primero, definimos la forma del bicho:
+                                       * Mono-repo en Python (recomendado):
+
+                                          * src/ucognet/ como paquete principal.
+
+                                          * Todo lo demás organizado alrededor.
+
+                                             * Arquitectura tipo “hexagonal / ports & adapters”:
+
+                                                * Núcleo: contratos e interfaces de módulos (input_handler, vision_detector, etc.).
+
+                                                * Adapters: implementaciones concretas (OpenCV, YOLO, etc.).
+
+                                                * Infra: logging, config, serialización, runtime loop.
+
+Estructura mínima:
+ucognet/
+├── pyproject.toml / requirements.txt
+├── src/
+│   └── ucognet/
+│       ├── core/           # Dominio y contratos
+│       ├── modules/        # Implementaciones concretas
+│       ├── runtime/        # Orquestador y loops
+│       ├── infra/          # logging, config, utils
+│       └── __main__.py     # entrypoint: `python -m ucognet`
+├── tests/
+└── docker/
+    ├── Dockerfile
+    └── docker-compose.yml
+
+
+Paso 1 – Modelo de dominio y contratos (antes de picar código gordo)
+Aquí viene la parte “postdoc”: primero definimos el lenguaje del sistema.
+                                                   * Define data models (con dataclasses o pydantic) para:
+
+                                                      * Frame
+
+                                                      * Detection
+
+                                                      * Event
+
+                                                      * Context
+
+                                                      * Metrics
+
+                                                      * SystemState
+
+                                                      * TopologyConfig
+
+                                                         * Define interfaces (ABC / Protocol) para módulos:
+
+# src/ucognet/core/interfaces.py
+from typing import Protocol, List
+from .types import Frame, Detection, Event, Context, Metrics, SystemState, TopologyConfig
+
+
+class InputHandler(Protocol):
+    def get_frame(self) -> Frame: ...
+
+
+class VisionDetector(Protocol):
+    def detect(self, frame: Frame) -> List[Detection]: ...
+
+
+class CognitiveCore(Protocol):
+    def store(self, event: Event) -> None: ...
+    def get_context(self) -> Context: ...
+
+
+class SemanticFeedback(Protocol):
+    def generate(self, context: Context, detections: List[Detection]) -> str: ...
+
+
+class Evaluator(Protocol):
+    def maybe_update(self, event: Event) -> Metrics | None: ...
+
+
+class TrainerLoop(Protocol):
+    def maybe_train(self, metrics: Metrics | None) -> None: ...
+
+
+class TDAManager(Protocol):
+    def update(self, state: SystemState) -> TopologyConfig: ...
+
+
+class VisualInterface(Protocol):
+    def render(self, frame: Frame, detections: List[Detection], text: str, state: SystemState) -> None: ...
+
+
+Con esto garantizamos que cualquier implementación concreta pueda enchufarse sin romper el sistema.
+Paso 2 – Skeleton de módulos + orquestador
+Ahora implementamos versiones mínimas (dummy pero funcionales) de los módulos:
+                                                            * modules/input/opencv_camera.py
+
+                                                            * modules/vision/yolov8_detector.py (o un mock al inicio)
+
+                                                            * modules/cognitive/simple_core.py
+
+                                                            * modules/semantic/rule_based.py
+
+                                                            * modules/eval/basic_evaluator.py
+
+                                                            * modules/train/noop_trainer.py
+
+                                                            * modules/tda/static_topology.py
+
+                                                            * modules/ui/opencv_window.py o gradio_ui.py
+
+Y luego creamos un Engine que cablea todo:
+# src/ucognet/runtime/engine.py
+from ucognet.core.interfaces import (
+    InputHandler, VisionDetector, CognitiveCore, SemanticFeedback,
+    Evaluator, TrainerLoop, TDAManager, VisualInterface
+)
+from ucognet.core.types import build_event, build_system_state
+
+
+class Engine:
+    def __init__(
+        self,
+        input_handler: InputHandler,
+        vision_detector: VisionDetector,
+        cognitive_core: CognitiveCore,
+        semantic_feedback: SemanticFeedback,
+        evaluator: Evaluator,
+        trainer_loop: TrainerLoop,
+        tda_manager: TDAManager,
+        visual_interface: VisualInterface,
+    ) -> None:
+        self.input_handler = input_handler
+        self.vision_detector = vision_detector
+        self.cognitive_core = cognitive_core
+        self.semantic_feedback = semantic_feedback
+        self.evaluator = evaluator
+        self.trainer_loop = trainer_loop
+        self.tda_manager = tda_manager
+        self.visual_interface = visual_interface
+
+
+    def step(self) -> None:
+        frame = self.input_handler.get_frame()
+        detections = self.vision_detector.detect(frame)
+        event = build_event(frame, detections)
+
+
+        self.cognitive_core.store(event)
+        context = self.cognitive_core.get_context()
+        text = self.semantic_feedback.generate(context, detections)
+
+
+        metrics = self.evaluator.maybe_update(event)
+        self.trainer_loop.maybe_train(metrics)
+
+
+        state = build_system_state(metrics=metrics)
+        topology = self.tda_manager.update(state)
+        state.topology = topology
+
+
+        self.visual_interface.render(frame, detections, text, state)
+
+
+Y un entrypoint sencillo:
+# src/ucognet/__main__.py
+from ucognet.runtime.engine import Engine
+from ucognet.infra.bootstrap import build_default_engine
+
+
+def main() -> None:
+    engine: Engine = build_default_engine()
+    while True:
+        engine.step()
+
+
+if __name__ == "__main__":
+    main()
+
+
+Esto ya es dockerizable sin dolor.
+Paso 3 – Infra transversal (config, logging, errores)
+Antes de meter modelos pesados:
+                                                               * Config:
+
+                                                                  * Usar pydantic-settings o similar.
+
+                                                                  * Todo configurable por env vars (para Docker): VIDEO_SOURCE, MODEL_PATH, CONF_THRESHOLD, etc.
+
+                                                                     * Logging estructurado:
+
+                                                                        * Logs en JSON a stdout (ideal para contenedores).
+
+                                                                        * Niveles: debug para dev, info/warn para prod.
+
+                                                                           * Manejo de errores:
+
+                                                                              * Try/catch en el loop principal.
+
+                                                                              * Métricas de fallos, reconexión a cámara, etc.
+
+Paso 4 – Testing serio
+Con conocimiento “postdoc” aquí no perdonamos:
+                                                                                 * Tests unitarios por módulo.
+
+                                                                                 * Tests de contrato: que las implementaciones cumplen interfaces.
+
+                                                                                 * Tests de integración del Engine con módulos fake.
+
+                                                                                 * Tests de performance básicos (tiempo medio por step).
+
+                                                                                 * Una pequeña batería de regresión para la parte de visión (mismas imágenes, mismo output dentro de tolerancias).
+
+Paso 5 – Incorporar el modelo real (YOLO) y buffers de experiencia
+Una vez estable:
+                                                                                    * Conectar el detector real (YOLOv8, etc.).
+
+                                                                                    * trainer_loop:
+
+                                                                                       * Buffer de ejemplos difíciles (detecciones con baja confianza o alto error).
+
+                                                                                       * Módulo minimal de “fine-tuning” offline al inicio (no en el contenedor de inferencia todavía).
+
+                                                                                          * Ya después:
+
+                                                                                             * Mover el entrenamiento a otro servicio/contendor (MLOps light).
+
+Paso 6 – TDA y optimizador “micelial” (v1)
+En una primera versión:
+                                                                                                * TDAManager que:
+
+                                                                                                   * Cambia thresholds,
+
+                                                                                                   * Activa/desactiva módulos “costosos” según FPS/métricas,
+
+                                                                                                   * Ajusta tamaño de buffer, etc.
+
+                                                                                                      * Nada de locuras todavía: reglas simples basadas en métricas y uso de CPU/GPU.
+
+________________
+
+
+2. Cómo levantarlo con Docker 🐳
+La clave: pensar en tres capas:
+                                                                                                         1. Base de runtime (Python, CUDA, deps pesadas)
+
+                                                                                                         2. Capa de app (tu código, modelos, config)
+
+                                                                                                         3. Orquestación con docker-compose (para GPU, volúmenes, etc.)
+
+2.1. Dockerfile (versión simple pero decente)
+Ejemplo general:
+# docker/Dockerfile
+
+
+# 1) Imagen base: si usas GPU, algo tipo CUDA/PyTorch. Si no, python puro.
+FROM python:3.11-slim AS base
+
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1
+
+
+WORKDIR /app
+
+
+# 2) Dependencias del sistema (opencv, etc.)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg libsm6 libxext6 \
+    && rm -rf /var/lib/apt/lists/*
+
+
+# 3) Instalar dependencias de Python
+COPY pyproject.toml poetry.lock* requirements.txt* ./
+
+
+# O usas poetry:
+# RUN pip install "poetry==1.8.0" \
+#     && poetry config virtualenvs.create false \
+#     && poetry install --no-root --only main
+
+
+# O requirements.txt:
+RUN if [ -f "requirements.txt" ]; then pip install -r requirements.txt; fi
+
+
+# 4) Copiar código
+COPY src/ ./src/
+
+
+ENV PYTHONPATH=/app/src
+
+
+# 5) Entry point
+CMD ["python", "-m", "ucognet"]
+
+
+Si quieres GPU, cambias la base por algo tipo nvidia/cuda o una imagen oficial de PyTorch y ejecutas con --gpus all.
+2.2. docker-compose para dev
+Para desarrollo es más cómodo:
+# docker/docker-compose.yml
+version: "3.9"
+
+
+services:
+  ucognet:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: ucognet-dev
+    working_dir: /app
+    command: ["python", "-m", "ucognet"]
+    environment:
+      VIDEO_SOURCE: "0"
+      MODEL_PATH: "/models/yolov8n.pt"
+      LOG_LEVEL: "DEBUG"
+    volumes:
+      - ../src:/app/src          # hot reload de código
+      - ../models:/models        # pesos del modelo
+    restart: unless-stopped
+    # Si tienes GPU:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]
+    # O con docker clásico:
+    # runtime: nvidia
+
+
+    # Si usas interfaz gráfica tipo X11, sería otro tema (forward de display, etc.)
+
+
+Comandos típicos:
+cd docker
+docker compose build
+docker compose up
+
+
+Y ya tienes el loop corriendo dentro de un contenedor.
+2.3. Separar “inferencias” y “entrenamiento” (paso siguiente)
+Para escalar bonito:
+                                                                                                            * Un servicio ucognet-infer (el de arriba).
+
+                                                                                                            * Un servicio ucognet-train que:
+
+                                                                                                               * Lee del buffer de ejemplos difíciles (volumen compartido o base de datos).
+
+                                                                                                               * Ejecuta ciclos de entrenamiento.
+
+                                                                                                               * Escribe nuevos pesos en /models.
+
+                                                                                                                  * El contenedor de inferencia:
+
+                                                                                                                     * Detecta cambios de pesos y los recarga en caliente (o con restart controlado).
+
+Algo así:
+services:
+  ucognet-infer:
+    # igual que antes
+
+
+  ucognet-train:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: ["python", "-m", "ucognet.training_loop"]
+    volumes:
+      - ../models:/models
+      - ../data:/data
+    environment:
+      TRAINING_MODE: "online"
+
+
+________________
+
+
+3. Orden sugerido de implementación (to-do list concreto)
+Para dejarlo ya como plan de ataque:
+                                                                                                                        1. Crear estructura de repo: src/ucognet, tests, docker/.
+
+                                                                                                                        2. Definir tipos y interfaces en core/ (Event, Context, Metrics, TopologyConfig + Protocols).
+
+                                                                                                                        3. Crear módulos dummy en modules/ (implementaciones mínimas).
+
+                                                                                                                        4. Implementar Engine y entrypoint (__main__.py).
+
+                                                                                                                        5. Meter infra básica:
+
+                                                                                                                           * Config por env vars,
+
+                                                                                                                           * Logging estructurado.
+
+                                                                                                                              6. Escribir tests básicos de unidad + integración del Engine con módulos fake.
+
+                                                                                                                              7. Escribir Dockerfile y docker-compose de dev:
+
+                                                                                                                                 * Asegurarte que corre localmente con cámara / fuente de video artificial.
+
+                                                                                                                                    8. Integrar el modelo de visión real (YOLO, etc.) dentro de vision_detector.
+
+                                                                                                                                    9. Agregar evaluator + buffer de casos difíciles (aunque no entrenen aún).
+
+                                                                                                                                    10. Crear script/servicio de entrenamiento y abrir puerta a ucognet-train.
+
+                                                                                                                                    11. Iterar sobre TDA:
+
+                                                                                                                                       * Empezar con reglas simples que ajustan thresholds y activan/desactivan cosas.
