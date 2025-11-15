@@ -1,0 +1,27 @@
+--2025-11-15 11:42:06--  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Resolving sample-videos.com (sample-videos.com)... 103.145.51.95
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:44:23--  (try: 2)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:46:42--  (try: 3)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:49:03--  (try: 4)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:51:25--  (try: 5)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:53:48--  (try: 6)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... failed: Connection timed out.
+Retrying.
+
+--2025-11-15 11:56:11--  (try: 7)  https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4
+Connecting to sample-videos.com (sample-videos.com)|103.145.51.95|:443... 
