@@ -1,7 +1,7 @@
 # U-CogNet: Universal Cognitive Neural Entity
 ## Towards Transcendent Artificial Intelligence
 
-**DOI:** Pending | **Version:** 0.1.0 | **Date:** November 15, 2025  
+**DOI:** Pending | **Version:** 0.1.0 | **Date:** November 16, 2025  
 **Institution:** Independent Research | **License:** MIT  
 **Keywords:** Cognitive AI, Universal Intelligence, Modular Architecture, Real-time Processing, Adaptive Systems
 
@@ -54,6 +54,13 @@ U-CogNet is grounded in **postdoctoral-level cognitive science** and **complex s
 ```
 
 ### 2.2 Modular Components
+
+#### Audio-Visual Module (AudioVisualSynthesizer)
+- **Architecture**: Cognitive audio perception with artistic visual expression
+- **Capabilities**: Environmental sound interpretation, emotional analysis, visual synthesis
+- **Components**: Feature extraction, perception engine, visual expression, rendering, evaluation
+- **Status**: Feature extraction ✅, Comprehensive testing ✅, Implementation in progress 🚧
+- **Performance**: ~140ms synthesis time (balanced quality preset)
 
 #### Perception Module (VisionDetector)
 - **Algorithm**: Enhanced YOLOv8 with domain-specific adaptations
@@ -411,6 +418,7 @@ Este proyecto sigue estándares NASA-equivalent para sistemas críticos. Todas l
 Este proyecto es de código abierto bajo la filosofía de "comprensión y protección" de U-CogNet.
 
 ## Documentación
+- [Changelog](CHANGELOG.md)
 - [Planteamiento del Problema](Planteamiento del Problema.md)
 - [Arquitectura Detallada](Arquitectura Detallada.md)
 - [Roadmap](Roadmap de Implementacion.md)

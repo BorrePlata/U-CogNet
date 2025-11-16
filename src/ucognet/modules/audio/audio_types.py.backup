@@ -1,0 +1,190 @@
+# U-CogNet Audio-Visual Module Types
+# Universal Auditory-Perceptual System with Artistic Expression
+
+from dataclasses import dataclass, field
+from typing import Dict, List, Optional, Any, Tuple
+from datetime import datetime
+import numpy as np
+
+# Audio Processing Types
+@dataclass
+class AudioFrame:
+    """Represents a frame of audio data with metadata."""
+    timestamp: datetime
+    data: np.ndarray  # Raw audio samples
+    sample_rate: int
+    channels: int
+    duration: float  # Duration in seconds
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+@dataclass
+class AudioFeatures:
+    """Extracted audio features for cognitive processing."""
+    timestamp: datetime
+
+    # Spectral features
+    mfcc: np.ndarray  # Mel-frequency cepstral coefficients
+    chroma: np.ndarray  # Chroma features
+    spectral_centroid: float
+    spectral_bandwidth: float
+    spectral_rolloff: float
+    zero_crossing_rate: float
+
+    # Temporal features
+    rms_energy: float
+    onset_strength: float
+    tempo: float
+    beat_positions: List[float]
+
+    # Advanced features
+    harmonic_ratio: float
+    percussive_ratio: float
+    tonnetz: np.ndarray  # Tonal centroid features
+
+    # Raw spectrogram data
+    spectrogram: np.ndarray
+    mel_spectrogram: np.ndarray
+
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+@dataclass
+class AudioPerception:
+    """Cognitive interpretation of audio input."""
+    timestamp: datetime
+    features: AudioFeatures
+
+    # Semantic interpretation
+    sound_type: str  # 'birdsong', 'explosion', 'alarm', 'nature', 'urban', 'unknown'
+    emotional_valence: float  # -1.0 (negative) to 1.0 (positive)
+    arousal_level: float  # 0.0 (calm) to 1.0 (intense)
+    familiarity: float  # 0.0 (novel) to 1.0 (familiar)
+
+    # Contextual understanding
+    environment_context: str  # 'forest', 'urban', 'industrial', 'domestic'
+    temporal_pattern: str  # 'continuous', 'intermittent', 'pulsed', 'random'
+    spatial_characteristics: Dict[str, float]  # direction, distance estimates
+
+    # Cognitive processing
+    attention_weight: float  # How much cognitive focus this deserves
+    memory_importance: float  # Likelihood of storing in episodic memory
+
+    confidence: float = 1.0
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+# Visual Expression Types
+@dataclass
+class VisualSymbol:
+    """Symbolic visual representation of audio perception."""
+    symbol_type: str  # 'geometric', 'organic', 'abstract', 'representational'
+    primary_color: Tuple[float, float, float]  # RGB values 0-1
+    secondary_colors: List[Tuple[float, float, float]]
+    shape_complexity: float  # 0.0 (simple) to 1.0 (complex)
+    movement_pattern: str  # 'static', 'flowing', 'pulsing', 'erratic'
+    size_scale: float  # Relative size multiplier
+    opacity: float  # 0.0 (transparent) to 1.0 (opaque)
+
+@dataclass
+class ArtisticExpression:
+    """Artistic visual manifestation of audio cognition."""
+    timestamp: datetime
+    audio_perception: AudioPerception
+
+    # Core visual elements
+    primary_symbol: VisualSymbol
+    supporting_elements: List[VisualSymbol]
+
+    # Dynamic properties
+    animation_speed: float  # 0.0 (static) to 1.0 (very fast)
+    color_evolution: List[Tuple[float, float, float]]  # Color progression over time
+    morphing_pattern: str  # How the visualization transforms
+
+    # Spatial composition
+    layout_type: str  # 'centralized', 'distributed', 'flowing', 'explosive'
+    depth_layers: int  # Number of visual depth layers
+    symmetry_degree: float  # 0.0 (asymmetric) to 1.0 (perfectly symmetric)
+
+    # Emotional mapping
+    emotional_intensity: float  # Visual intensity matching audio emotion
+    harmony_level: float  # Visual coherence and aesthetic quality
+
+    # Metadata for evaluation
+    artistic_confidence: float
+    cognitive_coherence: float
+    aesthetic_pleasure: float
+
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+@dataclass
+class AudioVisualSynthesis:
+    """Complete synthesis of audio perception and visual expression."""
+    timestamp: datetime
+    audio_frame: AudioFrame
+    audio_features: AudioFeatures
+    audio_perception: AudioPerception
+    visual_expression: ArtisticExpression
+
+    # Synthesis quality metrics
+    perceptual_fidelity: float  # How well visual matches audio perception
+    emotional_resonance: float  # Emotional impact of the synthesis
+    cognitive_clarity: float  # How clearly the concept is communicated
+
+    # System performance
+    processing_latency: float  # Total processing time
+    resource_usage: Dict[str, float]  # CPU, memory, etc.
+
+    # Adaptive parameters
+    adaptation_suggestions: Dict[str, Any]  # Suggestions for system improvement
+
+    metadata: Dict[str, Any] = field(default_factory=dict)
+
+# Evaluation and Adaptation Types
+@dataclass
+class AudioVisualMetrics:
+    """Performance metrics for audio-visual processing."""
+    timestamp: datetime
+
+    # Audio processing metrics
+    audio_quality_score: float  # 0-1, based on feature extraction quality
+    perception_accuracy: float  # How accurate the semantic interpretation is
+    novelty_detection: float  # Ability to identify novel sounds
+
+    # Visual expression metrics
+    visual_coherence: float  # Internal consistency of visualization
+    emotional_alignment: float  # Match between audio emotion and visual emotion
+    aesthetic_quality: float  # Subjective beauty/usefulness of visualization
+
+    # Synthesis metrics
+    cross_modal_fidelity: float  # How well audio and visual modalities align
+    cognitive_load: float  # Processing demand on cognitive system
+    user_engagement: float  # Estimated user interest/attention
+
+    # System health
+    processing_stability: float  # Consistency of processing pipeline
+    resource_efficiency: float  # Computational resource usage efficiency
+    adaptation_effectiveness: float  # How well the system improves over time
+
+@dataclass
+class AudioVisualAdaptation:
+    """Adaptation parameters for the audio-visual system."""
+    timestamp: datetime
+
+    # Audio processing adaptations
+    feature_extraction_params: Dict[str, Any]
+    perception_thresholds: Dict[str, float]
+    context_sensitivity: float
+
+    # Visual expression adaptations
+    symbol_complexity_bias: float
+    color_emotion_mapping: Dict[str, Tuple[float, float, float]]
+    animation_style_preferences: Dict[str, float]
+
+    # Synthesis adaptations
+    cross_modal_weights: Dict[str, float]
+    quality_target: float
+    performance_priorities: Dict[str, float]
+
+    # Learning parameters
+    adaptation_rate: float
+    exploration_factor: float
+    memory_retention: float</content>
+<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/src/ucognet/modules/audio/audio_types.py
