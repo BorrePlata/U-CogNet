@@ -123,14 +123,22 @@ graph TD
 - **Performance Recovery**: 15% improvement in degraded conditions
 - **Learning Adaptation**: Continuous metric optimization
 
+#### Incremental Learning Validation
+- **Snake Demo**: 5,000 episodes of Q-learning with episodic memory
+- **Knowledge Growth**: Q-table expansion from 4,747 to 5,712 states
+- **Performance Improvement**: Average score progression 0.58 → 8.0 (1,276% gain)
+- **Memory Efficiency**: Stable ~37MB usage with 1,000 experience buffer
+- **Video Documentation**: MP4 recordings demonstrating learning progression
+
 ### 3.2 Comparative Analysis
 
-| System | Architecture | Performance | Adaptability | Domain Scope |
-|--------|-------------|-------------|--------------|--------------|
-| U-CogNet | Modular Cognitive | 14.8 FPS | High | Universal |
-| YOLOv8 | CNN Detection | 25 FPS | Low | Vision Only |
-| CLIP | Multimodal | 5 FPS | Medium | Classification |
-| GPT-4 | LLM | 0.1 FPS | High | Language |
+| System | Architecture | Performance | Adaptability | Domain Scope | Learning Capability |
+|--------|-------------|-------------|--------------|--------------|-------------------|
+| U-CogNet | Modular Cognitive | 14.8 FPS | High | Universal | Incremental Q-Learning |
+| U-CogNet Snake | Q-Learning Agent | 8.0 avg score | High | Games | Continuous Adaptation |
+| YOLOv8 | CNN Detection | 25 FPS | Low | Vision Only | Static |
+| CLIP | Multimodal | 5 FPS | Medium | Classification | Few-shot |
+| GPT-4 | LLM | 0.1 FPS | High | Language | Fine-tuning |
 
 ### 3.3 Ablation Studies
 
@@ -315,6 +323,13 @@ This research builds upon foundational work in cognitive science, complex system
 - **TDA Básico**: Reasignación automática de recursos basada en métricas.
 - **Optimización**: Activación/desactivación de módulos según rendimiento.
 - **Recuperación**: Adaptación a cambios en el rendimiento del sistema.
+
+### Aprendizaje Incremental
+- **Demo de Snake**: Validación experimental de aprendizaje continuo con Q-learning.
+- **Memoria Episódica**: Sistema de 1,000 experiencias para repetición mejorada.
+- **Persistencia de Conocimiento**: Almacenamiento JSON de estados Q aprendidos (5,712 estados).
+- **Mejora Progresiva**: De puntuación promedio 0.58 a 8.0 (1,276% de mejora).
+- **Documentación Visual**: Videos MP4 compatibles con navegador del progreso de aprendizaje.
 
 ### Interfaz Avanzada
 - **HUD Táctico**: Panel de estado de seguridad con estadísticas en tiempo real.

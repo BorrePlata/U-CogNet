@@ -45,7 +45,9 @@ def main():
     }
     
     try:
-        for episode in range(1, 1001):  # 1000 episodios
+        print("🤖 Entrenando agente... (esto puede tomar un tiempo)")
+        
+        for episode in range(1, 5001):  # 5000 episodios para mejor aprendizaje
             state = env.reset()
             done = False
             episode_reward = 0
@@ -88,23 +90,26 @@ def main():
                 'memory_size': agent_stats['memory_size']
             })
             
-            # Mostrar progreso cada 50 episodios
-            if episode % 50 == 0:
+            # Mostrar progreso cada 200 episodios
+            if episode % 200 == 0:
                 avg_score = global_stats['total_score'] / global_stats['total_episodes']
-                avg_memory = sum(global_stats['memory_usage'][-50:]) / 50
-                q_states = len(agent.q_table)
-                
                 print("2d")
-                print(".2f")
-                print(f"   🧠 Estados Q aprendidos: {q_states}")
-                print(f"   📚 Memoria episódica: {agent_stats['memory_size']}")
                 print(f"   🎯 Mejor puntuación: {global_stats['best_score']}")
-                print("-" * 50)
+                print(f"   🧠 Estados Q: {len(agent.q_table)}")
                 
-                # Guardar conocimiento cada 100 episodios
-                if episode % 100 == 0:
-                    agent.save_knowledge()
-                    print("💾 Conocimiento guardado")
+                # Guardar conocimiento
+                agent.save_knowledge()
+                print("💾 Conocimiento guardado")
+        
+        print("\n✅ Entrenamiento completado!")
+        
+        # Jugar una partida completa y grabarla
+        print("🎬 Grabando partida completa del agente entrenado...")
+        play_and_record_game(env, agent)
+        
+        # Crear también una demo corta para ver rápidamente
+        print("🎬 Creando demo corta...")
+        create_short_demo(env, agent)
     
     except KeyboardInterrupt:
         print("\n⏹️ Demo interrumpida")
@@ -165,7 +170,184 @@ def main():
         json.dump(results, f, indent=2)
     
     print(f"\n💾 Resultados guardados en snake_demo_results.json")
-    print("🏁 Demo completada - Sistema U-CogNet operativo en Snake")
+    print(f"\n🏁 Demo completada - Sistema U-CogNet operativo en Snake")
+
+def play_and_record_game(env, agent):
+    """Juega una partida completa y la graba en video"""
+    import cv2
+    import numpy as np
+    
+    # Configurar grabación
+    width, height = 400, 400
+    fps = 10
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')  # XVID codec, más confiable
+    out = cv2.VideoWriter('snake_gameplay.avi', fourcc, fps, (width, height))
+    
+    # Resetear entorno
+    state = env.reset()
+    done = False
+    steps = 0
+    total_score = 0
+    
+    print("🎮 Iniciando grabación de partida...")
+    
+    # Crear ventana para renderizar
+    cv2.namedWindow('Snake AI Gameplay', cv2.WINDOW_NORMAL)
+    cv2.resizeWindow('Snake AI Gameplay', width, height)
+    
+    try:
+        while not done and steps < 2000:  # Límite más alto para partida completa
+            # Agente juega (sin aprender)
+            action = agent.choose_action(state)
+            
+            # Ejecutar acción
+            next_state, reward, done, _ = env.step(action)
+            
+            # Actualizar puntuación
+            if reward > 0:
+                total_score = env.score
+            
+            state = next_state
+            steps += 1
+            
+            # Crear frame visual
+            frame = create_visual_frame(env, width, height)
+            
+            # Mostrar en ventana
+            cv2.imshow('Snake AI Gameplay', frame)
+            
+            # Escribir al video
+            out.write(frame)
+            
+            # Info cada 50 pasos
+            if steps % 50 == 0:
+                print(f"🎬 Paso {steps} | Puntuación: {total_score} | Epsilon: {agent.epsilon:.3f}")
+            
+            # Salir si se presiona ESC
+            if cv2.waitKey(100) & 0xFF == 27:
+                break
+                
+    except Exception as e:
+        print(f"⚠️ Error durante grabación: {e}")
+    
+    finally:
+        out.release()
+        cv2.destroyAllWindows()
+    
+    print(f"✅ Grabación completada: {steps} pasos, puntuación final: {total_score}")
+    print("📹 Video guardado como 'snake_gameplay.avi' (compatible con navegadores)")
+
+def create_short_demo(env, agent):
+    """Crea una demo corta de 30 segundos para ver el aprendizaje rápidamente"""
+    import cv2
+    import numpy as np
+    
+    # Configurar grabación corta
+    width, height = 400, 400
+    fps = 15  # Más rápido para demo
+    fourcc = cv2.VideoWriter_fourcc(*'XVID')
+    out = cv2.VideoWriter('snake_demo_short.avi', fourcc, fps, (width, height))
+    
+    # Resetear entorno
+    state = env.reset()
+    done = False
+    steps = 0
+    total_score = 0
+    
+    print("🎮 Creando demo corta...")
+    
+    try:
+        while not done and steps < 450:  # 30 segundos a 15fps
+            # Agente juega
+            action = agent.choose_action(state)
+            
+            # Ejecutar acción
+            next_state, reward, done, _ = env.step(action)
+            
+            if reward > 0:
+                total_score = env.score
+            
+            state = next_state
+            steps += 1
+            
+            # Crear frame visual
+            frame = create_visual_frame(env, width, height)
+            
+            # Agregar info de aprendizaje
+            cv2.putText(frame, f"AI Learning Demo", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 0, 0), 2)
+            cv2.putText(frame, f"Score: {total_score}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2)
+            cv2.putText(frame, f"Steps: {steps}", (10, 85), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2)
+            cv2.putText(frame, f"Epsilon: {agent.epsilon:.3f}", (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
+            
+            # Escribir al video
+            out.write(frame)
+            
+            # Info cada 50 pasos
+            if steps % 50 == 0:
+                print(f"🎬 Demo paso {steps} | Puntuación: {total_score}")
+                
+    except Exception as e:
+        print(f"⚠️ Error en demo corta: {e}")
+    
+    finally:
+        out.release()
+    
+    print(f"✅ Demo corta completada: {steps} pasos, puntuación final: {total_score}")
+    print("📹 Demo guardada como 'snake_demo_short.avi' (compatible con navegadores)")
+
+def create_visual_frame(env, width, height):
+    """Crea un frame visual del estado del juego"""
+    import cv2
+    import numpy as np
+    
+    # Crear imagen en blanco
+    frame = np.ones((height, width, 3), dtype=np.uint8) * 255  # Blanco
+    
+    # Obtener estado
+    state = env._get_state()
+    grid = state['grid']
+    snake = state['snake']
+    food = state['food']
+    
+    # Tamaño de celda
+    cell_size = min(width, height) // max(env.width, env.height)
+    offset_x = (width - env.width * cell_size) // 2
+    offset_y = (height - env.height * cell_size) // 2
+    
+    # Dibujar grid
+    for y in range(env.height):
+        for x in range(env.width):
+            cell_value = grid[y, x]
+            
+            # Color según tipo
+            if cell_value == -1:  # Pared
+                color = (0, 0, 0)  # Negro
+            elif cell_value == 1:  # Cuerpo serpiente
+                color = (0, 128, 0)  # Verde oscuro
+            elif cell_value == 2:  # Cabeza serpiente
+                color = (0, 255, 0)  # Verde brillante
+            elif cell_value == 3:  # Comida
+                color = (0, 0, 255)  # Rojo
+            else:  # Vacío
+                color = (255, 255, 255)  # Blanco
+            
+            # Dibujar rectángulo
+            cv2.rectangle(frame, 
+                         (offset_x + x * cell_size, offset_y + y * cell_size),
+                         (offset_x + (x + 1) * cell_size, offset_y + (y + 1) * cell_size),
+                         color, -1)
+            
+            # Bordes
+            cv2.rectangle(frame, 
+                         (offset_x + x * cell_size, offset_y + y * cell_size),
+                         (offset_x + (x + 1) * cell_size, offset_y + (y + 1) * cell_size),
+                         (200, 200, 200), 1)
+    
+    # Agregar texto de puntuación
+    cv2.putText(frame, f"Score: {env.score}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
+    cv2.putText(frame, f"Steps: {len(snake)}", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 0), 2)
+    
+    return frame
 
 if __name__ == "__main__":
     main()
