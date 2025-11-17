@@ -1,0 +1,144 @@
+{
+  "timestamp": "2025-11-17T12:53:58.794440",
+  "total_tests": 10,
+  "successful_tests": 10,
+  "failed_tests": 0,
+  "total_duration": 2.8114404678344727,
+  "system_health": "SALUDABLE",
+  "resilience_status": {
+    "degradation_level": 0,
+    "failure_count": 0
+  },
+  "scaling_status": {
+    "current_load": 0.855,
+    "target_load": 0.7
+  },
+  "test_details": [
+    {
+      "name": "basic_modules",
+      "success": true,
+      "duration": 0.2646493911743164,
+      "error": null,
+      "metrics": {
+        "imports_ok": true,
+        "dirs_ok": true
+      }
+    },
+    {
+      "name": "security_architecture",
+      "success": true,
+      "duration": 0.235274076461792,
+      "error": null,
+      "metrics": {
+        "security_cycles": 2,
+        "threats_detected": 0,
+        "ethical_evaluations": 1
+      }
+    },
+    {
+      "name": "vision_pipeline",
+      "success": true,
+      "duration": 0.007852315902709961,
+      "error": null,
+      "metrics": {
+        "frame_shape": [
+          480,
+          640,
+          3
+        ],
+        "detections_count": 2,
+        "avg_confidence": 0.885
+      }
+    },
+    {
+      "name": "memory_system",
+      "success": true,
+      "duration": 0.10331320762634277,
+      "error": null,
+      "metrics": {
+        "events_stored": 10,
+        "recent_events": 5,
+        "avg_confidence": 0.39870225270216847
+      }
+    },
+    {
+      "name": "continuous_learning",
+      "success": true,
+      "duration": 0.003442525863647461,
+      "error": null,
+      "metrics": {
+        "difficult_examples": 10,
+        "learning_rate": 0.001,
+        "updates_applied": 10
+      }
+    },
+    {
+      "name": "dynamic_topology",
+      "success": true,
+      "duration": 0.0014677047729492188,
+      "error": null,
+      "metrics": {
+        "active_modules": 4,
+        "connections_count": 4,
+        "total_allocation": 1.0,
+        "topology_adapted": true
+      }
+    },
+    {
+      "name": "multimodal_integration",
+      "success": true,
+      "duration": 0.0036916732788085938,
+      "error": null,
+      "metrics": {
+        "modalities_processed": 4,
+        "embedding_dim": 512,
+        "attention_weights": [
+          0.3251225442806032,
+          0.1597845657789471,
+          0.3203174483139904,
+          0.19477544162645938
+        ],
+        "fusion_success": true
+      }
+    },
+    {
+      "name": "evaluation_system",
+      "success": true,
+      "duration": 0.003141641616821289,
+      "error": null,
+      "metrics": {
+        "accuracy": 0.32,
+        "avg_precision": 0.2993878527020564,
+        "classes_evaluated": 3,
+        "samples_tested": 100
+      }
+    },
+    {
+      "name": "scaling_resilience",
+      "success": true,
+      "duration": 0.007286548614501953,
+      "error": null,
+      "metrics": {
+        "load_scenarios_tested": 4,
+        "scaling_responses": 3,
+        "resilience_limits": {
+          "cpu_usage": 80,
+          "memory_usage": 85,
+          "gpu_memory": 90
+        },
+        "system_resilient": true
+      }
+    },
+    {
+      "name": "stress_conditions",
+      "success": true,
+      "duration": 2.181321382522583,
+      "error": null,
+      "metrics": {
+        "stress_tests": 3,
+        "total_duration": 2.0,
+        "error_resilience": true
+      }
+    }
+  ]
+}
