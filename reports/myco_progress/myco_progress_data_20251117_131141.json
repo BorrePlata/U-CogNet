@@ -1,0 +1,395 @@
+{
+  "progress_history": [
+    {
+      "timestamp": "2025-11-17T13:10:38.169831",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_0",
+        "simulated_load": 0.5
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:10:49.481257",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_1",
+        "simulated_load": 0.8
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:10:59.482201",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_2",
+        "simulated_load": 1.1
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:09.483291",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_3",
+        "simulated_load": 0.5
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:20.801702",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_4",
+        "simulated_load": 0.8
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:30.802799",
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_5",
+        "simulated_load": 1.1
+      },
+      "integration_metrics": {
+        "routes_processed": 0,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.0
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.0,
+        "emergent_behaviors": []
+      },
+      "topology": {
+        "nodes": [
+          "input_handler",
+          "vision_detector",
+          "audio_processor",
+          "cognitive_core",
+          "evaluator",
+          "trainer_loop",
+          "visual_interface"
+        ],
+        "connections": 7
+      },
+      "emergent_behaviors": [],
+      "safety_status": null,
+      "improvements": {
+        "routing_efficiency": 0,
+        "performance_gain": 0.0
+      }
+    }
+  ],
+  "emergent_behaviors": [],
+  "topology_evolution": [
+    {
+      "timestamp": "2025-11-17T13:10:38.169831",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_0",
+        "simulated_load": 0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:10:49.481257",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_1",
+        "simulated_load": 0.8
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:10:59.482201",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_2",
+        "simulated_load": 1.1
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:09.483291",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_3",
+        "simulated_load": 0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:20.801702",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_4",
+        "simulated_load": 0.8
+      }
+    },
+    {
+      "timestamp": "2025-11-17T13:11:30.802799",
+      "nodes_count": 7,
+      "connections_count": 7,
+      "nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "context": {
+        "phase": "monitoring",
+        "activity": "snapshot_5",
+        "simulated_load": 1.1
+      }
+    }
+  ],
+  "baseline_metrics": {
+    "processing_time_mean": 0.30763825148012997,
+    "processing_time_std": 0.02251161309351787,
+    "processing_time_min": 0.282875357141862,
+    "processing_time_max": 0.33764593215868755,
+    "total_time_mean": 0.00044307708740234377,
+    "total_time_std": 0.0009667827168647011,
+    "total_time_min": 6.4373016357421875e-06,
+    "total_time_max": 0.0021724700927734375,
+    "security_score_mean": 0.7348503712902424,
+    "security_score_std": 0.1033960723584504,
+    "security_score_min": 0.6045205305233932,
+    "security_score_max": 0.8471007836901499,
+    "adaptation_score_mean": 0.5911184875474051,
+    "adaptation_score_std": 0.0713560944897448,
+    "adaptation_score_min": 0.5075100800802684,
+    "adaptation_score_max": 0.6620368334789961,
+    "efficiency_mean": 3.2642816707685895,
+    "efficiency_std": 0.23444378751683786,
+    "efficiency_min": 2.9616823564455617,
+    "efficiency_max": 3.53512589468336,
+    "emergent_behaviors_mean": 0.0,
+    "emergent_behaviors_std": 0.0,
+    "emergent_behaviors_min": "0",
+    "emergent_behaviors_max": "0",
+    "resource_usage_mean": 0.8209850870667139,
+    "resource_usage_std": 0.08677360189669477,
+    "resource_usage_min": 0.6705289740888654,
+    "resource_usage_max": 0.8831883939971094,
+    "error_rate_mean": 0.10728961689249816,
+    "error_rate_std": 0.027354881855084754,
+    "error_rate_min": 0.08349699529590546,
+    "error_rate_max": 0.1447209197125116
+  },
+  "metadata": {
+    "generated_at": "2025-11-17T13:11:41.731651",
+    "total_snapshots": 6,
+    "emergent_behaviors_count": 0,
+    "topology_changes": 6
+  }
+}

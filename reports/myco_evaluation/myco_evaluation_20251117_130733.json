@@ -1,0 +1,340 @@
+{
+  "baseline_results": {
+    "metrics": [
+      {
+        "run_id": 0,
+        "processing_time": 0.282875357141862,
+        "total_time": 0.0021724700927734375,
+        "security_score": 0.8471007836901499,
+        "adaptation_score": 0.6620368334789961,
+        "efficiency": 3.53512589468336,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6705289740888654,
+        "error_rate": 0.09189466493660939
+      },
+      {
+        "run_id": 1,
+        "processing_time": 0.2981108480795104,
+        "total_time": 2.2172927856445312e-05,
+        "security_score": 0.7703704092908031,
+        "adaptation_score": 0.5075100800802684,
+        "efficiency": 3.3544569291664486,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.8831883939971094,
+        "error_rate": 0.12800988146420555
+      },
+      {
+        "run_id": 2,
+        "processing_time": 0.29540097801182186,
+        "total_time": 6.9141387939453125e-06,
+        "security_score": 0.6045205305233932,
+        "adaptation_score": 0.6250271755374149,
+        "efficiency": 3.385229144231135,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.8712994566854707,
+        "error_rate": 0.0883256230532588
+      },
+      {
+        "run_id": 3,
+        "processing_time": 0.33764593215868755,
+        "total_time": 6.4373016357421875e-06,
+        "security_score": 0.8028216830511157,
+        "adaptation_score": 0.5214664901038234,
+        "efficiency": 2.9616823564455617,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.8265166650573448,
+        "error_rate": 0.08349699529590546
+      },
+      {
+        "run_id": 4,
+        "processing_time": 0.324158142008768,
+        "total_time": 7.3909759521484375e-06,
+        "security_score": 0.64943844989575,
+        "adaptation_score": 0.6395518585365221,
+        "efficiency": 3.084914029316442,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.85339194550478,
+        "error_rate": 0.1447209197125116
+      }
+    ],
+    "summary": {
+      "processing_time_mean": 0.30763825148012997,
+      "processing_time_std": 0.02251161309351787,
+      "processing_time_min": 0.282875357141862,
+      "processing_time_max": 0.33764593215868755,
+      "total_time_mean": 0.00044307708740234377,
+      "total_time_std": 0.0009667827168647011,
+      "total_time_min": 6.4373016357421875e-06,
+      "total_time_max": 0.0021724700927734375,
+      "security_score_mean": 0.7348503712902424,
+      "security_score_std": 0.1033960723584504,
+      "security_score_min": 0.6045205305233932,
+      "security_score_max": 0.8471007836901499,
+      "adaptation_score_mean": 0.5911184875474051,
+      "adaptation_score_std": 0.0713560944897448,
+      "adaptation_score_min": 0.5075100800802684,
+      "adaptation_score_max": 0.6620368334789961,
+      "efficiency_mean": 3.2642816707685895,
+      "efficiency_std": 0.23444378751683786,
+      "efficiency_min": 2.9616823564455617,
+      "efficiency_max": 3.53512589468336,
+      "emergent_behaviors_mean": 0.0,
+      "emergent_behaviors_std": 0.0,
+      "emergent_behaviors_min": "0",
+      "emergent_behaviors_max": "0",
+      "resource_usage_mean": 0.8209850870667139,
+      "resource_usage_std": 0.08677360189669477,
+      "resource_usage_min": 0.6705289740888654,
+      "resource_usage_max": 0.8831883939971094,
+      "error_rate_mean": 0.10728961689249816,
+      "error_rate_std": 0.027354881855084754,
+      "error_rate_min": 0.08349699529590546,
+      "error_rate_max": 0.1447209197125116
+    },
+    "timestamp": "2025-11-17T13:07:31.930458"
+  },
+  "myco_results": {
+    "metrics": [
+      {
+        "run_id": 0,
+        "processing_time": 0.0013878345489501953,
+        "total_time": 0.0013878345489501953,
+        "security_score": 1.0,
+        "adaptation_score": 0.5,
+        "efficiency": 2882.1879402164577,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6,
+        "error_rate": 0.0,
+        "task_success_rate": 1.0,
+        "avg_confidence": 0.1274063929797974,
+        "avg_reward": 0.12854780368374105,
+        "avg_path_length": 1.25,
+        "path_efficiency": 0,
+        "pheromone_entropy": -0.0
+      },
+      {
+        "run_id": 1,
+        "processing_time": 0.0011031627655029297,
+        "total_time": 0.0011031627655029297,
+        "security_score": 1.0,
+        "adaptation_score": 0.5,
+        "efficiency": 3625.9381888912903,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6,
+        "error_rate": 0.0,
+        "task_success_rate": 1.0,
+        "avg_confidence": 0.19670926564772367,
+        "avg_reward": 0.1834346553802355,
+        "avg_path_length": 1.5,
+        "path_efficiency": 0,
+        "pheromone_entropy": 0.6615426758119483
+      },
+      {
+        "run_id": 2,
+        "processing_time": 0.0006589889526367188,
+        "total_time": 0.0006589889526367188,
+        "security_score": 1.0,
+        "adaptation_score": 0.5,
+        "efficiency": 6069.9044862518085,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6,
+        "error_rate": 0.0,
+        "task_success_rate": 1.0,
+        "avg_confidence": 0.2408803509549853,
+        "avg_reward": 0.22634032388502917,
+        "avg_path_length": 1.75,
+        "path_efficiency": 0,
+        "pheromone_entropy": 0.30387279282050483
+      },
+      {
+        "run_id": 3,
+        "processing_time": 0.0007126331329345703,
+        "total_time": 0.0007126331329345703,
+        "security_score": 1.0,
+        "adaptation_score": 0.5,
+        "efficiency": 5612.986283037805,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6,
+        "error_rate": 0.0,
+        "task_success_rate": 1.0,
+        "avg_confidence": 0.20398729837734345,
+        "avg_reward": 0.20316000955073255,
+        "avg_path_length": 1.75,
+        "path_efficiency": 0,
+        "pheromone_entropy": -0.5161061032278952
+      },
+      {
+        "run_id": 4,
+        "processing_time": 0.0005364418029785156,
+        "total_time": 0.0005364418029785156,
+        "security_score": 1.0,
+        "adaptation_score": 0.5,
+        "efficiency": 7456.540444444445,
+        "emergent_behaviors": 0,
+        "resource_usage": 0.6,
+        "error_rate": 0.0,
+        "task_success_rate": 1.0,
+        "avg_confidence": 0.1485386333591631,
+        "avg_reward": 0.15485691470708818,
+        "avg_path_length": 1.5,
+        "path_efficiency": 0,
+        "pheromone_entropy": -0.09809283571915253
+      }
+    ],
+    "summary": {
+      "processing_time_mean": 0.0008798122406005859,
+      "processing_time_std": 0.0003544669091519575,
+      "processing_time_min": 0.0005364418029785156,
+      "processing_time_max": 0.0013878345489501953,
+      "total_time_mean": 0.0008798122406005859,
+      "total_time_std": 0.0003544669091519575,
+      "total_time_min": 0.0005364418029785156,
+      "total_time_max": 0.0013878345489501953,
+      "security_score_mean": 1.0,
+      "security_score_std": 0.0,
+      "security_score_min": 1.0,
+      "security_score_max": 1.0,
+      "adaptation_score_mean": 0.5,
+      "adaptation_score_std": 0.0,
+      "adaptation_score_min": 0.5,
+      "adaptation_score_max": 0.5,
+      "efficiency_mean": 5129.511468568361,
+      "efficiency_std": 1860.3995825456323,
+      "efficiency_min": 2882.1879402164577,
+      "efficiency_max": 7456.540444444445,
+      "emergent_behaviors_mean": 0.0,
+      "emergent_behaviors_std": 0.0,
+      "emergent_behaviors_min": "0",
+      "emergent_behaviors_max": "0",
+      "resource_usage_mean": 0.6,
+      "resource_usage_std": 0.0,
+      "resource_usage_min": 0.6,
+      "resource_usage_max": 0.6,
+      "error_rate_mean": 0.0,
+      "error_rate_std": 0.0,
+      "error_rate_min": 0.0,
+      "error_rate_max": 0.0,
+      "task_success_rate_mean": 1.0,
+      "task_success_rate_std": 0.0,
+      "task_success_rate_min": 1.0,
+      "task_success_rate_max": 1.0,
+      "avg_confidence_mean": 0.18350438826380258,
+      "avg_confidence_std": 0.04542991464640718,
+      "avg_confidence_min": 0.1274063929797974,
+      "avg_confidence_max": 0.2408803509549853,
+      "avg_reward_mean": 0.17926794144136532,
+      "avg_reward_std": 0.0386407563748678,
+      "avg_reward_min": 0.12854780368374105,
+      "avg_reward_max": 0.22634032388502917,
+      "avg_path_length_mean": 1.55,
+      "avg_path_length_std": 0.2091650066335189,
+      "avg_path_length_min": 1.25,
+      "avg_path_length_max": 1.75,
+      "path_efficiency_mean": 0.0,
+      "path_efficiency_std": 0.0,
+      "path_efficiency_min": "0",
+      "path_efficiency_max": "0",
+      "pheromone_entropy_mean": 0.07024330593708109,
+      "pheromone_entropy_std": 0.44195432179146676,
+      "pheromone_entropy_min": -0.5161061032278952,
+      "pheromone_entropy_max": 0.6615426758119483
+    },
+    "integration_status": {
+      "integration_active": true,
+      "last_sync": 1763406453.879766,
+      "integration_metrics": {
+        "routes_processed": 20,
+        "security_blocks": 0,
+        "emergent_behaviors": 0,
+        "performance_gain": 0.10428318133035902
+      },
+      "myco_net_metrics": {
+        "path_efficiency": 0,
+        "safety_compliance": 1.0,
+        "adaptation_rate": 0.5,
+        "pheromone_entropy": -0.09809283571915253,
+        "emergent_behaviors": []
+      },
+      "security_status": null,
+      "active_nodes": [
+        "input_handler",
+        "vision_detector",
+        "audio_processor",
+        "cognitive_core",
+        "evaluator",
+        "trainer_loop",
+        "visual_interface"
+      ],
+      "active_connections": 12
+    },
+    "timestamp": "2025-11-17T13:07:33.881296"
+  },
+  "comparison_metrics": {
+    "comparisons": {
+      "processing_time": {
+        "baseline_mean": 0.30763825148012997,
+        "myco_mean": 0.0008798122406005859,
+        "improvement_percent": -99.71401077844918,
+        "improvement_type": "negative"
+      },
+      "security_score": {
+        "baseline_mean": 0.7348503712902424,
+        "myco_mean": 1.0,
+        "improvement_percent": 36.08212488811983,
+        "improvement_type": "positive"
+      },
+      "adaptation_score": {
+        "baseline_mean": 0.5911184875474051,
+        "myco_mean": 0.5,
+        "improvement_percent": -15.414589370307564,
+        "improvement_type": "negative"
+      },
+      "efficiency": {
+        "baseline_mean": 3.2642816707685895,
+        "myco_mean": 5129.511468568361,
+        "improvement_percent": 157040.589750657,
+        "improvement_type": "positive"
+      },
+      "resource_usage": {
+        "baseline_mean": 0.8209850870667139,
+        "myco_mean": 0.6,
+        "improvement_percent": -26.917064700440353,
+        "improvement_type": "negative"
+      },
+      "error_rate": {
+        "baseline_mean": 0.10728961689249816,
+        "myco_mean": 0.0,
+        "improvement_percent": -100.0,
+        "improvement_type": "negative"
+      },
+      "emergent_behaviors": {
+        "baseline_mean": 0.0,
+        "myco_mean": 0.0,
+        "improvement_percent": 0,
+        "improvement_type": "negative"
+      }
+    },
+    "myco_specific": {
+      "task_success_rate": 1.0,
+      "avg_confidence": 0.18350438826380258,
+      "avg_reward": 0.17926794144136532,
+      "path_efficiency": 0.0,
+      "pheromone_entropy": 0.07024330593708109
+    },
+    "overall_assessment": {
+      "overall_score": 1.1481657148922957,
+      "assessment": "EXCELLENT",
+      "description": "MycoNet proporciona mejoras significativas en rendimiento y capacidades",
+      "recommendations": [
+        "Aument\u00f3 la tasa de error - revisar integraci\u00f3n de seguridad",
+        "MycoNet es beneficioso - considerar despliegue completo"
+      ]
+    },
+    "timestamp": "2025-11-17T13:07:33.881434"
+  },
+  "metadata": {
+    "evaluation_timestamp": "2025-11-17T13:07:33.881456",
+    "version": "1.0",
+    "description": "MycoNet integration evaluation results"
+  }
+}
