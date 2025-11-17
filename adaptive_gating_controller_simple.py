@@ -11,7 +11,7 @@ from typing import Dict, List
 from collections import deque
 
 class SimplePolicyNetwork(nn.Module):
-    def __init__(self, input_size: int = 10):
+    def __init__(self, input_size: int = 4):
         super(SimplePolicyNetwork, self).__init__()
         self.network = nn.Sequential(
             nn.Linear(input_size, 16),
@@ -30,7 +30,8 @@ class AdaptiveGatingController:
         self.policies = {mod: SimplePolicyNetwork() for mod in modalities}
         self.optimizers = {mod: optim.Adam(self.policies[mod].parameters(), lr=0.01) for mod in modalities}
         self.current_gates = {mod: 'open' for mod in modalities}
-        self.attention_weights = {mod: 1.0 if gate == 'open' else 0.5 if gate == 'filtering' else 0.0 for mod in modalities}
+        self.attention_weights = {mod: 1.0 if self.current_gates[mod] == 'open' else 0.5 if self.current_gates[mod] == 'filtering' else 0.0 for mod in modalities}
+        self.reward_history = {mod: deque(maxlen=100) for mod in modalities}
 
     def select_action(self, modality: str, intrinsic_rewards: Dict[str, float]) -> str:
         """Seleccionar acción"""
@@ -52,7 +53,10 @@ class AdaptiveGatingController:
         for mod, gate in new_gates.items():
             self.attention_weights[mod] = 1.0 if gate == 'open' else 0.5 if gate == 'filtering' else 0.0
 
+    def update_reward_history(self, modality: str, reward: float):
+        """Actualizar historial de recompensas"""
+        self.reward_history[modality].append(reward)
+
     def learn_from_experience(self):
         """Aprender (simplificado)"""
-        pass  # Implementación básica por ahora</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/adaptive_gating_controller_simple.py
+        pass  # Implementación básica por ahora

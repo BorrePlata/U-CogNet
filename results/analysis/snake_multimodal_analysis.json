@@ -1,0 +1,18 @@
+{
+  "hypothesis_tested": "Multimodal sensory integration enhances reinforcement learning",
+  "conditions_tested": [
+    "control",
+    "audio",
+    "audio_visual"
+  ],
+  "control_mean_score": 3.518,
+  "audio_mean_score": 3.514,
+  "audiovisual_mean_score": 3.508,
+  "audio_improvement_percent": -0.113700966458215,
+  "audiovisual_improvement_percent": -0.2842524161455312,
+  "multimodal_effect": "NEGATIVE: Visual may interfere with audio learning",
+  "significance": "negative_multimodal",
+  "methodology": "Q-learning with episodic memory, multimodal reward enhancement (audio+visual)",
+  "episodes_per_experiment": 500,
+  "cognitive_implications": "Results demonstrate the impact of sensory integration on cognitive learning architectures"
+}

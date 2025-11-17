@@ -1,0 +1,23 @@
+{
+  "episode": 250,
+  "avg_score_last_50": 3.08,
+  "total_q_states": 5715,
+  "attention_status": {
+    "active_gates": {
+      "visual": "open",
+      "audio": "open",
+      "text": "closed",
+      "tactile": "closed"
+    },
+    "modality_weights": {
+      "visual": 0.5965701666091137,
+      "audio": 1.0,
+      "text": 0.45171491669544317,
+      "tactile": 0.45171491669544317
+    },
+    "performance_trend": 0.6105289295556507,
+    "temporal_buffer_size": 100,
+    "recent_performance": 0.0885506913392832
+  },
+  "timestamp": "2025-11-17T04:37:16"
+}

@@ -1,0 +1,3513 @@
+{
+  "experiment_name": "Control_NoAudio",
+  "audio_enabled": false,
+  "episodes": [
+    {
+      "episode": 1,
+      "score": 0,
+      "reward": -10,
+      "steps": 72,
+      "q_states": 5712
+    },
+    {
+      "episode": 2,
+      "score": 0,
+      "reward": -10,
+      "steps": 18,
+      "q_states": 5712
+    },
+    {
+      "episode": 3,
+      "score": 0,
+      "reward": -10,
+      "steps": 69,
+      "q_states": 5712
+    },
+    {
+      "episode": 4,
+      "score": 0,
+      "reward": -10,
+      "steps": 38,
+      "q_states": 5712
+    },
+    {
+      "episode": 5,
+      "score": 0,
+      "reward": -10,
+      "steps": 15,
+      "q_states": 5712
+    },
+    {
+      "episode": 6,
+      "score": 0,
+      "reward": -10,
+      "steps": 44,
+      "q_states": 5712
+    },
+    {
+      "episode": 7,
+      "score": 0,
+      "reward": -10,
+      "steps": 107,
+      "q_states": 5712
+    },
+    {
+      "episode": 8,
+      "score": 0,
+      "reward": -10,
+      "steps": 77,
+      "q_states": 5712
+    },
+    {
+      "episode": 9,
+      "score": 0,
+      "reward": -10,
+      "steps": 85,
+      "q_states": 5712
+    },
+    {
+      "episode": 10,
+      "score": 0,
+      "reward": -10,
+      "steps": 43,
+      "q_states": 5712
+    },
+    {
+      "episode": 11,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5712
+    },
+    {
+      "episode": 12,
+      "score": 1,
+      "reward": 0,
+      "steps": 54,
+      "q_states": 5712
+    },
+    {
+      "episode": 13,
+      "score": 0,
+      "reward": -10,
+      "steps": 36,
+      "q_states": 5712
+    },
+    {
+      "episode": 14,
+      "score": 0,
+      "reward": -10,
+      "steps": 38,
+      "q_states": 5712
+    },
+    {
+      "episode": 15,
+      "score": 0,
+      "reward": -10,
+      "steps": 35,
+      "q_states": 5712
+    },
+    {
+      "episode": 16,
+      "score": 0,
+      "reward": -10,
+      "steps": 36,
+      "q_states": 5712
+    },
+    {
+      "episode": 17,
+      "score": 0,
+      "reward": -10,
+      "steps": 27,
+      "q_states": 5712
+    },
+    {
+      "episode": 18,
+      "score": 1,
+      "reward": 0,
+      "steps": 101,
+      "q_states": 5712
+    },
+    {
+      "episode": 19,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5712
+    },
+    {
+      "episode": 20,
+      "score": 0,
+      "reward": -10,
+      "steps": 51,
+      "q_states": 5712
+    },
+    {
+      "episode": 21,
+      "score": 1,
+      "reward": 0,
+      "steps": 90,
+      "q_states": 5712
+    },
+    {
+      "episode": 22,
+      "score": 0,
+      "reward": -10,
+      "steps": 36,
+      "q_states": 5712
+    },
+    {
+      "episode": 23,
+      "score": 0,
+      "reward": -10,
+      "steps": 79,
+      "q_states": 5712
+    },
+    {
+      "episode": 24,
+      "score": 0,
+      "reward": -10,
+      "steps": 30,
+      "q_states": 5712
+    },
+    {
+      "episode": 25,
+      "score": 2,
+      "reward": 10,
+      "steps": 149,
+      "q_states": 5712
+    },
+    {
+      "episode": 26,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5712
+    },
+    {
+      "episode": 27,
+      "score": 0,
+      "reward": -10,
+      "steps": 29,
+      "q_states": 5712
+    },
+    {
+      "episode": 28,
+      "score": 0,
+      "reward": -10,
+      "steps": 41,
+      "q_states": 5712
+    },
+    {
+      "episode": 29,
+      "score": 0,
+      "reward": -10,
+      "steps": 25,
+      "q_states": 5712
+    },
+    {
+      "episode": 30,
+      "score": 1,
+      "reward": 0,
+      "steps": 32,
+      "q_states": 5712
+    },
+    {
+      "episode": 31,
+      "score": 0,
+      "reward": -10,
+      "steps": 40,
+      "q_states": 5712
+    },
+    {
+      "episode": 32,
+      "score": 0,
+      "reward": -10,
+      "steps": 52,
+      "q_states": 5712
+    },
+    {
+      "episode": 33,
+      "score": 2,
+      "reward": 10,
+      "steps": 63,
+      "q_states": 5712
+    },
+    {
+      "episode": 34,
+      "score": 0,
+      "reward": -10,
+      "steps": 53,
+      "q_states": 5712
+    },
+    {
+      "episode": 35,
+      "score": 0,
+      "reward": -10,
+      "steps": 124,
+      "q_states": 5712
+    },
+    {
+      "episode": 36,
+      "score": 0,
+      "reward": -10,
+      "steps": 24,
+      "q_states": 5712
+    },
+    {
+      "episode": 37,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5712
+    },
+    {
+      "episode": 38,
+      "score": 0,
+      "reward": -10,
+      "steps": 28,
+      "q_states": 5712
+    },
+    {
+      "episode": 39,
+      "score": 1,
+      "reward": 0,
+      "steps": 66,
+      "q_states": 5712
+    },
+    {
+      "episode": 40,
+      "score": 0,
+      "reward": -10,
+      "steps": 37,
+      "q_states": 5712
+    },
+    {
+      "episode": 41,
+      "score": 1,
+      "reward": 0,
+      "steps": 132,
+      "q_states": 5712
+    },
+    {
+      "episode": 42,
+      "score": 0,
+      "reward": -10,
+      "steps": 38,
+      "q_states": 5712
+    },
+    {
+      "episode": 43,
+      "score": 0,
+      "reward": -10,
+      "steps": 42,
+      "q_states": 5712
+    },
+    {
+      "episode": 44,
+      "score": 0,
+      "reward": -10,
+      "steps": 31,
+      "q_states": 5712
+    },
+    {
+      "episode": 45,
+      "score": 0,
+      "reward": -10,
+      "steps": 173,
+      "q_states": 5713
+    },
+    {
+      "episode": 46,
+      "score": 0,
+      "reward": -10,
+      "steps": 85,
+      "q_states": 5713
+    },
+    {
+      "episode": 47,
+      "score": 2,
+      "reward": 10,
+      "steps": 210,
+      "q_states": 5713
+    },
+    {
+      "episode": 48,
+      "score": 0,
+      "reward": -10,
+      "steps": 30,
+      "q_states": 5713
+    },
+    {
+      "episode": 49,
+      "score": 1,
+      "reward": 0,
+      "steps": 43,
+      "q_states": 5713
+    },
+    {
+      "episode": 50,
+      "score": 1,
+      "reward": 0,
+      "steps": 33,
+      "q_states": 5713
+    },
+    {
+      "episode": 51,
+      "score": 1,
+      "reward": 0,
+      "steps": 40,
+      "q_states": 5713
+    },
+    {
+      "episode": 52,
+      "score": 0,
+      "reward": -10,
+      "steps": 52,
+      "q_states": 5713
+    },
+    {
+      "episode": 53,
+      "score": 3,
+      "reward": 20,
+      "steps": 57,
+      "q_states": 5713
+    },
+    {
+      "episode": 54,
+      "score": 1,
+      "reward": 0,
+      "steps": 151,
+      "q_states": 5713
+    },
+    {
+      "episode": 55,
+      "score": 0,
+      "reward": -10,
+      "steps": 142,
+      "q_states": 5713
+    },
+    {
+      "episode": 56,
+      "score": 2,
+      "reward": 10,
+      "steps": 145,
+      "q_states": 5713
+    },
+    {
+      "episode": 57,
+      "score": 0,
+      "reward": -10,
+      "steps": 20,
+      "q_states": 5713
+    },
+    {
+      "episode": 58,
+      "score": 1,
+      "reward": 0,
+      "steps": 36,
+      "q_states": 5714
+    },
+    {
+      "episode": 59,
+      "score": 0,
+      "reward": -10,
+      "steps": 34,
+      "q_states": 5714
+    },
+    {
+      "episode": 60,
+      "score": 0,
+      "reward": -10,
+      "steps": 20,
+      "q_states": 5714
+    },
+    {
+      "episode": 61,
+      "score": 0,
+      "reward": -10,
+      "steps": 29,
+      "q_states": 5714
+    },
+    {
+      "episode": 62,
+      "score": 1,
+      "reward": 0,
+      "steps": 59,
+      "q_states": 5714
+    },
+    {
+      "episode": 63,
+      "score": 0,
+      "reward": -10,
+      "steps": 40,
+      "q_states": 5714
+    },
+    {
+      "episode": 64,
+      "score": 3,
+      "reward": 20,
+      "steps": 107,
+      "q_states": 5714
+    },
+    {
+      "episode": 65,
+      "score": 1,
+      "reward": 0,
+      "steps": 58,
+      "q_states": 5714
+    },
+    {
+      "episode": 66,
+      "score": 2,
+      "reward": 10,
+      "steps": 52,
+      "q_states": 5714
+    },
+    {
+      "episode": 67,
+      "score": 1,
+      "reward": 0,
+      "steps": 70,
+      "q_states": 5714
+    },
+    {
+      "episode": 68,
+      "score": 0,
+      "reward": -10,
+      "steps": 14,
+      "q_states": 5714
+    },
+    {
+      "episode": 69,
+      "score": 1,
+      "reward": 0,
+      "steps": 79,
+      "q_states": 5714
+    },
+    {
+      "episode": 70,
+      "score": 2,
+      "reward": 10,
+      "steps": 125,
+      "q_states": 5714
+    },
+    {
+      "episode": 71,
+      "score": 1,
+      "reward": 0,
+      "steps": 35,
+      "q_states": 5714
+    },
+    {
+      "episode": 72,
+      "score": 1,
+      "reward": 0,
+      "steps": 114,
+      "q_states": 5714
+    },
+    {
+      "episode": 73,
+      "score": 3,
+      "reward": 20,
+      "steps": 143,
+      "q_states": 5714
+    },
+    {
+      "episode": 74,
+      "score": 3,
+      "reward": 20,
+      "steps": 125,
+      "q_states": 5714
+    },
+    {
+      "episode": 75,
+      "score": 0,
+      "reward": -10,
+      "steps": 40,
+      "q_states": 5714
+    },
+    {
+      "episode": 76,
+      "score": 2,
+      "reward": 10,
+      "steps": 47,
+      "q_states": 5714
+    },
+    {
+      "episode": 77,
+      "score": 1,
+      "reward": 0,
+      "steps": 84,
+      "q_states": 5714
+    },
+    {
+      "episode": 78,
+      "score": 2,
+      "reward": 10,
+      "steps": 78,
+      "q_states": 5714
+    },
+    {
+      "episode": 79,
+      "score": 3,
+      "reward": 20,
+      "steps": 62,
+      "q_states": 5714
+    },
+    {
+      "episode": 80,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5714
+    },
+    {
+      "episode": 81,
+      "score": 1,
+      "reward": 0,
+      "steps": 23,
+      "q_states": 5714
+    },
+    {
+      "episode": 82,
+      "score": 0,
+      "reward": -10,
+      "steps": 19,
+      "q_states": 5714
+    },
+    {
+      "episode": 83,
+      "score": 1,
+      "reward": 0,
+      "steps": 30,
+      "q_states": 5714
+    },
+    {
+      "episode": 84,
+      "score": 0,
+      "reward": -10,
+      "steps": 80,
+      "q_states": 5714
+    },
+    {
+      "episode": 85,
+      "score": 2,
+      "reward": 10,
+      "steps": 77,
+      "q_states": 5714
+    },
+    {
+      "episode": 86,
+      "score": 2,
+      "reward": 10,
+      "steps": 66,
+      "q_states": 5714
+    },
+    {
+      "episode": 87,
+      "score": 3,
+      "reward": 20,
+      "steps": 88,
+      "q_states": 5714
+    },
+    {
+      "episode": 88,
+      "score": 3,
+      "reward": 20,
+      "steps": 90,
+      "q_states": 5714
+    },
+    {
+      "episode": 89,
+      "score": 1,
+      "reward": 0,
+      "steps": 18,
+      "q_states": 5714
+    },
+    {
+      "episode": 90,
+      "score": 5,
+      "reward": 40,
+      "steps": 129,
+      "q_states": 5714
+    },
+    {
+      "episode": 91,
+      "score": 2,
+      "reward": 10,
+      "steps": 97,
+      "q_states": 5715
+    },
+    {
+      "episode": 92,
+      "score": 2,
+      "reward": 10,
+      "steps": 37,
+      "q_states": 5715
+    },
+    {
+      "episode": 93,
+      "score": 5,
+      "reward": 40,
+      "steps": 252,
+      "q_states": 5715
+    },
+    {
+      "episode": 94,
+      "score": 2,
+      "reward": 10,
+      "steps": 70,
+      "q_states": 5715
+    },
+    {
+      "episode": 95,
+      "score": 1,
+      "reward": 0,
+      "steps": 109,
+      "q_states": 5715
+    },
+    {
+      "episode": 96,
+      "score": 1,
+      "reward": 0,
+      "steps": 76,
+      "q_states": 5715
+    },
+    {
+      "episode": 97,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5715
+    },
+    {
+      "episode": 98,
+      "score": 1,
+      "reward": 0,
+      "steps": 72,
+      "q_states": 5715
+    },
+    {
+      "episode": 99,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5715
+    },
+    {
+      "episode": 100,
+      "score": 3,
+      "reward": 20,
+      "steps": 102,
+      "q_states": 5715
+    },
+    {
+      "episode": 101,
+      "score": 4,
+      "reward": 30,
+      "steps": 115,
+      "q_states": 5715
+    },
+    {
+      "episode": 102,
+      "score": 3,
+      "reward": 20,
+      "steps": 59,
+      "q_states": 5715
+    },
+    {
+      "episode": 103,
+      "score": 2,
+      "reward": 10,
+      "steps": 54,
+      "q_states": 5715
+    },
+    {
+      "episode": 104,
+      "score": 7,
+      "reward": 60,
+      "steps": 183,
+      "q_states": 5715
+    },
+    {
+      "episode": 105,
+      "score": 1,
+      "reward": 0,
+      "steps": 25,
+      "q_states": 5715
+    },
+    {
+      "episode": 106,
+      "score": 1,
+      "reward": 0,
+      "steps": 23,
+      "q_states": 5715
+    },
+    {
+      "episode": 107,
+      "score": 1,
+      "reward": 0,
+      "steps": 47,
+      "q_states": 5715
+    },
+    {
+      "episode": 108,
+      "score": 3,
+      "reward": 20,
+      "steps": 100,
+      "q_states": 5715
+    },
+    {
+      "episode": 109,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5715
+    },
+    {
+      "episode": 110,
+      "score": 3,
+      "reward": 20,
+      "steps": 47,
+      "q_states": 5715
+    },
+    {
+      "episode": 111,
+      "score": 3,
+      "reward": 20,
+      "steps": 93,
+      "q_states": 5715
+    },
+    {
+      "episode": 112,
+      "score": 2,
+      "reward": 10,
+      "steps": 121,
+      "q_states": 5716
+    },
+    {
+      "episode": 113,
+      "score": 2,
+      "reward": 10,
+      "steps": 31,
+      "q_states": 5716
+    },
+    {
+      "episode": 114,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5716
+    },
+    {
+      "episode": 115,
+      "score": 4,
+      "reward": 30,
+      "steps": 166,
+      "q_states": 5716
+    },
+    {
+      "episode": 116,
+      "score": 1,
+      "reward": 0,
+      "steps": 34,
+      "q_states": 5716
+    },
+    {
+      "episode": 117,
+      "score": 2,
+      "reward": 10,
+      "steps": 79,
+      "q_states": 5716
+    },
+    {
+      "episode": 118,
+      "score": 1,
+      "reward": 0,
+      "steps": 10,
+      "q_states": 5716
+    },
+    {
+      "episode": 119,
+      "score": 0,
+      "reward": -10,
+      "steps": 52,
+      "q_states": 5716
+    },
+    {
+      "episode": 120,
+      "score": 1,
+      "reward": 0,
+      "steps": 33,
+      "q_states": 5716
+    },
+    {
+      "episode": 121,
+      "score": 5,
+      "reward": 40,
+      "steps": 134,
+      "q_states": 5716
+    },
+    {
+      "episode": 122,
+      "score": 4,
+      "reward": 30,
+      "steps": 151,
+      "q_states": 5716
+    },
+    {
+      "episode": 123,
+      "score": 3,
+      "reward": 20,
+      "steps": 90,
+      "q_states": 5716
+    },
+    {
+      "episode": 124,
+      "score": 3,
+      "reward": 20,
+      "steps": 138,
+      "q_states": 5716
+    },
+    {
+      "episode": 125,
+      "score": 2,
+      "reward": 10,
+      "steps": 171,
+      "q_states": 5716
+    },
+    {
+      "episode": 126,
+      "score": 1,
+      "reward": 0,
+      "steps": 58,
+      "q_states": 5717
+    },
+    {
+      "episode": 127,
+      "score": 2,
+      "reward": 10,
+      "steps": 69,
+      "q_states": 5717
+    },
+    {
+      "episode": 128,
+      "score": 2,
+      "reward": 10,
+      "steps": 46,
+      "q_states": 5717
+    },
+    {
+      "episode": 129,
+      "score": 2,
+      "reward": 10,
+      "steps": 94,
+      "q_states": 5717
+    },
+    {
+      "episode": 130,
+      "score": 1,
+      "reward": 0,
+      "steps": 49,
+      "q_states": 5717
+    },
+    {
+      "episode": 131,
+      "score": 3,
+      "reward": 20,
+      "steps": 76,
+      "q_states": 5717
+    },
+    {
+      "episode": 132,
+      "score": 5,
+      "reward": 40,
+      "steps": 164,
+      "q_states": 5717
+    },
+    {
+      "episode": 133,
+      "score": 0,
+      "reward": -10,
+      "steps": 72,
+      "q_states": 5717
+    },
+    {
+      "episode": 134,
+      "score": 0,
+      "reward": -10,
+      "steps": 27,
+      "q_states": 5717
+    },
+    {
+      "episode": 135,
+      "score": 1,
+      "reward": 0,
+      "steps": 27,
+      "q_states": 5717
+    },
+    {
+      "episode": 136,
+      "score": 4,
+      "reward": 30,
+      "steps": 54,
+      "q_states": 5717
+    },
+    {
+      "episode": 137,
+      "score": 0,
+      "reward": -10,
+      "steps": 25,
+      "q_states": 5717
+    },
+    {
+      "episode": 138,
+      "score": 2,
+      "reward": 10,
+      "steps": 129,
+      "q_states": 5717
+    },
+    {
+      "episode": 139,
+      "score": 1,
+      "reward": 0,
+      "steps": 43,
+      "q_states": 5717
+    },
+    {
+      "episode": 140,
+      "score": 4,
+      "reward": 30,
+      "steps": 116,
+      "q_states": 5717
+    },
+    {
+      "episode": 141,
+      "score": 2,
+      "reward": 10,
+      "steps": 40,
+      "q_states": 5717
+    },
+    {
+      "episode": 142,
+      "score": 2,
+      "reward": 10,
+      "steps": 32,
+      "q_states": 5717
+    },
+    {
+      "episode": 143,
+      "score": 4,
+      "reward": 30,
+      "steps": 98,
+      "q_states": 5717
+    },
+    {
+      "episode": 144,
+      "score": 1,
+      "reward": 0,
+      "steps": 15,
+      "q_states": 5717
+    },
+    {
+      "episode": 145,
+      "score": 1,
+      "reward": 0,
+      "steps": 22,
+      "q_states": 5717
+    },
+    {
+      "episode": 146,
+      "score": 3,
+      "reward": 20,
+      "steps": 98,
+      "q_states": 5717
+    },
+    {
+      "episode": 147,
+      "score": 3,
+      "reward": 20,
+      "steps": 61,
+      "q_states": 5717
+    },
+    {
+      "episode": 148,
+      "score": 1,
+      "reward": 0,
+      "steps": 37,
+      "q_states": 5717
+    },
+    {
+      "episode": 149,
+      "score": 0,
+      "reward": -10,
+      "steps": 33,
+      "q_states": 5717
+    },
+    {
+      "episode": 150,
+      "score": 3,
+      "reward": 20,
+      "steps": 79,
+      "q_states": 5717
+    },
+    {
+      "episode": 151,
+      "score": 4,
+      "reward": 30,
+      "steps": 56,
+      "q_states": 5717
+    },
+    {
+      "episode": 152,
+      "score": 3,
+      "reward": 20,
+      "steps": 54,
+      "q_states": 5717
+    },
+    {
+      "episode": 153,
+      "score": 0,
+      "reward": -10,
+      "steps": 25,
+      "q_states": 5717
+    },
+    {
+      "episode": 154,
+      "score": 2,
+      "reward": 10,
+      "steps": 50,
+      "q_states": 5717
+    },
+    {
+      "episode": 155,
+      "score": 1,
+      "reward": 0,
+      "steps": 18,
+      "q_states": 5717
+    },
+    {
+      "episode": 156,
+      "score": 5,
+      "reward": 40,
+      "steps": 67,
+      "q_states": 5717
+    },
+    {
+      "episode": 157,
+      "score": 1,
+      "reward": 0,
+      "steps": 22,
+      "q_states": 5717
+    },
+    {
+      "episode": 158,
+      "score": 5,
+      "reward": 40,
+      "steps": 123,
+      "q_states": 5717
+    },
+    {
+      "episode": 159,
+      "score": 0,
+      "reward": -10,
+      "steps": 22,
+      "q_states": 5717
+    },
+    {
+      "episode": 160,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5717
+    },
+    {
+      "episode": 161,
+      "score": 2,
+      "reward": 10,
+      "steps": 57,
+      "q_states": 5717
+    },
+    {
+      "episode": 162,
+      "score": 2,
+      "reward": 10,
+      "steps": 44,
+      "q_states": 5717
+    },
+    {
+      "episode": 163,
+      "score": 1,
+      "reward": 0,
+      "steps": 30,
+      "q_states": 5717
+    },
+    {
+      "episode": 164,
+      "score": 3,
+      "reward": 20,
+      "steps": 43,
+      "q_states": 5717
+    },
+    {
+      "episode": 165,
+      "score": 2,
+      "reward": 10,
+      "steps": 54,
+      "q_states": 5717
+    },
+    {
+      "episode": 166,
+      "score": 3,
+      "reward": 20,
+      "steps": 75,
+      "q_states": 5717
+    },
+    {
+      "episode": 167,
+      "score": 0,
+      "reward": -10,
+      "steps": 94,
+      "q_states": 5717
+    },
+    {
+      "episode": 168,
+      "score": 5,
+      "reward": 40,
+      "steps": 63,
+      "q_states": 5717
+    },
+    {
+      "episode": 169,
+      "score": 2,
+      "reward": 10,
+      "steps": 66,
+      "q_states": 5717
+    },
+    {
+      "episode": 170,
+      "score": 4,
+      "reward": 30,
+      "steps": 74,
+      "q_states": 5717
+    },
+    {
+      "episode": 171,
+      "score": 3,
+      "reward": 20,
+      "steps": 76,
+      "q_states": 5717
+    },
+    {
+      "episode": 172,
+      "score": 0,
+      "reward": -10,
+      "steps": 19,
+      "q_states": 5717
+    },
+    {
+      "episode": 173,
+      "score": 1,
+      "reward": 0,
+      "steps": 22,
+      "q_states": 5717
+    },
+    {
+      "episode": 174,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5717
+    },
+    {
+      "episode": 175,
+      "score": 1,
+      "reward": 0,
+      "steps": 28,
+      "q_states": 5717
+    },
+    {
+      "episode": 176,
+      "score": 4,
+      "reward": 30,
+      "steps": 75,
+      "q_states": 5717
+    },
+    {
+      "episode": 177,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5717
+    },
+    {
+      "episode": 178,
+      "score": 2,
+      "reward": 10,
+      "steps": 61,
+      "q_states": 5717
+    },
+    {
+      "episode": 179,
+      "score": 0,
+      "reward": -10,
+      "steps": 17,
+      "q_states": 5717
+    },
+    {
+      "episode": 180,
+      "score": 5,
+      "reward": 40,
+      "steps": 113,
+      "q_states": 5717
+    },
+    {
+      "episode": 181,
+      "score": 2,
+      "reward": 10,
+      "steps": 31,
+      "q_states": 5717
+    },
+    {
+      "episode": 182,
+      "score": 2,
+      "reward": 10,
+      "steps": 43,
+      "q_states": 5717
+    },
+    {
+      "episode": 183,
+      "score": 3,
+      "reward": 20,
+      "steps": 55,
+      "q_states": 5717
+    },
+    {
+      "episode": 184,
+      "score": 1,
+      "reward": 0,
+      "steps": 26,
+      "q_states": 5717
+    },
+    {
+      "episode": 185,
+      "score": 2,
+      "reward": 10,
+      "steps": 23,
+      "q_states": 5717
+    },
+    {
+      "episode": 186,
+      "score": 1,
+      "reward": 0,
+      "steps": 42,
+      "q_states": 5717
+    },
+    {
+      "episode": 187,
+      "score": 4,
+      "reward": 30,
+      "steps": 89,
+      "q_states": 5717
+    },
+    {
+      "episode": 188,
+      "score": 3,
+      "reward": 20,
+      "steps": 103,
+      "q_states": 5717
+    },
+    {
+      "episode": 189,
+      "score": 2,
+      "reward": 10,
+      "steps": 36,
+      "q_states": 5717
+    },
+    {
+      "episode": 190,
+      "score": 3,
+      "reward": 20,
+      "steps": 29,
+      "q_states": 5717
+    },
+    {
+      "episode": 191,
+      "score": 0,
+      "reward": -10,
+      "steps": 32,
+      "q_states": 5717
+    },
+    {
+      "episode": 192,
+      "score": 4,
+      "reward": 30,
+      "steps": 62,
+      "q_states": 5717
+    },
+    {
+      "episode": 193,
+      "score": 5,
+      "reward": 40,
+      "steps": 74,
+      "q_states": 5717
+    },
+    {
+      "episode": 194,
+      "score": 0,
+      "reward": -10,
+      "steps": 19,
+      "q_states": 5717
+    },
+    {
+      "episode": 195,
+      "score": 1,
+      "reward": 0,
+      "steps": 34,
+      "q_states": 5718
+    },
+    {
+      "episode": 196,
+      "score": 1,
+      "reward": 0,
+      "steps": 37,
+      "q_states": 5718
+    },
+    {
+      "episode": 197,
+      "score": 3,
+      "reward": 20,
+      "steps": 113,
+      "q_states": 5718
+    },
+    {
+      "episode": 198,
+      "score": 4,
+      "reward": 30,
+      "steps": 101,
+      "q_states": 5718
+    },
+    {
+      "episode": 199,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5718
+    },
+    {
+      "episode": 200,
+      "score": 7,
+      "reward": 60,
+      "steps": 112,
+      "q_states": 5718
+    },
+    {
+      "episode": 201,
+      "score": 2,
+      "reward": 10,
+      "steps": 34,
+      "q_states": 5718
+    },
+    {
+      "episode": 202,
+      "score": 0,
+      "reward": -10,
+      "steps": 13,
+      "q_states": 5718
+    },
+    {
+      "episode": 203,
+      "score": 5,
+      "reward": 40,
+      "steps": 86,
+      "q_states": 5718
+    },
+    {
+      "episode": 204,
+      "score": 5,
+      "reward": 40,
+      "steps": 78,
+      "q_states": 5718
+    },
+    {
+      "episode": 205,
+      "score": 3,
+      "reward": 20,
+      "steps": 53,
+      "q_states": 5718
+    },
+    {
+      "episode": 206,
+      "score": 3,
+      "reward": 20,
+      "steps": 67,
+      "q_states": 5718
+    },
+    {
+      "episode": 207,
+      "score": 0,
+      "reward": -10,
+      "steps": 16,
+      "q_states": 5718
+    },
+    {
+      "episode": 208,
+      "score": 4,
+      "reward": 30,
+      "steps": 97,
+      "q_states": 5718
+    },
+    {
+      "episode": 209,
+      "score": 2,
+      "reward": 10,
+      "steps": 51,
+      "q_states": 5718
+    },
+    {
+      "episode": 210,
+      "score": 1,
+      "reward": 0,
+      "steps": 22,
+      "q_states": 5718
+    },
+    {
+      "episode": 211,
+      "score": 4,
+      "reward": 30,
+      "steps": 172,
+      "q_states": 5718
+    },
+    {
+      "episode": 212,
+      "score": 3,
+      "reward": 20,
+      "steps": 61,
+      "q_states": 5718
+    },
+    {
+      "episode": 213,
+      "score": 5,
+      "reward": 40,
+      "steps": 91,
+      "q_states": 5718
+    },
+    {
+      "episode": 214,
+      "score": 0,
+      "reward": -10,
+      "steps": 16,
+      "q_states": 5718
+    },
+    {
+      "episode": 215,
+      "score": 3,
+      "reward": 20,
+      "steps": 45,
+      "q_states": 5718
+    },
+    {
+      "episode": 216,
+      "score": 4,
+      "reward": 30,
+      "steps": 50,
+      "q_states": 5718
+    },
+    {
+      "episode": 217,
+      "score": 1,
+      "reward": 0,
+      "steps": 34,
+      "q_states": 5718
+    },
+    {
+      "episode": 218,
+      "score": 1,
+      "reward": 0,
+      "steps": 18,
+      "q_states": 5718
+    },
+    {
+      "episode": 219,
+      "score": 5,
+      "reward": 40,
+      "steps": 71,
+      "q_states": 5718
+    },
+    {
+      "episode": 220,
+      "score": 8,
+      "reward": 70,
+      "steps": 122,
+      "q_states": 5718
+    },
+    {
+      "episode": 221,
+      "score": 9,
+      "reward": 80,
+      "steps": 152,
+      "q_states": 5718
+    },
+    {
+      "episode": 222,
+      "score": 3,
+      "reward": 20,
+      "steps": 63,
+      "q_states": 5718
+    },
+    {
+      "episode": 223,
+      "score": 3,
+      "reward": 20,
+      "steps": 53,
+      "q_states": 5718
+    },
+    {
+      "episode": 224,
+      "score": 1,
+      "reward": 0,
+      "steps": 21,
+      "q_states": 5718
+    },
+    {
+      "episode": 225,
+      "score": 0,
+      "reward": -10,
+      "steps": 25,
+      "q_states": 5718
+    },
+    {
+      "episode": 226,
+      "score": 2,
+      "reward": 10,
+      "steps": 53,
+      "q_states": 5718
+    },
+    {
+      "episode": 227,
+      "score": 3,
+      "reward": 20,
+      "steps": 43,
+      "q_states": 5718
+    },
+    {
+      "episode": 228,
+      "score": 2,
+      "reward": 10,
+      "steps": 42,
+      "q_states": 5718
+    },
+    {
+      "episode": 229,
+      "score": 3,
+      "reward": 20,
+      "steps": 51,
+      "q_states": 5718
+    },
+    {
+      "episode": 230,
+      "score": 5,
+      "reward": 40,
+      "steps": 93,
+      "q_states": 5718
+    },
+    {
+      "episode": 231,
+      "score": 4,
+      "reward": 30,
+      "steps": 86,
+      "q_states": 5718
+    },
+    {
+      "episode": 232,
+      "score": 1,
+      "reward": 0,
+      "steps": 16,
+      "q_states": 5718
+    },
+    {
+      "episode": 233,
+      "score": 3,
+      "reward": 20,
+      "steps": 60,
+      "q_states": 5718
+    },
+    {
+      "episode": 234,
+      "score": 3,
+      "reward": 20,
+      "steps": 38,
+      "q_states": 5718
+    },
+    {
+      "episode": 235,
+      "score": 1,
+      "reward": 0,
+      "steps": 25,
+      "q_states": 5718
+    },
+    {
+      "episode": 236,
+      "score": 1,
+      "reward": 0,
+      "steps": 28,
+      "q_states": 5718
+    },
+    {
+      "episode": 237,
+      "score": 6,
+      "reward": 50,
+      "steps": 82,
+      "q_states": 5718
+    },
+    {
+      "episode": 238,
+      "score": 3,
+      "reward": 20,
+      "steps": 57,
+      "q_states": 5718
+    },
+    {
+      "episode": 239,
+      "score": 5,
+      "reward": 40,
+      "steps": 79,
+      "q_states": 5718
+    },
+    {
+      "episode": 240,
+      "score": 8,
+      "reward": 70,
+      "steps": 132,
+      "q_states": 5718
+    },
+    {
+      "episode": 241,
+      "score": 5,
+      "reward": 40,
+      "steps": 155,
+      "q_states": 5718
+    },
+    {
+      "episode": 242,
+      "score": 2,
+      "reward": 10,
+      "steps": 42,
+      "q_states": 5718
+    },
+    {
+      "episode": 243,
+      "score": 1,
+      "reward": 0,
+      "steps": 23,
+      "q_states": 5718
+    },
+    {
+      "episode": 244,
+      "score": 3,
+      "reward": 20,
+      "steps": 61,
+      "q_states": 5718
+    },
+    {
+      "episode": 245,
+      "score": 3,
+      "reward": 20,
+      "steps": 71,
+      "q_states": 5718
+    },
+    {
+      "episode": 246,
+      "score": 1,
+      "reward": 0,
+      "steps": 27,
+      "q_states": 5718
+    },
+    {
+      "episode": 247,
+      "score": 4,
+      "reward": 30,
+      "steps": 72,
+      "q_states": 5718
+    },
+    {
+      "episode": 248,
+      "score": 1,
+      "reward": 0,
+      "steps": 40,
+      "q_states": 5718
+    },
+    {
+      "episode": 249,
+      "score": 3,
+      "reward": 20,
+      "steps": 88,
+      "q_states": 5718
+    },
+    {
+      "episode": 250,
+      "score": 4,
+      "reward": 30,
+      "steps": 72,
+      "q_states": 5718
+    },
+    {
+      "episode": 251,
+      "score": 5,
+      "reward": 40,
+      "steps": 58,
+      "q_states": 5718
+    },
+    {
+      "episode": 252,
+      "score": 1,
+      "reward": 0,
+      "steps": 16,
+      "q_states": 5718
+    },
+    {
+      "episode": 253,
+      "score": 1,
+      "reward": 0,
+      "steps": 49,
+      "q_states": 5718
+    },
+    {
+      "episode": 254,
+      "score": 5,
+      "reward": 40,
+      "steps": 111,
+      "q_states": 5718
+    },
+    {
+      "episode": 255,
+      "score": 2,
+      "reward": 10,
+      "steps": 63,
+      "q_states": 5718
+    },
+    {
+      "episode": 256,
+      "score": 3,
+      "reward": 20,
+      "steps": 36,
+      "q_states": 5718
+    },
+    {
+      "episode": 257,
+      "score": 1,
+      "reward": 0,
+      "steps": 43,
+      "q_states": 5718
+    },
+    {
+      "episode": 258,
+      "score": 1,
+      "reward": 0,
+      "steps": 24,
+      "q_states": 5718
+    },
+    {
+      "episode": 259,
+      "score": 3,
+      "reward": 20,
+      "steps": 52,
+      "q_states": 5718
+    },
+    {
+      "episode": 260,
+      "score": 5,
+      "reward": 40,
+      "steps": 99,
+      "q_states": 5718
+    },
+    {
+      "episode": 261,
+      "score": 5,
+      "reward": 40,
+      "steps": 90,
+      "q_states": 5718
+    },
+    {
+      "episode": 262,
+      "score": 6,
+      "reward": 50,
+      "steps": 148,
+      "q_states": 5718
+    },
+    {
+      "episode": 263,
+      "score": 3,
+      "reward": 20,
+      "steps": 66,
+      "q_states": 5718
+    },
+    {
+      "episode": 264,
+      "score": 3,
+      "reward": 20,
+      "steps": 80,
+      "q_states": 5718
+    },
+    {
+      "episode": 265,
+      "score": 2,
+      "reward": 10,
+      "steps": 27,
+      "q_states": 5718
+    },
+    {
+      "episode": 266,
+      "score": 6,
+      "reward": 50,
+      "steps": 111,
+      "q_states": 5718
+    },
+    {
+      "episode": 267,
+      "score": 2,
+      "reward": 10,
+      "steps": 54,
+      "q_states": 5718
+    },
+    {
+      "episode": 268,
+      "score": 4,
+      "reward": 30,
+      "steps": 85,
+      "q_states": 5718
+    },
+    {
+      "episode": 269,
+      "score": 12,
+      "reward": 110,
+      "steps": 166,
+      "q_states": 5718
+    },
+    {
+      "episode": 270,
+      "score": 5,
+      "reward": 40,
+      "steps": 112,
+      "q_states": 5718
+    },
+    {
+      "episode": 271,
+      "score": 1,
+      "reward": 0,
+      "steps": 33,
+      "q_states": 5718
+    },
+    {
+      "episode": 272,
+      "score": 4,
+      "reward": 30,
+      "steps": 69,
+      "q_states": 5718
+    },
+    {
+      "episode": 273,
+      "score": 4,
+      "reward": 30,
+      "steps": 75,
+      "q_states": 5718
+    },
+    {
+      "episode": 274,
+      "score": 1,
+      "reward": 0,
+      "steps": 32,
+      "q_states": 5718
+    },
+    {
+      "episode": 275,
+      "score": 1,
+      "reward": 0,
+      "steps": 35,
+      "q_states": 5718
+    },
+    {
+      "episode": 276,
+      "score": 1,
+      "reward": 0,
+      "steps": 14,
+      "q_states": 5718
+    },
+    {
+      "episode": 277,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5718
+    },
+    {
+      "episode": 278,
+      "score": 8,
+      "reward": 70,
+      "steps": 120,
+      "q_states": 5718
+    },
+    {
+      "episode": 279,
+      "score": 5,
+      "reward": 40,
+      "steps": 104,
+      "q_states": 5718
+    },
+    {
+      "episode": 280,
+      "score": 3,
+      "reward": 20,
+      "steps": 56,
+      "q_states": 5718
+    },
+    {
+      "episode": 281,
+      "score": 4,
+      "reward": 30,
+      "steps": 71,
+      "q_states": 5718
+    },
+    {
+      "episode": 282,
+      "score": 5,
+      "reward": 40,
+      "steps": 122,
+      "q_states": 5718
+    },
+    {
+      "episode": 283,
+      "score": 3,
+      "reward": 20,
+      "steps": 58,
+      "q_states": 5718
+    },
+    {
+      "episode": 284,
+      "score": 4,
+      "reward": 30,
+      "steps": 70,
+      "q_states": 5718
+    },
+    {
+      "episode": 285,
+      "score": 10,
+      "reward": 90,
+      "steps": 126,
+      "q_states": 5718
+    },
+    {
+      "episode": 286,
+      "score": 6,
+      "reward": 50,
+      "steps": 132,
+      "q_states": 5718
+    },
+    {
+      "episode": 287,
+      "score": 9,
+      "reward": 80,
+      "steps": 182,
+      "q_states": 5718
+    },
+    {
+      "episode": 288,
+      "score": 3,
+      "reward": 20,
+      "steps": 50,
+      "q_states": 5718
+    },
+    {
+      "episode": 289,
+      "score": 9,
+      "reward": 80,
+      "steps": 181,
+      "q_states": 5718
+    },
+    {
+      "episode": 290,
+      "score": 1,
+      "reward": 0,
+      "steps": 22,
+      "q_states": 5718
+    },
+    {
+      "episode": 291,
+      "score": 4,
+      "reward": 30,
+      "steps": 82,
+      "q_states": 5718
+    },
+    {
+      "episode": 292,
+      "score": 5,
+      "reward": 40,
+      "steps": 88,
+      "q_states": 5718
+    },
+    {
+      "episode": 293,
+      "score": 5,
+      "reward": 40,
+      "steps": 103,
+      "q_states": 5718
+    },
+    {
+      "episode": 294,
+      "score": 5,
+      "reward": 40,
+      "steps": 86,
+      "q_states": 5718
+    },
+    {
+      "episode": 295,
+      "score": 4,
+      "reward": 30,
+      "steps": 83,
+      "q_states": 5718
+    },
+    {
+      "episode": 296,
+      "score": 2,
+      "reward": 10,
+      "steps": 18,
+      "q_states": 5718
+    },
+    {
+      "episode": 297,
+      "score": 2,
+      "reward": 10,
+      "steps": 35,
+      "q_states": 5718
+    },
+    {
+      "episode": 298,
+      "score": 4,
+      "reward": 30,
+      "steps": 75,
+      "q_states": 5718
+    },
+    {
+      "episode": 299,
+      "score": 3,
+      "reward": 20,
+      "steps": 48,
+      "q_states": 5718
+    },
+    {
+      "episode": 300,
+      "score": 2,
+      "reward": 10,
+      "steps": 18,
+      "q_states": 5718
+    },
+    {
+      "episode": 301,
+      "score": 3,
+      "reward": 20,
+      "steps": 65,
+      "q_states": 5718
+    },
+    {
+      "episode": 302,
+      "score": 6,
+      "reward": 50,
+      "steps": 113,
+      "q_states": 5718
+    },
+    {
+      "episode": 303,
+      "score": 2,
+      "reward": 10,
+      "steps": 26,
+      "q_states": 5718
+    },
+    {
+      "episode": 304,
+      "score": 3,
+      "reward": 20,
+      "steps": 41,
+      "q_states": 5718
+    },
+    {
+      "episode": 305,
+      "score": 5,
+      "reward": 40,
+      "steps": 83,
+      "q_states": 5718
+    },
+    {
+      "episode": 306,
+      "score": 4,
+      "reward": 30,
+      "steps": 76,
+      "q_states": 5718
+    },
+    {
+      "episode": 307,
+      "score": 3,
+      "reward": 20,
+      "steps": 56,
+      "q_states": 5718
+    },
+    {
+      "episode": 308,
+      "score": 5,
+      "reward": 40,
+      "steps": 127,
+      "q_states": 5718
+    },
+    {
+      "episode": 309,
+      "score": 7,
+      "reward": 60,
+      "steps": 138,
+      "q_states": 5718
+    },
+    {
+      "episode": 310,
+      "score": 1,
+      "reward": 0,
+      "steps": 21,
+      "q_states": 5718
+    },
+    {
+      "episode": 311,
+      "score": 4,
+      "reward": 30,
+      "steps": 99,
+      "q_states": 5718
+    },
+    {
+      "episode": 312,
+      "score": 6,
+      "reward": 50,
+      "steps": 102,
+      "q_states": 5718
+    },
+    {
+      "episode": 313,
+      "score": 6,
+      "reward": 50,
+      "steps": 124,
+      "q_states": 5718
+    },
+    {
+      "episode": 314,
+      "score": 3,
+      "reward": 20,
+      "steps": 75,
+      "q_states": 5718
+    },
+    {
+      "episode": 315,
+      "score": 6,
+      "reward": 50,
+      "steps": 109,
+      "q_states": 5718
+    },
+    {
+      "episode": 316,
+      "score": 8,
+      "reward": 70,
+      "steps": 134,
+      "q_states": 5718
+    },
+    {
+      "episode": 317,
+      "score": 3,
+      "reward": 20,
+      "steps": 50,
+      "q_states": 5718
+    },
+    {
+      "episode": 318,
+      "score": 4,
+      "reward": 30,
+      "steps": 114,
+      "q_states": 5718
+    },
+    {
+      "episode": 319,
+      "score": 7,
+      "reward": 60,
+      "steps": 96,
+      "q_states": 5718
+    },
+    {
+      "episode": 320,
+      "score": 4,
+      "reward": 30,
+      "steps": 107,
+      "q_states": 5718
+    },
+    {
+      "episode": 321,
+      "score": 0,
+      "reward": -10,
+      "steps": 14,
+      "q_states": 5718
+    },
+    {
+      "episode": 322,
+      "score": 7,
+      "reward": 60,
+      "steps": 114,
+      "q_states": 5718
+    },
+    {
+      "episode": 323,
+      "score": 4,
+      "reward": 30,
+      "steps": 86,
+      "q_states": 5718
+    },
+    {
+      "episode": 324,
+      "score": 2,
+      "reward": 10,
+      "steps": 50,
+      "q_states": 5718
+    },
+    {
+      "episode": 325,
+      "score": 1,
+      "reward": 0,
+      "steps": 15,
+      "q_states": 5718
+    },
+    {
+      "episode": 326,
+      "score": 7,
+      "reward": 60,
+      "steps": 133,
+      "q_states": 5718
+    },
+    {
+      "episode": 327,
+      "score": 4,
+      "reward": 30,
+      "steps": 108,
+      "q_states": 5718
+    },
+    {
+      "episode": 328,
+      "score": 4,
+      "reward": 30,
+      "steps": 34,
+      "q_states": 5718
+    },
+    {
+      "episode": 329,
+      "score": 3,
+      "reward": 20,
+      "steps": 41,
+      "q_states": 5718
+    },
+    {
+      "episode": 330,
+      "score": 4,
+      "reward": 30,
+      "steps": 66,
+      "q_states": 5718
+    },
+    {
+      "episode": 331,
+      "score": 2,
+      "reward": 10,
+      "steps": 43,
+      "q_states": 5718
+    },
+    {
+      "episode": 332,
+      "score": 4,
+      "reward": 30,
+      "steps": 63,
+      "q_states": 5718
+    },
+    {
+      "episode": 333,
+      "score": 10,
+      "reward": 90,
+      "steps": 144,
+      "q_states": 5718
+    },
+    {
+      "episode": 334,
+      "score": 5,
+      "reward": 40,
+      "steps": 126,
+      "q_states": 5718
+    },
+    {
+      "episode": 335,
+      "score": 7,
+      "reward": 60,
+      "steps": 129,
+      "q_states": 5718
+    },
+    {
+      "episode": 336,
+      "score": 6,
+      "reward": 50,
+      "steps": 99,
+      "q_states": 5718
+    },
+    {
+      "episode": 337,
+      "score": 4,
+      "reward": 30,
+      "steps": 42,
+      "q_states": 5718
+    },
+    {
+      "episode": 338,
+      "score": 4,
+      "reward": 30,
+      "steps": 60,
+      "q_states": 5718
+    },
+    {
+      "episode": 339,
+      "score": 1,
+      "reward": 0,
+      "steps": 25,
+      "q_states": 5718
+    },
+    {
+      "episode": 340,
+      "score": 2,
+      "reward": 10,
+      "steps": 31,
+      "q_states": 5718
+    },
+    {
+      "episode": 341,
+      "score": 7,
+      "reward": 60,
+      "steps": 92,
+      "q_states": 5718
+    },
+    {
+      "episode": 342,
+      "score": 6,
+      "reward": 50,
+      "steps": 88,
+      "q_states": 5718
+    },
+    {
+      "episode": 343,
+      "score": 9,
+      "reward": 80,
+      "steps": 165,
+      "q_states": 5718
+    },
+    {
+      "episode": 344,
+      "score": 3,
+      "reward": 20,
+      "steps": 43,
+      "q_states": 5718
+    },
+    {
+      "episode": 345,
+      "score": 4,
+      "reward": 30,
+      "steps": 64,
+      "q_states": 5718
+    },
+    {
+      "episode": 346,
+      "score": 6,
+      "reward": 50,
+      "steps": 123,
+      "q_states": 5718
+    },
+    {
+      "episode": 347,
+      "score": 5,
+      "reward": 40,
+      "steps": 99,
+      "q_states": 5718
+    },
+    {
+      "episode": 348,
+      "score": 10,
+      "reward": 90,
+      "steps": 180,
+      "q_states": 5719
+    },
+    {
+      "episode": 349,
+      "score": 3,
+      "reward": 20,
+      "steps": 34,
+      "q_states": 5719
+    },
+    {
+      "episode": 350,
+      "score": 8,
+      "reward": 70,
+      "steps": 90,
+      "q_states": 5719
+    },
+    {
+      "episode": 351,
+      "score": 1,
+      "reward": 0,
+      "steps": 35,
+      "q_states": 5719
+    },
+    {
+      "episode": 352,
+      "score": 3,
+      "reward": 20,
+      "steps": 57,
+      "q_states": 5719
+    },
+    {
+      "episode": 353,
+      "score": 0,
+      "reward": -10,
+      "steps": 13,
+      "q_states": 5719
+    },
+    {
+      "episode": 354,
+      "score": 4,
+      "reward": 30,
+      "steps": 57,
+      "q_states": 5719
+    },
+    {
+      "episode": 355,
+      "score": 4,
+      "reward": 30,
+      "steps": 72,
+      "q_states": 5719
+    },
+    {
+      "episode": 356,
+      "score": 7,
+      "reward": 60,
+      "steps": 110,
+      "q_states": 5719
+    },
+    {
+      "episode": 357,
+      "score": 3,
+      "reward": 20,
+      "steps": 45,
+      "q_states": 5719
+    },
+    {
+      "episode": 358,
+      "score": 4,
+      "reward": 30,
+      "steps": 60,
+      "q_states": 5719
+    },
+    {
+      "episode": 359,
+      "score": 3,
+      "reward": 20,
+      "steps": 58,
+      "q_states": 5719
+    },
+    {
+      "episode": 360,
+      "score": 3,
+      "reward": 20,
+      "steps": 42,
+      "q_states": 5719
+    },
+    {
+      "episode": 361,
+      "score": 5,
+      "reward": 40,
+      "steps": 78,
+      "q_states": 5719
+    },
+    {
+      "episode": 362,
+      "score": 4,
+      "reward": 30,
+      "steps": 63,
+      "q_states": 5719
+    },
+    {
+      "episode": 363,
+      "score": 4,
+      "reward": 30,
+      "steps": 65,
+      "q_states": 5719
+    },
+    {
+      "episode": 364,
+      "score": 3,
+      "reward": 20,
+      "steps": 77,
+      "q_states": 5719
+    },
+    {
+      "episode": 365,
+      "score": 5,
+      "reward": 40,
+      "steps": 63,
+      "q_states": 5719
+    },
+    {
+      "episode": 366,
+      "score": 3,
+      "reward": 20,
+      "steps": 53,
+      "q_states": 5719
+    },
+    {
+      "episode": 367,
+      "score": 1,
+      "reward": 0,
+      "steps": 25,
+      "q_states": 5719
+    },
+    {
+      "episode": 368,
+      "score": 5,
+      "reward": 40,
+      "steps": 103,
+      "q_states": 5719
+    },
+    {
+      "episode": 369,
+      "score": 10,
+      "reward": 90,
+      "steps": 159,
+      "q_states": 5720
+    },
+    {
+      "episode": 370,
+      "score": 8,
+      "reward": 70,
+      "steps": 150,
+      "q_states": 5720
+    },
+    {
+      "episode": 371,
+      "score": 6,
+      "reward": 50,
+      "steps": 90,
+      "q_states": 5720
+    },
+    {
+      "episode": 372,
+      "score": 13,
+      "reward": 120,
+      "steps": 179,
+      "q_states": 5720
+    },
+    {
+      "episode": 373,
+      "score": 19,
+      "reward": 180,
+      "steps": 289,
+      "q_states": 5720
+    },
+    {
+      "episode": 374,
+      "score": 5,
+      "reward": 40,
+      "steps": 92,
+      "q_states": 5720
+    },
+    {
+      "episode": 375,
+      "score": 8,
+      "reward": 70,
+      "steps": 107,
+      "q_states": 5720
+    },
+    {
+      "episode": 376,
+      "score": 5,
+      "reward": 40,
+      "steps": 67,
+      "q_states": 5720
+    },
+    {
+      "episode": 377,
+      "score": 8,
+      "reward": 70,
+      "steps": 152,
+      "q_states": 5720
+    },
+    {
+      "episode": 378,
+      "score": 3,
+      "reward": 20,
+      "steps": 65,
+      "q_states": 5720
+    },
+    {
+      "episode": 379,
+      "score": 17,
+      "reward": 160,
+      "steps": 252,
+      "q_states": 5721
+    },
+    {
+      "episode": 380,
+      "score": 2,
+      "reward": 10,
+      "steps": 16,
+      "q_states": 5721
+    },
+    {
+      "episode": 381,
+      "score": 6,
+      "reward": 50,
+      "steps": 81,
+      "q_states": 5721
+    },
+    {
+      "episode": 382,
+      "score": 6,
+      "reward": 50,
+      "steps": 82,
+      "q_states": 5721
+    },
+    {
+      "episode": 383,
+      "score": 10,
+      "reward": 90,
+      "steps": 156,
+      "q_states": 5721
+    },
+    {
+      "episode": 384,
+      "score": 1,
+      "reward": 0,
+      "steps": 16,
+      "q_states": 5721
+    },
+    {
+      "episode": 385,
+      "score": 0,
+      "reward": -10,
+      "steps": 15,
+      "q_states": 5721
+    },
+    {
+      "episode": 386,
+      "score": 2,
+      "reward": 10,
+      "steps": 42,
+      "q_states": 5721
+    },
+    {
+      "episode": 387,
+      "score": 5,
+      "reward": 40,
+      "steps": 63,
+      "q_states": 5721
+    },
+    {
+      "episode": 388,
+      "score": 4,
+      "reward": 30,
+      "steps": 79,
+      "q_states": 5721
+    },
+    {
+      "episode": 389,
+      "score": 4,
+      "reward": 30,
+      "steps": 64,
+      "q_states": 5721
+    },
+    {
+      "episode": 390,
+      "score": 6,
+      "reward": 50,
+      "steps": 80,
+      "q_states": 5721
+    },
+    {
+      "episode": 391,
+      "score": 6,
+      "reward": 50,
+      "steps": 114,
+      "q_states": 5721
+    },
+    {
+      "episode": 392,
+      "score": 6,
+      "reward": 50,
+      "steps": 100,
+      "q_states": 5721
+    },
+    {
+      "episode": 393,
+      "score": 6,
+      "reward": 50,
+      "steps": 77,
+      "q_states": 5721
+    },
+    {
+      "episode": 394,
+      "score": 5,
+      "reward": 40,
+      "steps": 72,
+      "q_states": 5721
+    },
+    {
+      "episode": 395,
+      "score": 5,
+      "reward": 40,
+      "steps": 82,
+      "q_states": 5721
+    },
+    {
+      "episode": 396,
+      "score": 6,
+      "reward": 50,
+      "steps": 94,
+      "q_states": 5721
+    },
+    {
+      "episode": 397,
+      "score": 14,
+      "reward": 130,
+      "steps": 181,
+      "q_states": 5721
+    },
+    {
+      "episode": 398,
+      "score": 4,
+      "reward": 30,
+      "steps": 54,
+      "q_states": 5721
+    },
+    {
+      "episode": 399,
+      "score": 6,
+      "reward": 50,
+      "steps": 93,
+      "q_states": 5721
+    },
+    {
+      "episode": 400,
+      "score": 0,
+      "reward": -10,
+      "steps": 23,
+      "q_states": 5721
+    },
+    {
+      "episode": 401,
+      "score": 7,
+      "reward": 60,
+      "steps": 142,
+      "q_states": 5721
+    },
+    {
+      "episode": 402,
+      "score": 5,
+      "reward": 40,
+      "steps": 70,
+      "q_states": 5721
+    },
+    {
+      "episode": 403,
+      "score": 1,
+      "reward": 0,
+      "steps": 27,
+      "q_states": 5721
+    },
+    {
+      "episode": 404,
+      "score": 7,
+      "reward": 60,
+      "steps": 63,
+      "q_states": 5721
+    },
+    {
+      "episode": 405,
+      "score": 3,
+      "reward": 20,
+      "steps": 60,
+      "q_states": 5721
+    },
+    {
+      "episode": 406,
+      "score": 1,
+      "reward": 0,
+      "steps": 16,
+      "q_states": 5721
+    },
+    {
+      "episode": 407,
+      "score": 1,
+      "reward": 0,
+      "steps": 20,
+      "q_states": 5721
+    },
+    {
+      "episode": 408,
+      "score": 9,
+      "reward": 80,
+      "steps": 177,
+      "q_states": 5721
+    },
+    {
+      "episode": 409,
+      "score": 7,
+      "reward": 60,
+      "steps": 96,
+      "q_states": 5721
+    },
+    {
+      "episode": 410,
+      "score": 5,
+      "reward": 40,
+      "steps": 85,
+      "q_states": 5721
+    },
+    {
+      "episode": 411,
+      "score": 3,
+      "reward": 20,
+      "steps": 30,
+      "q_states": 5721
+    },
+    {
+      "episode": 412,
+      "score": 12,
+      "reward": 110,
+      "steps": 149,
+      "q_states": 5721
+    },
+    {
+      "episode": 413,
+      "score": 5,
+      "reward": 40,
+      "steps": 74,
+      "q_states": 5721
+    },
+    {
+      "episode": 414,
+      "score": 11,
+      "reward": 100,
+      "steps": 136,
+      "q_states": 5721
+    },
+    {
+      "episode": 415,
+      "score": 5,
+      "reward": 40,
+      "steps": 73,
+      "q_states": 5721
+    },
+    {
+      "episode": 416,
+      "score": 12,
+      "reward": 110,
+      "steps": 178,
+      "q_states": 5721
+    },
+    {
+      "episode": 417,
+      "score": 3,
+      "reward": 20,
+      "steps": 54,
+      "q_states": 5721
+    },
+    {
+      "episode": 418,
+      "score": 4,
+      "reward": 30,
+      "steps": 60,
+      "q_states": 5721
+    },
+    {
+      "episode": 419,
+      "score": 7,
+      "reward": 60,
+      "steps": 115,
+      "q_states": 5721
+    },
+    {
+      "episode": 420,
+      "score": 8,
+      "reward": 70,
+      "steps": 115,
+      "q_states": 5721
+    },
+    {
+      "episode": 421,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5721
+    },
+    {
+      "episode": 422,
+      "score": 2,
+      "reward": 10,
+      "steps": 40,
+      "q_states": 5721
+    },
+    {
+      "episode": 423,
+      "score": 3,
+      "reward": 20,
+      "steps": 45,
+      "q_states": 5721
+    },
+    {
+      "episode": 424,
+      "score": 7,
+      "reward": 60,
+      "steps": 99,
+      "q_states": 5721
+    },
+    {
+      "episode": 425,
+      "score": 13,
+      "reward": 120,
+      "steps": 208,
+      "q_states": 5721
+    },
+    {
+      "episode": 426,
+      "score": 3,
+      "reward": 20,
+      "steps": 29,
+      "q_states": 5721
+    },
+    {
+      "episode": 427,
+      "score": 12,
+      "reward": 110,
+      "steps": 157,
+      "q_states": 5721
+    },
+    {
+      "episode": 428,
+      "score": 7,
+      "reward": 60,
+      "steps": 104,
+      "q_states": 5721
+    },
+    {
+      "episode": 429,
+      "score": 7,
+      "reward": 60,
+      "steps": 101,
+      "q_states": 5721
+    },
+    {
+      "episode": 430,
+      "score": 9,
+      "reward": 80,
+      "steps": 124,
+      "q_states": 5721
+    },
+    {
+      "episode": 431,
+      "score": 5,
+      "reward": 40,
+      "steps": 79,
+      "q_states": 5721
+    },
+    {
+      "episode": 432,
+      "score": 16,
+      "reward": 150,
+      "steps": 239,
+      "q_states": 5721
+    },
+    {
+      "episode": 433,
+      "score": 4,
+      "reward": 30,
+      "steps": 82,
+      "q_states": 5722
+    },
+    {
+      "episode": 434,
+      "score": 11,
+      "reward": 100,
+      "steps": 167,
+      "q_states": 5722
+    },
+    {
+      "episode": 435,
+      "score": 10,
+      "reward": 90,
+      "steps": 94,
+      "q_states": 5722
+    },
+    {
+      "episode": 436,
+      "score": 5,
+      "reward": 40,
+      "steps": 77,
+      "q_states": 5722
+    },
+    {
+      "episode": 437,
+      "score": 0,
+      "reward": -10,
+      "steps": 11,
+      "q_states": 5722
+    },
+    {
+      "episode": 438,
+      "score": 7,
+      "reward": 60,
+      "steps": 116,
+      "q_states": 5722
+    },
+    {
+      "episode": 439,
+      "score": 10,
+      "reward": 90,
+      "steps": 142,
+      "q_states": 5722
+    },
+    {
+      "episode": 440,
+      "score": 4,
+      "reward": 30,
+      "steps": 79,
+      "q_states": 5722
+    },
+    {
+      "episode": 441,
+      "score": 16,
+      "reward": 150,
+      "steps": 209,
+      "q_states": 5722
+    },
+    {
+      "episode": 442,
+      "score": 10,
+      "reward": 90,
+      "steps": 134,
+      "q_states": 5722
+    },
+    {
+      "episode": 443,
+      "score": 9,
+      "reward": 80,
+      "steps": 138,
+      "q_states": 5722
+    },
+    {
+      "episode": 444,
+      "score": 5,
+      "reward": 40,
+      "steps": 122,
+      "q_states": 5722
+    },
+    {
+      "episode": 445,
+      "score": 6,
+      "reward": 50,
+      "steps": 90,
+      "q_states": 5722
+    },
+    {
+      "episode": 446,
+      "score": 5,
+      "reward": 40,
+      "steps": 73,
+      "q_states": 5722
+    },
+    {
+      "episode": 447,
+      "score": 3,
+      "reward": 20,
+      "steps": 39,
+      "q_states": 5722
+    },
+    {
+      "episode": 448,
+      "score": 14,
+      "reward": 130,
+      "steps": 167,
+      "q_states": 5722
+    },
+    {
+      "episode": 449,
+      "score": 9,
+      "reward": 80,
+      "steps": 94,
+      "q_states": 5722
+    },
+    {
+      "episode": 450,
+      "score": 2,
+      "reward": 10,
+      "steps": 30,
+      "q_states": 5722
+    },
+    {
+      "episode": 451,
+      "score": 4,
+      "reward": 30,
+      "steps": 57,
+      "q_states": 5722
+    },
+    {
+      "episode": 452,
+      "score": 2,
+      "reward": 10,
+      "steps": 18,
+      "q_states": 5722
+    },
+    {
+      "episode": 453,
+      "score": 8,
+      "reward": 70,
+      "steps": 116,
+      "q_states": 5722
+    },
+    {
+      "episode": 454,
+      "score": 18,
+      "reward": 170,
+      "steps": 261,
+      "q_states": 5722
+    },
+    {
+      "episode": 455,
+      "score": 5,
+      "reward": 40,
+      "steps": 88,
+      "q_states": 5722
+    },
+    {
+      "episode": 456,
+      "score": 3,
+      "reward": 20,
+      "steps": 37,
+      "q_states": 5722
+    },
+    {
+      "episode": 457,
+      "score": 7,
+      "reward": 60,
+      "steps": 114,
+      "q_states": 5722
+    },
+    {
+      "episode": 458,
+      "score": 5,
+      "reward": 40,
+      "steps": 87,
+      "q_states": 5723
+    },
+    {
+      "episode": 459,
+      "score": 11,
+      "reward": 100,
+      "steps": 155,
+      "q_states": 5723
+    },
+    {
+      "episode": 460,
+      "score": 9,
+      "reward": 80,
+      "steps": 127,
+      "q_states": 5723
+    },
+    {
+      "episode": 461,
+      "score": 7,
+      "reward": 60,
+      "steps": 103,
+      "q_states": 5723
+    },
+    {
+      "episode": 462,
+      "score": 5,
+      "reward": 40,
+      "steps": 60,
+      "q_states": 5723
+    },
+    {
+      "episode": 463,
+      "score": 6,
+      "reward": 50,
+      "steps": 83,
+      "q_states": 5723
+    },
+    {
+      "episode": 464,
+      "score": 4,
+      "reward": 30,
+      "steps": 44,
+      "q_states": 5723
+    },
+    {
+      "episode": 465,
+      "score": 3,
+      "reward": 20,
+      "steps": 44,
+      "q_states": 5723
+    },
+    {
+      "episode": 466,
+      "score": 8,
+      "reward": 70,
+      "steps": 108,
+      "q_states": 5723
+    },
+    {
+      "episode": 467,
+      "score": 13,
+      "reward": 120,
+      "steps": 170,
+      "q_states": 5723
+    },
+    {
+      "episode": 468,
+      "score": 2,
+      "reward": 10,
+      "steps": 54,
+      "q_states": 5723
+    },
+    {
+      "episode": 469,
+      "score": 17,
+      "reward": 160,
+      "steps": 264,
+      "q_states": 5723
+    },
+    {
+      "episode": 470,
+      "score": 1,
+      "reward": 0,
+      "steps": 29,
+      "q_states": 5723
+    },
+    {
+      "episode": 471,
+      "score": 5,
+      "reward": 40,
+      "steps": 81,
+      "q_states": 5723
+    },
+    {
+      "episode": 472,
+      "score": 10,
+      "reward": 90,
+      "steps": 175,
+      "q_states": 5723
+    },
+    {
+      "episode": 473,
+      "score": 21,
+      "reward": 200,
+      "steps": 312,
+      "q_states": 5723
+    },
+    {
+      "episode": 474,
+      "score": 1,
+      "reward": 0,
+      "steps": 25,
+      "q_states": 5723
+    },
+    {
+      "episode": 475,
+      "score": 6,
+      "reward": 50,
+      "steps": 62,
+      "q_states": 5723
+    },
+    {
+      "episode": 476,
+      "score": 4,
+      "reward": 30,
+      "steps": 42,
+      "q_states": 5723
+    },
+    {
+      "episode": 477,
+      "score": 19,
+      "reward": 180,
+      "steps": 266,
+      "q_states": 5723
+    },
+    {
+      "episode": 478,
+      "score": 7,
+      "reward": 60,
+      "steps": 77,
+      "q_states": 5723
+    },
+    {
+      "episode": 479,
+      "score": 7,
+      "reward": 60,
+      "steps": 91,
+      "q_states": 5724
+    },
+    {
+      "episode": 480,
+      "score": 3,
+      "reward": 20,
+      "steps": 51,
+      "q_states": 5724
+    },
+    {
+      "episode": 481,
+      "score": 13,
+      "reward": 120,
+      "steps": 166,
+      "q_states": 5724
+    },
+    {
+      "episode": 482,
+      "score": 7,
+      "reward": 60,
+      "steps": 60,
+      "q_states": 5724
+    },
+    {
+      "episode": 483,
+      "score": 4,
+      "reward": 30,
+      "steps": 62,
+      "q_states": 5724
+    },
+    {
+      "episode": 484,
+      "score": 4,
+      "reward": 30,
+      "steps": 70,
+      "q_states": 5724
+    },
+    {
+      "episode": 485,
+      "score": 3,
+      "reward": 20,
+      "steps": 55,
+      "q_states": 5724
+    },
+    {
+      "episode": 486,
+      "score": 4,
+      "reward": 30,
+      "steps": 45,
+      "q_states": 5724
+    },
+    {
+      "episode": 487,
+      "score": 5,
+      "reward": 40,
+      "steps": 74,
+      "q_states": 5724
+    },
+    {
+      "episode": 488,
+      "score": 3,
+      "reward": 20,
+      "steps": 43,
+      "q_states": 5724
+    },
+    {
+      "episode": 489,
+      "score": 6,
+      "reward": 50,
+      "steps": 97,
+      "q_states": 5724
+    },
+    {
+      "episode": 490,
+      "score": 20,
+      "reward": 190,
+      "steps": 275,
+      "q_states": 5724
+    },
+    {
+      "episode": 491,
+      "score": 8,
+      "reward": 70,
+      "steps": 103,
+      "q_states": 5724
+    },
+    {
+      "episode": 492,
+      "score": 6,
+      "reward": 50,
+      "steps": 84,
+      "q_states": 5724
+    },
+    {
+      "episode": 493,
+      "score": 12,
+      "reward": 110,
+      "steps": 109,
+      "q_states": 5724
+    },
+    {
+      "episode": 494,
+      "score": 8,
+      "reward": 70,
+      "steps": 105,
+      "q_states": 5724
+    },
+    {
+      "episode": 495,
+      "score": 2,
+      "reward": 10,
+      "steps": 65,
+      "q_states": 5724
+    },
+    {
+      "episode": 496,
+      "score": 1,
+      "reward": 0,
+      "steps": 18,
+      "q_states": 5724
+    },
+    {
+      "episode": 497,
+      "score": 3,
+      "reward": 20,
+      "steps": 50,
+      "q_states": 5724
+    },
+    {
+      "episode": 498,
+      "score": 5,
+      "reward": 40,
+      "steps": 74,
+      "q_states": 5724
+    },
+    {
+      "episode": 499,
+      "score": 1,
+      "reward": 0,
+      "steps": 18,
+      "q_states": 5724
+    },
+    {
+      "episode": 500,
+      "score": 2,
+      "reward": 10,
+      "steps": 28,
+      "q_states": 5724
+    }
+  ],
+  "final_stats": {
+    "mean_score": 3.654,
+    "std_score": 3.492031500430659,
+    "max_score": 21,
+    "mean_reward": 26.54,
+    "final_q_states": 5724
+  }
+}

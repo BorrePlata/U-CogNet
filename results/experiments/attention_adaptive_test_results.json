@@ -1,0 +1,4232 @@
+{
+  "experiment_name": "Attention_Adaptive_Test",
+  "episodes": [
+    {
+      "episode": 1,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 65,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 2,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 19,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 3,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 31,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 4,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 73,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 5,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 37,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 6,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 50,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 7,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 25,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 8,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 23,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5,
+          "audio": 0.5,
+          "text": 0.5,
+          "tactile": 0.5
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 9,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 76,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5039878429981819,
+          "audio": 0.4980083847887483,
+          "text": 0.49800607850090906,
+          "tactile": 0.49800607850090906
+        },
+        "performance_trend": 0.42982476037135803,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.014008649104798987
+      }
+    },
+    {
+      "episode": 10,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 47,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5031501295259758,
+          "audio": 0.49849064664167314,
+          "text": 0.4984249352370121,
+          "tactile": 0.4984249352370121
+        },
+        "performance_trend": 0.5720683827544061,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.023637761790911947
+      }
+    },
+    {
+      "episode": 11,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 34,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.500571400663716,
+          "audio": 0.49973893920817364,
+          "text": 0.499714299668142,
+          "tactile": 0.499714299668142
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 12,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 122,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999991,
+          "audio": 0.5000246395400321,
+          "text": 0.5000000000000004,
+          "tactile": 0.5000000000000004
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 13,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 60,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5047603115974356,
+          "audio": 0.49767896610343504,
+          "text": 0.4976198442012822,
+          "tactile": 0.4976198442012822
+        },
+        "performance_trend": 0.40937005351446043,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.018066507462231277
+      }
+    },
+    {
+      "episode": 14,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 15,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "closed",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5025076563769679,
+          "audio": 0.4988052937136689,
+          "text": 0.49874617181151604,
+          "tactile": 0.49874617181151604
+        },
+        "performance_trend": 0,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 15,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 49,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999988,
+          "audio": 0.5000591219021534,
+          "text": 0.5000000000000006,
+          "tactile": 0.5000000000000006
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 16,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 110,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999988,
+          "audio": 0.5000591219021534,
+          "text": 0.5000000000000006,
+          "tactile": 0.5000000000000006
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 17,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 48,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5049278695776497,
+          "audio": 0.4976663177100882,
+          "text": 0.4975360652111751,
+          "tactile": 0.4975360652111751
+        },
+        "performance_trend": 0.3838898907636011,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.02308951617687686
+      }
+    },
+    {
+      "episode": 18,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 95,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5029663448422211,
+          "audio": 0.49863173590864246,
+          "text": 0.4985168275788894,
+          "tactile": 0.4985168275788894
+        },
+        "performance_trend": 0.44463283545263554,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.011060874042149407
+      }
+    },
+    {
+      "episode": 19,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 96,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5029267367293431,
+          "audio": 0.49863940609293605,
+          "text": 0.4985366316353284,
+          "tactile": 0.4985366316353284
+        },
+        "performance_trend": 0.4452405794592693,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.010939750011141657
+      }
+    },
+    {
+      "episode": 20,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 27,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5005706354150297,
+          "audio": 0.4997902313137078,
+          "text": 0.4997146822924851,
+          "tactile": 0.4997146822924851
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 21,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 50,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 22,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 52,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 23,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 25,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 24,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 33,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 25,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 178,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 26,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 80,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5000755490212233,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 27,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 60,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5058089337651077,
+          "audio": 0.4971822501237959,
+          "text": 0.4970955331174461,
+          "tactile": 0.4970955331174461
+        },
+        "performance_trend": 0.40937005351446043,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.018066507462231277
+      }
+    },
+    {
+      "episode": 28,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 144,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5016833636652128,
+          "audio": 0.4992572838198008,
+          "text": 0.4991583181673935,
+          "tactile": 0.4991583181673935
+        },
+        "performance_trend": 0.4641261068391586,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.007171500075577708
+      }
+    },
+    {
+      "episode": 29,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 25,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5006629068658384,
+          "audio": 0.4998396794405689,
+          "text": 0.4996685465670807,
+          "tactile": 0.4996685465670807
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.008166666666666666
+      }
+    },
+    {
+      "episode": 30,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 47,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5000243333333334,
+          "audio": 0.5001507995401557,
+          "text": 0.4999878333333332,
+          "tactile": 0.4999878333333332
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 31,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 12,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5000000000000001,
+          "audio": 0.5001629662068224,
+          "text": 0.49999999999999983,
+          "tactile": 0.49999999999999983
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 32,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 33,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5000000000000001,
+          "audio": 0.5001629662068224,
+          "text": 0.49999999999999983,
+          "tactile": 0.49999999999999983
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 33,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 42,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5009249573486223,
+          "audio": 0.49983475007867695,
+          "text": 0.49953752132568874,
+          "tactile": 0.49953752132568874
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.015218360985369972
+      }
+    },
+    {
+      "episode": 34,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 54,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5002972287529889,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 35,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 39,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5002972287529889,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 36,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 59,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5002972287529889,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 37,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 39,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5002972287529889,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 38,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 107,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5008382856738376,
+          "audio": 0.4999232522410214,
+          "text": 0.49958085716308115,
+          "tactile": 0.49958085716308115
+        },
+        "performance_trend": 1,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.009763769206124663
+      }
+    },
+    {
+      "episode": 39,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 28,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.50036414544225,
+          "audio": 0.5001484859931074,
+          "text": 0.4998179272788749,
+          "tactile": 0.4998179272788749
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 40,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 40,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 41,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 79,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 42,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 28,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 43,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 71,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 44,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 102,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 45,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 61,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 46,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 38,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 47,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 17,
+      "q_states": 5712,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 48,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 108,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5025240332463573,
+          "audio": 0.49908728215609394,
+          "text": 0.49873798337682135,
+          "tactile": 0.49873798337682135
+        },
+        "performance_trend": 0.451612266868641,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.009669286968785284
+      }
+    },
+    {
+      "episode": 49,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 100,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999992,
+          "audio": 0.5003492987792731,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 50,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 71,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5044273516151108,
+          "audio": 0.4981479609461639,
+          "text": 0.49778632419244456,
+          "tactile": 0.49778632419244456
+        },
+        "performance_trend": 0.42450503460453537,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.015065740910563669
+      }
+    },
+    {
+      "episode": 51,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 36,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5002722666171227,
+          "audio": 0.5002037126401331,
+          "text": 0.4998638666914386,
+          "tactile": 0.4998638666914386
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 52,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 33,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5005812390029316,
+          "audio": 0.5001936564325659,
+          "text": 0.4997093804985341,
+          "tactile": 0.4997093804985341
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.012714442815249267
+      }
+    },
+    {
+      "episode": 53,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 44,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5078663771931238,
+          "audio": 0.49658228372411406,
+          "text": 0.496066811403438,
+          "tactile": 0.496066811403438
+        },
+        "performance_trend": 0.37182550018042826,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.025451590288366716
+      }
+    },
+    {
+      "episode": 54,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 71,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999983,
+          "audio": 0.5005154723206765,
+          "text": 0.5000000000000008,
+          "tactile": 0.5000000000000008
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 55,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 106,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5030175606292246,
+          "audio": 0.49905090515441214,
+          "text": 0.4984912196853876,
+          "tactile": 0.4984912196853876
+        },
+        "performance_trend": 0.7613884311096519,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.016658798195429887
+      }
+    },
+    {
+      "episode": 56,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 15,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "closed",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5016834099464548,
+          "audio": 0.4997179804957971,
+          "text": 0.49915829502677256,
+          "tactile": 0.49915829502677256
+        },
+        "performance_trend": 0,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 57,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 148,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.504277751754116,
+          "audio": 0.4984628522756107,
+          "text": 0.4978611241229419,
+          "tactile": 0.4978611241229419
+        },
+        "performance_trend": 0.5385576041145316,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.020914304977540616
+      }
+    },
+    {
+      "episode": 58,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 34,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5005026540495302,
+          "audio": 0.5003162005792177,
+          "text": 0.49974867297523484,
+          "tactile": 0.49974867297523484
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 59,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 108,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5030333169946992,
+          "audio": 0.4990873745810816,
+          "text": 0.4984833415026503,
+          "tactile": 0.4984833415026503
+        },
+        "performance_trend": 0.8093410574543657,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.017328472927469554
+      }
+    },
+    {
+      "episode": 60,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 84,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5034886595933282,
+          "audio": 0.4988332428165492,
+          "text": 0.4982556702033358,
+          "tactile": 0.4982556702033358
+        },
+        "performance_trend": 0.43693026999363593,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.012595073736521394
+      }
+    },
+    {
+      "episode": 61,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 59,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5023821469002133,
+          "audio": 0.4994529094046111,
+          "text": 0.49880892654989323,
+          "tactile": 0.49880892654989323
+        },
+        "performance_trend": 0.6034217257408696,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.01839984079556461
+      }
+    },
+    {
+      "episode": 62,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 41,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5003995802163371,
+          "audio": 0.5004979573142981,
+          "text": 0.4998002098918313,
+          "tactile": 0.4998002098918313
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.007503126954346467
+      }
+    },
+    {
+      "episode": 63,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 48,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5070502681408315,
+          "audio": 0.4972026418747139,
+          "text": 0.4964748659295841,
+          "tactile": 0.4964748659295841
+        },
+        "performance_trend": 0.3838898907636011,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.02308951617687686
+      }
+    },
+    {
+      "episode": 64,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 18,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "closed",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5027345681817592,
+          "audio": 0.4993604918542501,
+          "text": 0.4986327159091203,
+          "tactile": 0.4986327159091203
+        },
+        "performance_trend": 0,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 65,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 186,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5011109802095748,
+          "audio": 0.500187052091357,
+          "text": 0.49944450989521244,
+          "tactile": 0.49944450989521244
+        },
+        "performance_trend": 0.47243758068887143,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.005511022312393873
+      }
+    },
+    {
+      "episode": 66,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 42,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5000304374946732,
+          "audio": 0.5007229391959995,
+          "text": 0.4999847812526632,
+          "tactile": 0.4999847812526632
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 67,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 34,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5103287836283993,
+          "audio": 0.4958077173552619,
+          "text": 0.4948356081858002,
+          "tactile": 0.4948356081858002
+        },
+        "performance_trend": 0.41306258117486494,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.043321660770083856
+      }
+    },
+    {
+      "episode": 68,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 26,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5025835456307289,
+          "audio": 0.4995523157009485,
+          "text": 0.49870822718463537,
+          "tactile": 0.49870822718463537
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 69,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 52,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5085987804110494,
+          "audio": 0.4966275205971846,
+          "text": 0.4957006097944751,
+          "tactile": 0.4957006097944751
+        },
+        "performance_trend": 0.6677291648543047,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.042260228809822074
+      }
+    },
+    {
+      "episode": 70,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 46,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5004560627655605,
+          "audio": 0.5007562911257356,
+          "text": 0.49977196861721956,
+          "tactile": 0.49977196861721956
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.008994443933776592
+      }
+    },
+    {
+      "episode": 71,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 187,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.50354495957832,
+          "audio": 0.499229209465372,
+          "text": 0.4982275202108398,
+          "tactile": 0.4982275202108398
+        },
+        "performance_trend": 0.47258876449043935,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.01644242975781064
+      }
+    },
+    {
+      "episode": 72,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 150,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5038380580163757,
+          "audio": 0.49925856797508444,
+          "text": 0.498080970991812,
+          "tactile": 0.498080970991812
+        },
+        "performance_trend": 0.6743978837379647,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.019917377414024422
+      }
+    },
+    {
+      "episode": 73,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 68,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.511472323213938,
+          "audio": 0.49560392488243565,
+          "text": 0.49426383839303084,
+          "tactile": 0.49426383839303084
+        },
+        "performance_trend": 0.47119060259039236,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.04734110879594125
+      }
+    },
+    {
+      "episode": 74,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 53,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5103235140331981,
+          "audio": 0.4959183131529805,
+          "text": 0.4948382429834008,
+          "tactile": 0.4948382429834008
+        },
+        "performance_trend": 0.44553276233888145,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.04138265092478478
+      }
+    },
+    {
+      "episode": 75,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 30,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5108655396005907,
+          "audio": 0.4955160754144195,
+          "text": 0.4945672301997045,
+          "tactile": 0.4945672301997045
+        },
+        "performance_trend": 0.2969979516846249,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.03972474737767091
+      }
+    },
+    {
+      "episode": 76,
+      "score": 4,
+      "reward": 38.8125,
+      "steps": 110,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5064926647767753,
+          "audio": 0.49755205366316757,
+          "text": 0.49675366761161216,
+          "tactile": 0.49675366761161216
+        },
+        "performance_trend": 0.48157837587049684,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.030283646283058657
+      }
+    },
+    {
+      "episode": 77,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 71,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5032254416634069,
+          "audio": 0.4992056122856216,
+          "text": 0.4983872791682964,
+          "tactile": 0.4983872791682964
+        },
+        "performance_trend": 0.42450503460453537,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.015065740910563669
+      }
+    },
+    {
+      "episode": 78,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 135,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.503918696409386,
+          "audio": 0.498863728020135,
+          "text": 0.4980406517953068,
+          "tactile": 0.4980406517953068
+        },
+        "performance_trend": 0.5518643049233894,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.01832956599236367
+      }
+    },
+    {
+      "episode": 79,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 61,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.511159803390245,
+          "audio": 0.4952742830179518,
+          "text": 0.4944200983048773,
+          "tactile": 0.4944200983048773
+        },
+        "performance_trend": 0.5091903551490748,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.04396958490074753
+      }
+    },
+    {
+      "episode": 80,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 148,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5042777517541146,
+          "audio": 0.49869317883865466,
+          "text": 0.49786112412294253,
+          "tactile": 0.49786112412294253
+        },
+        "performance_trend": 0.5385576041145316,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.020914304977540616
+      }
+    },
+    {
+      "episode": 81,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 13,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "closed",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5026085200727394,
+          "audio": 0.4995277946793423,
+          "text": 0.49869573996363015,
+          "tactile": 0.49869573996363015
+        },
+        "performance_trend": 0,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 82,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 44,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5013327950479503,
+          "audio": 0.5002893477008006,
+          "text": 0.49933360247602476,
+          "tactile": 0.49933360247602476
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.01981666965344608
+      }
+    },
+    {
+      "episode": 83,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 71,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5054786858937934,
+          "audio": 0.4982933296536704,
+          "text": 0.4972606570531032,
+          "tactile": 0.4972606570531032
+        },
+        "performance_trend": 0.8490100692090707,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.030131481821127338
+      }
+    },
+    {
+      "episode": 84,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 63,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.49999999999999745,
+          "audio": 0.5010326726005684,
+          "text": 0.5000000000000011,
+          "tactile": 0.5000000000000011
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 85,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 25,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.49999999999999745,
+          "audio": 0.5010326726005684,
+          "text": 0.5000000000000011,
+          "tactile": 0.5000000000000011
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 86,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 22,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.49999999999999745,
+          "audio": 0.5010326726005684,
+          "text": 0.5000000000000011,
+          "tactile": 0.5000000000000011
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 87,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 90,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.504281142200813,
+          "audio": 0.49895160057588894,
+          "text": 0.49785942889959334,
+          "tactile": 0.49785942889959334
+        },
+        "performance_trend": 0.6862645519491528,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.023418264780599805
+      }
+    },
+    {
+      "episode": 88,
+      "score": 2,
+      "reward": 12.9375,
+      "steps": 117,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5044312348397365,
+          "audio": 0.4989195968604788,
+          "text": 0.4977843825801315,
+          "tactile": 0.4977843825801315
+        },
+        "performance_trend": 0.4554946791518718,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.017789379687426717
+      }
+    },
+    {
+      "episode": 89,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 32,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5005488200494079,
+          "audio": 0.50082754835589,
+          "text": 0.4997255899752958,
+          "tactile": 0.4997255899752958
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 90,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 34,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5027451270095747,
+          "audio": 0.499885059220729,
+          "text": 0.4986274364952124,
+          "tactile": 0.4986274364952124
+        },
+        "performance_trend": 1,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.034225181269192585
+      }
+    },
+    {
+      "episode": 91,
+      "score": 4,
+      "reward": 38.8125,
+      "steps": 62,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5176175967564374,
+          "audio": 0.4929372459678093,
+          "text": 0.4911912016217811,
+          "tactile": 0.4911912016217811
+        },
+        "performance_trend": 0.4125603245545656,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.06973957485412159
+      }
+    },
+    {
+      "episode": 92,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 48,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5000129032258029,
+          "audio": 0.5017265837431744,
+          "text": 0.4999935483870983,
+          "tactile": 0.4999935483870983
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 93,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 14,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999965,
+          "audio": 0.5017330353560776,
+          "text": 0.5000000000000016,
+          "tactile": 0.5000000000000016
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 94,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 60,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5011065926056022,
+          "audio": 0.5012671992234596,
+          "text": 0.49944670369719874,
+          "tactile": 0.49944670369719874
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.016105723148505786
+      }
+    },
+    {
+      "episode": 95,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 57,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5041749668889425,
+          "audio": 0.4997711396806896,
+          "text": 0.4979125165555286,
+          "tactile": 0.4979125165555286
+        },
+        "performance_trend": 0.4041189990649219,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.01910493727015678
+      }
+    },
+    {
+      "episode": 96,
+      "score": 0,
+      "reward": -12.9375,
+      "steps": 40,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5001659260220596,
+          "audio": 0.5017565551768601,
+          "text": 0.49991703698897005,
+          "tactile": 0.49991703698897005
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      }
+    },
+    {
+      "episode": 97,
+      "score": 3,
+      "reward": 25.875,
+      "steps": 97,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5076554359615932,
+          "audio": 0.4981139897320989,
+          "text": 0.49617228201920316,
+          "tactile": 0.49617228201920316
+        },
+        "performance_trend": 0.44583509573859836,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.03246375767651064
+      }
+    },
+    {
+      "episode": 98,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 80,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5027774647512809,
+          "audio": 0.5005897400682079,
+          "text": 0.4986112676243593,
+          "tactile": 0.4986112676243593
+        },
+        "performance_trend": 0.43356766346033704,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.013264252130744475
+      }
+    },
+    {
+      "episode": 99,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 24,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5013864385473655,
+          "audio": 0.5013619533654217,
+          "text": 0.499306780726317,
+          "tactile": 0.499306780726317
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.013059947299077734
+      }
+    },
+    {
+      "episode": 100,
+      "score": 1,
+      "reward": 0.0,
+      "steps": 79,
+      "q_states": 5713,
+      "attention_summary": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5037955943707143,
+          "audio": 0.5001459524555821,
+          "text": 0.4981022028146426,
+          "tactile": 0.4981022028146426
+        },
+        "performance_trend": 0.4326700178598326,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.013442823559315902
+      }
+    }
+  ],
+  "attention_history": [
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5,
+        "audio": 0.5,
+        "text": 0.5,
+        "tactile": 0.5
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5039878429981819,
+        "audio": 0.4980083847887483,
+        "text": 0.49800607850090906,
+        "tactile": 0.49800607850090906
+      },
+      "performance_trend": 0.42982476037135803,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.014008649104798987
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5031501295259758,
+        "audio": 0.49849064664167314,
+        "text": 0.4984249352370121,
+        "tactile": 0.4984249352370121
+      },
+      "performance_trend": 0.5720683827544061,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.023637761790911947
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.500571400663716,
+        "audio": 0.49973893920817364,
+        "text": 0.499714299668142,
+        "tactile": 0.499714299668142
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999991,
+        "audio": 0.5000246395400321,
+        "text": 0.5000000000000004,
+        "tactile": 0.5000000000000004
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5047603115974356,
+        "audio": 0.49767896610343504,
+        "text": 0.4976198442012822,
+        "tactile": 0.4976198442012822
+      },
+      "performance_trend": 0.40937005351446043,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.018066507462231277
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "closed",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5025076563769679,
+        "audio": 0.4988052937136689,
+        "text": 0.49874617181151604,
+        "tactile": 0.49874617181151604
+      },
+      "performance_trend": 0,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999988,
+        "audio": 0.5000591219021534,
+        "text": 0.5000000000000006,
+        "tactile": 0.5000000000000006
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999988,
+        "audio": 0.5000591219021534,
+        "text": 0.5000000000000006,
+        "tactile": 0.5000000000000006
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5049278695776497,
+        "audio": 0.4976663177100882,
+        "text": 0.4975360652111751,
+        "tactile": 0.4975360652111751
+      },
+      "performance_trend": 0.3838898907636011,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.02308951617687686
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5029663448422211,
+        "audio": 0.49863173590864246,
+        "text": 0.4985168275788894,
+        "tactile": 0.4985168275788894
+      },
+      "performance_trend": 0.44463283545263554,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.011060874042149407
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5029267367293431,
+        "audio": 0.49863940609293605,
+        "text": 0.4985366316353284,
+        "tactile": 0.4985366316353284
+      },
+      "performance_trend": 0.4452405794592693,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.010939750011141657
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5005706354150297,
+        "audio": 0.4997902313137078,
+        "text": 0.4997146822924851,
+        "tactile": 0.4997146822924851
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5000755490212233,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5058089337651077,
+        "audio": 0.4971822501237959,
+        "text": 0.4970955331174461,
+        "tactile": 0.4970955331174461
+      },
+      "performance_trend": 0.40937005351446043,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.018066507462231277
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5016833636652128,
+        "audio": 0.4992572838198008,
+        "text": 0.4991583181673935,
+        "tactile": 0.4991583181673935
+      },
+      "performance_trend": 0.4641261068391586,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.007171500075577708
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5006629068658384,
+        "audio": 0.4998396794405689,
+        "text": 0.4996685465670807,
+        "tactile": 0.4996685465670807
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.008166666666666666
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5000243333333334,
+        "audio": 0.5001507995401557,
+        "text": 0.4999878333333332,
+        "tactile": 0.4999878333333332
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5000000000000001,
+        "audio": 0.5001629662068224,
+        "text": 0.49999999999999983,
+        "tactile": 0.49999999999999983
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5000000000000001,
+        "audio": 0.5001629662068224,
+        "text": 0.49999999999999983,
+        "tactile": 0.49999999999999983
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5009249573486223,
+        "audio": 0.49983475007867695,
+        "text": 0.49953752132568874,
+        "tactile": 0.49953752132568874
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.015218360985369972
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5002972287529889,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5002972287529889,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5002972287529889,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5002972287529889,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5008382856738376,
+        "audio": 0.4999232522410214,
+        "text": 0.49958085716308115,
+        "tactile": 0.49958085716308115
+      },
+      "performance_trend": 1,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.009763769206124663
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.50036414544225,
+        "audio": 0.5001484859931074,
+        "text": 0.4998179272788749,
+        "tactile": 0.4998179272788749
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999993,
+        "audio": 0.5003305587142327,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5025240332463573,
+        "audio": 0.49908728215609394,
+        "text": 0.49873798337682135,
+        "tactile": 0.49873798337682135
+      },
+      "performance_trend": 0.451612266868641,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.009669286968785284
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999992,
+        "audio": 0.5003492987792731,
+        "text": 0.5000000000000003,
+        "tactile": 0.5000000000000003
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5044273516151108,
+        "audio": 0.4981479609461639,
+        "text": 0.49778632419244456,
+        "tactile": 0.49778632419244456
+      },
+      "performance_trend": 0.42450503460453537,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.015065740910563669
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5002722666171227,
+        "audio": 0.5002037126401331,
+        "text": 0.4998638666914386,
+        "tactile": 0.4998638666914386
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5005812390029316,
+        "audio": 0.5001936564325659,
+        "text": 0.4997093804985341,
+        "tactile": 0.4997093804985341
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.012714442815249267
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5078663771931238,
+        "audio": 0.49658228372411406,
+        "text": 0.496066811403438,
+        "tactile": 0.496066811403438
+      },
+      "performance_trend": 0.37182550018042826,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.025451590288366716
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999983,
+        "audio": 0.5005154723206765,
+        "text": 0.5000000000000008,
+        "tactile": 0.5000000000000008
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5030175606292246,
+        "audio": 0.49905090515441214,
+        "text": 0.4984912196853876,
+        "tactile": 0.4984912196853876
+      },
+      "performance_trend": 0.7613884311096519,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.016658798195429887
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "closed",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5016834099464548,
+        "audio": 0.4997179804957971,
+        "text": 0.49915829502677256,
+        "tactile": 0.49915829502677256
+      },
+      "performance_trend": 0,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.504277751754116,
+        "audio": 0.4984628522756107,
+        "text": 0.4978611241229419,
+        "tactile": 0.4978611241229419
+      },
+      "performance_trend": 0.5385576041145316,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.020914304977540616
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5005026540495302,
+        "audio": 0.5003162005792177,
+        "text": 0.49974867297523484,
+        "tactile": 0.49974867297523484
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5030333169946992,
+        "audio": 0.4990873745810816,
+        "text": 0.4984833415026503,
+        "tactile": 0.4984833415026503
+      },
+      "performance_trend": 0.8093410574543657,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.017328472927469554
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5034886595933282,
+        "audio": 0.4988332428165492,
+        "text": 0.4982556702033358,
+        "tactile": 0.4982556702033358
+      },
+      "performance_trend": 0.43693026999363593,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.012595073736521394
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5023821469002133,
+        "audio": 0.4994529094046111,
+        "text": 0.49880892654989323,
+        "tactile": 0.49880892654989323
+      },
+      "performance_trend": 0.6034217257408696,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.01839984079556461
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5003995802163371,
+        "audio": 0.5004979573142981,
+        "text": 0.4998002098918313,
+        "tactile": 0.4998002098918313
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.007503126954346467
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5070502681408315,
+        "audio": 0.4972026418747139,
+        "text": 0.4964748659295841,
+        "tactile": 0.4964748659295841
+      },
+      "performance_trend": 0.3838898907636011,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.02308951617687686
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "closed",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5027345681817592,
+        "audio": 0.4993604918542501,
+        "text": 0.4986327159091203,
+        "tactile": 0.4986327159091203
+      },
+      "performance_trend": 0,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5011109802095748,
+        "audio": 0.500187052091357,
+        "text": 0.49944450989521244,
+        "tactile": 0.49944450989521244
+      },
+      "performance_trend": 0.47243758068887143,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.005511022312393873
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5000304374946732,
+        "audio": 0.5007229391959995,
+        "text": 0.4999847812526632,
+        "tactile": 0.4999847812526632
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5103287836283993,
+        "audio": 0.4958077173552619,
+        "text": 0.4948356081858002,
+        "tactile": 0.4948356081858002
+      },
+      "performance_trend": 0.41306258117486494,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.043321660770083856
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5025835456307289,
+        "audio": 0.4995523157009485,
+        "text": 0.49870822718463537,
+        "tactile": 0.49870822718463537
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5085987804110494,
+        "audio": 0.4966275205971846,
+        "text": 0.4957006097944751,
+        "tactile": 0.4957006097944751
+      },
+      "performance_trend": 0.6677291648543047,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.042260228809822074
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5004560627655605,
+        "audio": 0.5007562911257356,
+        "text": 0.49977196861721956,
+        "tactile": 0.49977196861721956
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.008994443933776592
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.50354495957832,
+        "audio": 0.499229209465372,
+        "text": 0.4982275202108398,
+        "tactile": 0.4982275202108398
+      },
+      "performance_trend": 0.47258876449043935,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.01644242975781064
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5038380580163757,
+        "audio": 0.49925856797508444,
+        "text": 0.498080970991812,
+        "tactile": 0.498080970991812
+      },
+      "performance_trend": 0.6743978837379647,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.019917377414024422
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.511472323213938,
+        "audio": 0.49560392488243565,
+        "text": 0.49426383839303084,
+        "tactile": 0.49426383839303084
+      },
+      "performance_trend": 0.47119060259039236,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.04734110879594125
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5103235140331981,
+        "audio": 0.4959183131529805,
+        "text": 0.4948382429834008,
+        "tactile": 0.4948382429834008
+      },
+      "performance_trend": 0.44553276233888145,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.04138265092478478
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5108655396005907,
+        "audio": 0.4955160754144195,
+        "text": 0.4945672301997045,
+        "tactile": 0.4945672301997045
+      },
+      "performance_trend": 0.2969979516846249,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.03972474737767091
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5064926647767753,
+        "audio": 0.49755205366316757,
+        "text": 0.49675366761161216,
+        "tactile": 0.49675366761161216
+      },
+      "performance_trend": 0.48157837587049684,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.030283646283058657
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5032254416634069,
+        "audio": 0.4992056122856216,
+        "text": 0.4983872791682964,
+        "tactile": 0.4983872791682964
+      },
+      "performance_trend": 0.42450503460453537,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.015065740910563669
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.503918696409386,
+        "audio": 0.498863728020135,
+        "text": 0.4980406517953068,
+        "tactile": 0.4980406517953068
+      },
+      "performance_trend": 0.5518643049233894,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.01832956599236367
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.511159803390245,
+        "audio": 0.4952742830179518,
+        "text": 0.4944200983048773,
+        "tactile": 0.4944200983048773
+      },
+      "performance_trend": 0.5091903551490748,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.04396958490074753
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5042777517541146,
+        "audio": 0.49869317883865466,
+        "text": 0.49786112412294253,
+        "tactile": 0.49786112412294253
+      },
+      "performance_trend": 0.5385576041145316,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.020914304977540616
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "closed",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5026085200727394,
+        "audio": 0.4995277946793423,
+        "text": 0.49869573996363015,
+        "tactile": 0.49869573996363015
+      },
+      "performance_trend": 0,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5013327950479503,
+        "audio": 0.5002893477008006,
+        "text": 0.49933360247602476,
+        "tactile": 0.49933360247602476
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.01981666965344608
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5054786858937934,
+        "audio": 0.4982933296536704,
+        "text": 0.4972606570531032,
+        "tactile": 0.4972606570531032
+      },
+      "performance_trend": 0.8490100692090707,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.030131481821127338
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.49999999999999745,
+        "audio": 0.5010326726005684,
+        "text": 0.5000000000000011,
+        "tactile": 0.5000000000000011
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.49999999999999745,
+        "audio": 0.5010326726005684,
+        "text": 0.5000000000000011,
+        "tactile": 0.5000000000000011
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.49999999999999745,
+        "audio": 0.5010326726005684,
+        "text": 0.5000000000000011,
+        "tactile": 0.5000000000000011
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.504281142200813,
+        "audio": 0.49895160057588894,
+        "text": 0.49785942889959334,
+        "tactile": 0.49785942889959334
+      },
+      "performance_trend": 0.6862645519491528,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.023418264780599805
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5044312348397365,
+        "audio": 0.4989195968604788,
+        "text": 0.4977843825801315,
+        "tactile": 0.4977843825801315
+      },
+      "performance_trend": 0.4554946791518718,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.017789379687426717
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5005488200494079,
+        "audio": 0.50082754835589,
+        "text": 0.4997255899752958,
+        "tactile": 0.4997255899752958
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5027451270095747,
+        "audio": 0.499885059220729,
+        "text": 0.4986274364952124,
+        "tactile": 0.4986274364952124
+      },
+      "performance_trend": 1,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.034225181269192585
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5176175967564374,
+        "audio": 0.4929372459678093,
+        "text": 0.4911912016217811,
+        "tactile": 0.4911912016217811
+      },
+      "performance_trend": 0.4125603245545656,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.06973957485412159
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5000129032258029,
+        "audio": 0.5017265837431744,
+        "text": 0.4999935483870983,
+        "tactile": 0.4999935483870983
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.4999999999999965,
+        "audio": 0.5017330353560776,
+        "text": 0.5000000000000016,
+        "tactile": 0.5000000000000016
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5011065926056022,
+        "audio": 0.5012671992234596,
+        "text": 0.49944670369719874,
+        "tactile": 0.49944670369719874
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.016105723148505786
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5041749668889425,
+        "audio": 0.4997711396806896,
+        "text": 0.4979125165555286,
+        "tactile": 0.4979125165555286
+      },
+      "performance_trend": 0.4041189990649219,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.01910493727015678
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5001659260220596,
+        "audio": 0.5017565551768601,
+        "text": 0.49991703698897005,
+        "tactile": 0.49991703698897005
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.0
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5076554359615932,
+        "audio": 0.4981139897320989,
+        "text": 0.49617228201920316,
+        "tactile": 0.49617228201920316
+      },
+      "performance_trend": 0.44583509573859836,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.03246375767651064
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5027774647512809,
+        "audio": 0.5005897400682079,
+        "text": 0.4986112676243593,
+        "tactile": 0.4986112676243593
+      },
+      "performance_trend": 0.43356766346033704,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.013264252130744475
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5013864385473655,
+        "audio": 0.5013619533654217,
+        "text": 0.499306780726317,
+        "tactile": 0.499306780726317
+      },
+      "performance_trend": 0.5,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.013059947299077734
+    },
+    {
+      "active_gates": {
+        "visual": "open",
+        "audio": "filtering",
+        "text": "closed",
+        "tactile": "closed"
+      },
+      "modality_weights": {
+        "visual": 0.5037955943707143,
+        "audio": 0.5001459524555821,
+        "text": 0.4981022028146426,
+        "tactile": 0.4981022028146426
+      },
+      "performance_trend": 0.4326700178598326,
+      "temporal_buffer_size": 100,
+      "recent_performance": 0.013442823559315902
+    }
+  ],
+  "progress_checkpoints": [
+    {
+      "episode": 20,
+      "avg_score_last_20": 0.3,
+      "total_q_states": 5712,
+      "attention_status": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5005706354150297,
+          "audio": 0.4997902313137078,
+          "text": 0.4997146822924851,
+          "tactile": 0.4997146822924851
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      },
+      "timestamp": "2025-11-17T04:34:32"
+    },
+    {
+      "episode": 40,
+      "avg_score_last_20": 0.25,
+      "total_q_states": 5712,
+      "attention_status": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.4999999999999993,
+          "audio": 0.5003305587142327,
+          "text": 0.5000000000000003,
+          "tactile": 0.5000000000000003
+        },
+        "performance_trend": 0.5,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.0
+      },
+      "timestamp": "2025-11-17T04:34:32"
+    },
+    {
+      "episode": 60,
+      "avg_score_last_20": 0.6,
+      "total_q_states": 5713,
+      "attention_status": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5034886595933282,
+          "audio": 0.4988332428165492,
+          "text": 0.4982556702033358,
+          "tactile": 0.4982556702033358
+        },
+        "performance_trend": 0.43693026999363593,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.012595073736521394
+      },
+      "timestamp": "2025-11-17T04:34:33"
+    },
+    {
+      "episode": 80,
+      "avg_score_last_20": 1.75,
+      "total_q_states": 5713,
+      "attention_status": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5042777517541146,
+          "audio": 0.49869317883865466,
+          "text": 0.49786112412294253,
+          "tactile": 0.49786112412294253
+        },
+        "performance_trend": 0.5385576041145316,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.020914304977540616
+      },
+      "timestamp": "2025-11-17T04:34:33"
+    },
+    {
+      "episode": 100,
+      "avg_score_last_20": 1.0,
+      "total_q_states": 5713,
+      "attention_status": {
+        "active_gates": {
+          "visual": "open",
+          "audio": "filtering",
+          "text": "closed",
+          "tactile": "closed"
+        },
+        "modality_weights": {
+          "visual": 0.5037955943707143,
+          "audio": 0.5001459524555821,
+          "text": 0.4981022028146426,
+          "tactile": 0.4981022028146426
+        },
+        "performance_trend": 0.4326700178598326,
+        "temporal_buffer_size": 100,
+        "recent_performance": 0.013442823559315902
+      },
+      "timestamp": "2025-11-17T04:34:33"
+    }
+  ],
+  "final_stats": {
+    "mean_score": 0.78,
+    "std_score": 1.0254754994635416,
+    "max_score": 4,
+    "mean_reward": -2.84625,
+    "final_q_states": 5713,
+    "total_episodes": 100
+  }
+}

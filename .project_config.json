@@ -1,0 +1,30 @@
+{
+  "file_patterns": {
+    "documentation": ["*.md", "*.txt", "*.pdf"],
+    "results": ["*results.json", "*analysis.json"],
+    "checkpoints": ["*checkpoint*.json", "*model*.json"],
+    "visualizations": ["*.png", "*.jpg", "*.svg"],
+    "videos": ["*.mp4", "*.avi", "*.webm"]
+  },
+  "folder_mappings": {
+    "docs": ["README.md"],
+    "docs/architecture": ["ARCHITECTURE_GUIDE.md", "API_DOCUMENTATION.md", "TECHNICAL_PAPER.md"],
+    "docs/experiments": ["*EXPERIMENT*.md", "*RESULT*.md", "AUTONOMOUS_MULTIMODAL_GATING_FRAMEWORK.md"],
+    "docs/research": ["RESEARCH_ROADMAP.md", "CHANGELOG.md"],
+    "docs/papers": ["TECHNICAL_PAPER.md"],
+    "results/experiments": ["*results.json", "*_results/"],
+    "results/analysis": ["*analysis.json"],
+    "results/visualizations": ["*.png"],
+    "checkpoints/training": ["*checkpoint*.json"],
+    "checkpoints/models": ["*model*.json"]
+  },
+  "auto_clean": {
+    "remove_empty_dirs": true,
+    "archive_old_results": false,
+    "max_result_files": 50
+  },
+  "backup": {
+    "include_patterns": ["*.py", "*.md", "*.json", "docs/", "src/", "results/experiments/"],
+    "exclude_patterns": ["__pycache__/", "*.pyc", ".git/"]
+  }
+}

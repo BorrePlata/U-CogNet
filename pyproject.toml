@@ -18,6 +18,7 @@ mediapipe = "^0.10.0"
 pillow = "^10.0"
 librosa = {version = "^0.10.0", optional = true}
 scipy = "^1.11.0"
+pygame = "^2.6.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"

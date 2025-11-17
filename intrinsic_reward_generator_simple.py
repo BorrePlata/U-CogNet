@@ -39,5 +39,4 @@ class IntrinsicRewardGenerator:
 
     def get_all_intrinsic_rewards(self) -> Dict[str, Dict[str, float]]:
         """Obtener recompensas para todas las modalidades"""
-        return {mod: self.calculate_intrinsic_reward(mod) for mod in self.modalities}</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/intrinsic_reward_generator_simple.py
+        return {mod: self.calculate_intrinsic_reward(mod) for mod in self.modalities}
