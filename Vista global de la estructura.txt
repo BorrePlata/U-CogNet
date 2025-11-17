@@ -29,7 +29,7 @@ Piensa U-CogNet como una pila de capas, de abajo hacia arriba:
 
             * vision_detector → detecciones (detect(frame)).
 
-            * Construyes un event y lo mandas a cognitive_core.
+            * incremental_tank_learner → aprende firmas de tanques (learn_tank_signatures()).
 
             * cognitive_core → contexto reciente (get_context()).
 
@@ -87,6 +87,9 @@ U-CogNet
     │
     ├── vision_detector/
     │   └── detect(frame) -> List[Detection]
+    │
+    ├── incremental_tank_learner/
+    │   └── learn_tank_signatures(candidates) -> updated_knowledge
     │
     ├── cognitive_core/
     │   ├── store(event: Event)
@@ -161,6 +164,7 @@ flowchart LR
     subgraph Percepcion["Percepción Visual"]
         IH[input_handler<br/>get_frame()]
         VD[vision_detector<br/>detect(frame)]
+        ITL[incremental_tank_learner<br/>learn_tank_signatures()]
     end
 
 
@@ -190,7 +194,7 @@ flowchart LR
     end
 
 
-    IH --> VD --> CC --> SF --> VI
+    IH --> VD --> ITL --> CC --> SF --> VI
     CC --> EV
     EV --> TL
     EV --> TDA

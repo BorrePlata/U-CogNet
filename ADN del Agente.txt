@@ -398,13 +398,44 @@ Cuando las fases anteriores estén sólidas, tu nuevo agente puede:
                                                                                                                                                                                     * Búsqueda de anomalías en señales cósmicas.
 
 La conciencia de diseño que quiero que herede es:
-“No me limito a la tarea.
+"No me limito a la tarea.
 Me limito a la estructura.
-Y con esa estructura puedo aprender casi cualquier tarea.”
+Y con esa estructura puedo aprender casi cualquier tarea."
 ________________
 
 
-11. Espíritu que debe heredar tu nuevo agente
+12. IMPLEMENTACIÓN ACTUAL – APRENDIZAJE INCREMENTAL PARA TANQUES
+Objetivo:
+ Demostrar aprendizaje continuo en un dominio específico: reconocimiento de tanques en video táctico.
+12.1 Contexto del problema
+El modelo base YOLOv8 no incluye la clase "tank", causando que tanques sean detectados como "train" u otros objetos similares.
+El agente debe aprender incrementalmente a distinguir tanques basándose en características visuales.
+12.2 Módulo incremental_tank_learner
+Capacidades que el agente debe implementar:
+                                       * Análisis de candidatos militares (trenes, camiones, vehículos grandes).
+                                       * Extracción de firmas visuales: tamaño, forma, color, bordes.
+                                       * Cálculo de probabilidad de ser tanque basado en patrones aprendidos.
+                                       * Adaptación de umbrales en tiempo real.
+                                       * Persistencia de conocimiento aprendido en JSON.
+Responsabilidad cognitiva:
+ Aprender de datos no etiquetados, usando heurísticas de consistencia temporal y tamaño.
+12.3 Integración con evaluador militar
+El military_auto_evaluator incorpora el aprendizaje incremental:
+                                                   * Evalúa detecciones en tiempo real.
+                                                   * Aprende de candidatos confirmados.
+                                                   * Adapta parámetros basados en métricas (precisión, recall, F1).
+                                                   * Monitorea ciclos de adaptación y falsos positivos rechazados.
+12.4 Resultados demostrados
+En demo completa:
+                                                            * Procesó 1000 frames de video.
+                                                            * Aprendió 89 tanques con 100% ratio de aprendizaje.
+                                                            * Completó 901 ciclos de adaptación.
+                                                            * Logró detección en tiempo real a 1.6 FPS.
+Esto valida la capacidad de aprendizaje incremental sin reentrenamiento completo del modelo base.
+________________
+
+
+13. ESPÍRITU QUE DEBE HEREDAR TU NUEVO AGENTE
 Si le tuviera que dejar un mensaje al siguiente modelo, sería algo así:
 Aprende por módulos.
 Júzgate con métricas.

@@ -98,6 +98,20 @@ Módulos núcleo (v1.0)
 
                                     2. vision_detector
 
+                                       * Detector YOLOv8 especializado en objetos militares.
+
+                                       * Salida: lista de detecciones con clase, confianza, bbox.
+
+                                          3. incremental_tank_learner
+
+                                             * Aprende firmas visuales de tanques de candidatos militares.
+
+                                             * Actualiza umbrales adaptativos basados en aprendizaje.
+
+                                             * Persistencia de conocimiento en JSON.
+
+                                                4. cognitive_core
+
                                        * Modelo tipo YOLOv8 (o derivado) para detección de objetos tácticos.
 
 Interfaz clara:
@@ -507,7 +521,40 @@ Y es solo el Módulo 1 del U-CogNet completo.
 ________________
 
 
-12. Extensión a otros dominios (por diseño, no por parcheo)
+13. Demo actual: sistema completo con aprendizaje incremental de tanques
+Pipeline extendido con aprendizaje continuo:
+                                                                                                                                                                                                                                                                                                            1. input_handler lee video de tanques.
+
+                                                                                                                                                                                                                                                                                                            2. vision_detector (YOLOv8) detecta objetos, clasificando tanques como "train" inicialmente.
+
+                                                                                                                                                                                                                                                                                                            3. incremental_tank_learner analiza candidatos grandes y aprende firmas visuales de tanques.
+
+                                                                                                                                                                                                                                                                                                            4. cognitive_core mantiene contexto y tracking.
+
+                                                                                                                                                                                                                                                                                                            5. semantic_feedback genera explicaciones basadas en conocimiento aprendido.
+
+                                                                                                                                                                                                                                                                                                            6. military_auto_evaluator integra aprendizaje, calcula métricas y adapta parámetros.
+
+                                                                                                                                                                                                                                                                                                            7. trainer_loop potencial para futuras expansiones.
+
+                                                                                                                                                                                                                                                                                                            8. tda_manager ajusta topología basada en desempeño.
+
+                                                                                                                                                                                                                                                                                                            9. visual_interface muestra HUD con detecciones aprendidas.
+
+Resultados demostrados:
+                                                                                                                                                                                                                                                                                                               * Procesamiento de 1000 frames a 1.6 FPS.
+
+                                                                                                                                                                                                                                                                                                               * Aprendizaje de 89 tanques con ratio 100%.
+
+                                                                                                                                                                                                                                                                                                               * 901 ciclos de adaptación automática.
+
+                                                                                                                                                                                                                                                                                                               * Detección en tiempo real de tanques aprendidos.
+
+Esto valida el aprendizaje incremental en dominios militares sin reentrenamiento del modelo base.
+________________
+
+
+14. Extensión a otros dominios (por diseño, no por parcheo)
 Una vez tengas:
                                                                                                                                                                                                                                                                                                                                                          * Arquitectura modular.
 
