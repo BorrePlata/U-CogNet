@@ -1,11 +1,23 @@
-
 """
-U-CogNet: Sistema Cognitivo Universal
-Versión consolidada con arquitectura modular
+U-CogNet: Unified Cognitive Network
+Módulo principal del sistema de inteligencia modular adaptativa.
+
+Este paquete implementa el marco ADN del Agente con énfasis en:
+- Modularidad contractual
+- Aprendizaje continuo
+- Meta-cognición
+- Topología dinámica adaptativa
+- Ética funcional
+
+Versión: 0.1.0 (Fase inicial de integración)
 """
 
-from .common.types import *
-from .common.logging import logger
+__version__ = "0.1.0"
+__author__ = "U-CogNet Team"
+__description__ = "Sistema de inteligencia artificial modular y adaptativa"
+
+# Imports principales para facilitar el uso
+from .common import types, utils, logging
 from .input_handler import InputHandler
 from .vision_detector import VisionDetector
 from .cognitive_core import CognitiveCore
@@ -14,16 +26,4 @@ from .evaluator import Evaluator
 from .trainer_loop import TrainerLoop
 from .tda_manager import TDAManager
 from .visual_interface import VisualInterface
-
-# Nuevos módulos consolidados
-try:
-    from .audio.feature_extractor import AudioFeatureExtractor
-    from .audio.video_audio_extractor import VideoAudioExtractor
-    from .security.perception_sanitizer import PerceptionSanitizer
-    from .security.universal_ethics_engine import UniversalEthicsEngine
-    from .security.cognitive_security_architecture import CognitiveSecurityArchitecture
-except ImportError:
-    pass
-
-__version__ = "2.0.0"
-__author__ = "AGI U-CogNet"
+from .audio import AudioCognitiveProcessor

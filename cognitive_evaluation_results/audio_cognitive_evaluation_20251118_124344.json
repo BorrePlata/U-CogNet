@@ -1,0 +1,519 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "20251118_124344",
+    "total_samples": 15,
+    "evaluation_duration": "0:00:00.095231"
+  },
+  "evolution_history": [
+    {
+      "sample_index": 0,
+      "timestamp": "2025-11-18T12:43:44.844582",
+      "processing_time": 0.001947,
+      "audio_duration": 2.0,
+      "expected_type": "environmental",
+      "reasoning": {
+        "event_type": "environmental",
+        "confidence": 0.6,
+        "semantic_description": "Sonidos ambientales con características naturales",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9989674742831617,
+        "scenarios_count": 0,
+        "associations_count": 3
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.6,
+        "interiorization_depth": 0.1,
+        "imagination_creativity": 0.9994837371415808,
+        "processing_latency": 0.001947,
+        "memory_utilization": 0.1
+      },
+      "cognitive_status": {
+        "audio_memory_size": 1,
+        "reasoning_patterns": 1,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 1,
+      "timestamp": "2025-11-18T12:43:44.846239",
+      "processing_time": 0.001586,
+      "audio_duration": 2.2142857142857144,
+      "expected_type": "environmental",
+      "reasoning": {
+        "event_type": "environmental",
+        "confidence": 0.6,
+        "semantic_description": "Sonidos ambientales con características naturales",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9992487868930715,
+        "scenarios_count": 0,
+        "associations_count": 3
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.6,
+        "interiorization_depth": 0.2,
+        "imagination_creativity": 0.9996243934465358,
+        "processing_latency": 0.001586,
+        "memory_utilization": 0.1
+      },
+      "cognitive_status": {
+        "audio_memory_size": 2,
+        "reasoning_patterns": 1,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 2,
+      "timestamp": "2025-11-18T12:43:44.847856",
+      "processing_time": 0.001536,
+      "audio_duration": 2.4285714285714284,
+      "expected_type": "environmental",
+      "reasoning": {
+        "event_type": "environmental",
+        "confidence": 0.6,
+        "semantic_description": "Sonidos ambientales con características naturales",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.999672843988575,
+        "scenarios_count": 0,
+        "associations_count": 3
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.6,
+        "interiorization_depth": 0.3,
+        "imagination_creativity": 0.9998364219942875,
+        "processing_latency": 0.001536,
+        "memory_utilization": 0.1
+      },
+      "cognitive_status": {
+        "audio_memory_size": 3,
+        "reasoning_patterns": 1,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 3,
+      "timestamp": "2025-11-18T12:43:44.849963",
+      "processing_time": 0.002052,
+      "audio_duration": 2.642857142857143,
+      "expected_type": "environmental",
+      "reasoning": {
+        "event_type": "environmental",
+        "confidence": 0.6,
+        "semantic_description": "Sonidos ambientales con características naturales",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.999827961590312,
+        "scenarios_count": 0,
+        "associations_count": 3
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.6,
+        "interiorization_depth": 0.4,
+        "imagination_creativity": 0.999913980795156,
+        "processing_latency": 0.002052,
+        "memory_utilization": 0.1
+      },
+      "cognitive_status": {
+        "audio_memory_size": 4,
+        "reasoning_patterns": 1,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 4,
+      "timestamp": "2025-11-18T12:43:44.852167",
+      "processing_time": 0.002091,
+      "audio_duration": 2.857142857142857,
+      "expected_type": "environmental",
+      "reasoning": {
+        "event_type": "environmental",
+        "confidence": 0.6,
+        "semantic_description": "Sonidos ambientales con características naturales",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9993692928982388,
+        "scenarios_count": 0,
+        "associations_count": 3
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.6,
+        "interiorization_depth": 0.5,
+        "imagination_creativity": 0.9996846464491194,
+        "processing_latency": 0.002091,
+        "memory_utilization": 0.1
+      },
+      "cognitive_status": {
+        "audio_memory_size": 5,
+        "reasoning_patterns": 1,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 5,
+      "timestamp": "2025-11-18T12:43:44.854488",
+      "processing_time": 0.002247,
+      "audio_duration": 3.071428571428571,
+      "expected_type": "music",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9961806854210749,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.1,
+        "imagination_creativity": 0.9980903427105374,
+        "processing_latency": 0.002247,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 6,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 6,
+      "timestamp": "2025-11-18T12:43:44.856651",
+      "processing_time": 0.002045,
+      "audio_duration": 3.2857142857142856,
+      "expected_type": "music",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9924050155711843,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.2,
+        "imagination_creativity": 0.9962025077855922,
+        "processing_latency": 0.002045,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 7,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 7,
+      "timestamp": "2025-11-18T12:43:44.859739",
+      "processing_time": 0.002935,
+      "audio_duration": 3.5,
+      "expected_type": "music",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9851611354025359,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.3,
+        "imagination_creativity": 0.992580567701268,
+        "processing_latency": 0.002935,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 8,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 8,
+      "timestamp": "2025-11-18T12:43:44.862305",
+      "processing_time": 0.00248,
+      "audio_duration": 3.7142857142857144,
+      "expected_type": "music",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.99216566069382,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.4,
+        "imagination_creativity": 0.99608283034691,
+        "processing_latency": 0.00248,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 9,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 9,
+      "timestamp": "2025-11-18T12:43:44.864765",
+      "processing_time": 0.002365,
+      "audio_duration": 3.928571428571429,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9701510162681888,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.5,
+        "imagination_creativity": 0.9850755081340944,
+        "processing_latency": 0.002365,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 10,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 10,
+      "timestamp": "2025-11-18T12:43:44.867406",
+      "processing_time": 0.002549,
+      "audio_duration": 4.142857142857142,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.996393014043083,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.6,
+        "imagination_creativity": 0.9981965070215415,
+        "processing_latency": 0.002549,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 11,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 11,
+      "timestamp": "2025-11-18T12:43:44.871699",
+      "processing_time": 0.004212,
+      "audio_duration": 4.357142857142858,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9654758609759996,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.7,
+        "imagination_creativity": 0.9827379304879997,
+        "processing_latency": 0.004212,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 12,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 12,
+      "timestamp": "2025-11-18T12:43:44.876287",
+      "processing_time": 0.00448,
+      "audio_duration": 4.571428571428571,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9733105396058033,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.8,
+        "imagination_creativity": 0.9866552698029016,
+        "processing_latency": 0.00448,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 13,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 13,
+      "timestamp": "2025-11-18T12:43:44.879969",
+      "processing_time": 0.003595,
+      "audio_duration": 4.785714285714286,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9991113201462527,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 0.9,
+        "imagination_creativity": 0.9995556600731264,
+        "processing_latency": 0.003595,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 14,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    },
+    {
+      "sample_index": 14,
+      "timestamp": "2025-11-18T12:43:44.883115",
+      "processing_time": 0.003049,
+      "audio_duration": 5.0,
+      "expected_type": "speech",
+      "reasoning": {
+        "event_type": "speech",
+        "confidence": 0.7,
+        "semantic_description": "Contenido vocal con patrones lingüísticos",
+        "cognitive_insights_count": 1
+      },
+      "imagination": {
+        "novelty_score": 1.0,
+        "coherence_score": 0.9833884233140254,
+        "scenarios_count": 1,
+        "associations_count": 0
+      },
+      "metrics": {
+        "extraction_quality": 0.9,
+        "reasoning_accuracy": 0.7,
+        "interiorization_depth": 1.0,
+        "imagination_creativity": 0.9916942116570127,
+        "processing_latency": 0.003049,
+        "memory_utilization": 0.2
+      },
+      "cognitive_status": {
+        "audio_memory_size": 15,
+        "reasoning_patterns": 2,
+        "metrics_history_length": 0,
+        "average_creativity": 0.0,
+        "average_reasoning_accuracy": 0.0
+      }
+    }
+  ]
+}
