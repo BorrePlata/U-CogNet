@@ -461,5 +461,4 @@ def test_security_architecture():
 
 if __name__ == "__main__":
     # Ejecutar test si se llama directamente
-    test_security_architecture()</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/src/cognitive_security_architecture.py
+    test_security_architecture()

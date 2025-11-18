@@ -424,5 +424,4 @@ def test_perception_sanitizer():
 
 if __name__ == "__main__":
     # Ejecutar test si se llama directamente
-    test_perception_sanitizer()</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/src/perception_sanitizer.py
+    test_perception_sanitizer()

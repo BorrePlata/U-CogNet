@@ -584,5 +584,4 @@ def test_universal_ethics():
 
 if __name__ == "__main__":
     # Ejecutar test si se llama directamente
-    test_universal_ethics()</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/src/universal_ethics_engine.py
+    test_universal_ethics()

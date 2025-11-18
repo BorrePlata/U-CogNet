@@ -310,4 +310,3 @@ class AdaptiveGatingController:
         for mod in self.modalities:
             self.reward_history[mod].clear()
         self.epsilon = 1.0</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/adaptive_gating_controller.py

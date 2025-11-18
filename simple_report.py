@@ -61,4 +61,3 @@ def generate_simple_report():
 
 if __name__ == "__main__":
     generate_simple_report()</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/simple_report.py

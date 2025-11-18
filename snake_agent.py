@@ -40,7 +40,7 @@ class IncrementalSnakeAgent:
     def _get_state_key(self, state: Dict) -> str:
         """Convierte el estado en una clave hashable"""
         grid = state['grid']
-        # Simplificar: solo considerar posiciones relativas de cabeza, comida y dirección
+        # Considerar posiciones relativas de cabeza, comida, dirección y peligros
         head_x, head_y = state['snake'][0]
         food_x, food_y = state['food']
         
@@ -51,7 +51,13 @@ class IncrementalSnakeAgent:
         # Dirección actual
         dir_idx = ['UP', 'DOWN', 'LEFT', 'RIGHT'].index(state['direction'].name)
         
-        return f"{dx},{dy},{dir_idx}"
+        # Información de peligro en las 4 direcciones
+        danger_up = 1 if head_y - 1 < 0 or (head_x, head_y - 1) in state['snake'] else 0
+        danger_down = 1 if head_y + 1 >= state['height'] or (head_x, head_y + 1) in state['snake'] else 0
+        danger_left = 1 if head_x - 1 < 0 or (head_x - 1, head_y) in state['snake'] else 0
+        danger_right = 1 if head_x + 1 >= state['width'] or (head_x + 1, head_y) in state['snake'] else 0
+        
+        return f"{dx},{dy},{dir_idx},{danger_up},{danger_down},{danger_left},{danger_right}"
 
     def choose_action(self, state: Dict) -> int:
         """Elige acción usando epsilon-greedy"""

@@ -1,0 +1,49 @@
+# U-CogNet Security Profile for AppArmor
+# This profile restricts U-CogNet processes to only access allowed paths
+
+#include <tunables/global>
+
+/usr/bin/python3 {
+    #include <abstractions/base>
+    #include <abstractions/python>
+
+    # Allow reading Python libraries
+    /usr/lib/python*/** r,
+    /usr/local/lib/python*/** r,
+
+    # Allow reading U-CogNet source code (read-only)
+    /app/src/** r,
+    /app/*.py r,
+
+    # Allow writing to data and logs directories only
+    /data/** rw,
+    /logs/** rw,
+
+    # Deny writing to source code
+    /app/src/** w,
+    /app/*.py w,
+
+    # Deny network access except localhost for monitoring
+    deny network inet,
+    deny network inet6,
+    network unix,
+
+    # Allow process management for monitoring
+    /proc/** r,
+    /sys/** r,
+
+    # Deny dangerous system calls
+    deny capability sys_admin,
+    deny capability sys_rawio,
+    deny capability dac_override,
+
+    # Allow basic capabilities
+    capability ipc_lock,
+    capability setgid,
+    capability setuid,
+
+    # Audit logging
+    audit /data/** w,
+    audit /logs/** w,
+    audit deny /app/** w,
+}

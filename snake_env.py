@@ -67,7 +67,9 @@ class SnakeEnv:
             'food': self.food,
             'direction': self.direction,
             'score': self.score,
-            'done': self.done
+            'done': self.done,
+            'height': self.height,
+            'width': self.width
         }
 
     def step(self, action: int) -> Tuple[Dict, float, bool, Dict]:
@@ -106,11 +108,19 @@ class SnakeEnv:
         
         # Check food
         reward = 0
+        prev_distance = abs(self.food[0] - head_x) + abs(self.food[1] - head_y)
+        new_distance = abs(self.food[0] - new_head[0]) + abs(self.food[1] - new_head[1])
+        
         if new_head == self.food:
             self.score += 1
             reward = 10
             self.food = self._place_food()
         else:
+            # Small reward for getting closer to food
+            if new_distance < prev_distance:
+                reward = 0.1
+            elif new_distance > prev_distance:
+                reward = -0.1
             self.snake.pop()  # Remove tail
         
         return self._get_state(), reward, self.done, {}

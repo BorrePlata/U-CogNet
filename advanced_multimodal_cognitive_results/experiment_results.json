@@ -1,0 +1,938 @@
+{
+  "experiment_name": "Advanced_Multimodal_Cognitive_Development",
+  "start_time": "2025-11-17T20:42:42.596096",
+  "domains": [
+    "mathematics",
+    "snake",
+    "pong"
+  ],
+  "episodes": [
+    {
+      "episode": 1,
+      "time": 0.12944531440734863,
+      "mathematics": {
+        "problem": "Integral(x + y + z, (z, 0, 1), (y, 0, 1), (x, 0, 1))",
+        "difficulty": "basic",
+        "analytical_solution": 1.5,
+        "numerical_solution": 1.5006801431465115,
+        "accuracy": 0.9995465712356589,
+        "quality_score": 0.9983352099713216,
+        "complexity": 1.0
+      },
+      "snake": {
+        "score": 0,
+        "steps": 34,
+        "total_reward": -10.1,
+        "final_length": 1,
+        "efficiency": 0.0
+      },
+      "pong": {
+        "left_score": 0,
+        "right_score": 1,
+        "steps": 67,
+        "total_reward": 1.5999999999999925,
+        "ball_control_time": 6.7,
+        "coordination_score": -0.07611940298507475
+      },
+      "transfer_learning": {
+        "cross_correlations": {
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "granger_causality": {
+          "math_causes_motor": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "math_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "motor_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          }
+        },
+        "information_transfer": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "emergent_patterns": [],
+        "statistical_significance": {
+          "math_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          },
+          "motor_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          },
+          "spatial_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          }
+        },
+        "overall_transfer_score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "transfer_strength": "negligible"
+      },
+      "cognitive_metrics": {
+        "domain_performances": {
+          "mathematics": 0.9983352099713216,
+          "snake_motor": 0.0,
+          "pong_spatial": -0.07611940298507475
+        },
+        "cognitive_synergy": {
+          "score": 0.0,
+          "confidence_interval": [
+            0.0,
+            0.0
+          ],
+          "strength": "negligible"
+        },
+        "emergent_intelligence": {
+          "score": 0.0,
+          "patterns": [],
+          "pattern_count": 0
+        },
+        "transfer_effectiveness": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "cross_domain_correlation": {
+          "average": 0.0,
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "statistical_validation": {
+          "overall_significance": false,
+          "significance_tests": {
+            "math_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            },
+            "motor_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            },
+            "spatial_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            }
+          }
+        },
+        "overall_cognitive_score": -1.706442037649001e-17,
+        "development_trend": {
+          "trend": "insufficient_data",
+          "strength": 0.0
+        },
+        "confidence_assessment": {
+          "level": "very_low",
+          "score": -1.0665262735306257e-17,
+          "significance_ratio": 0.0,
+          "score_confidence": -2.1330525470612514e-17
+        }
+      }
+    },
+    {
+      "episode": 2,
+      "time": 0.014033317565917969,
+      "mathematics": {
+        "problem": "Integral(x + y + z, (z, 0, 1), (y, 0, 1), (x, 0, 1))",
+        "difficulty": "basic",
+        "analytical_solution": 1.5,
+        "numerical_solution": 1.5025013697539553,
+        "accuracy": 0.9983324201640298,
+        "quality_score": 0.9977681605586906,
+        "complexity": 1.0
+      },
+      "snake": {
+        "score": 0,
+        "steps": 20,
+        "total_reward": -10.1,
+        "final_length": 1,
+        "efficiency": 0.0
+      },
+      "pong": {
+        "left_score": 0,
+        "right_score": 1,
+        "steps": 67,
+        "total_reward": 1.5999999999999925,
+        "ball_control_time": 6.7,
+        "coordination_score": -0.07611940298507475
+      },
+      "transfer_learning": {
+        "cross_correlations": {
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "granger_causality": {
+          "math_causes_motor": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "math_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "motor_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          }
+        },
+        "information_transfer": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "emergent_patterns": [],
+        "statistical_significance": {
+          "math_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          },
+          "motor_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          },
+          "spatial_significance": {
+            "significant": false,
+            "p_value": 1.0,
+            "t_statistic": 0.0
+          }
+        },
+        "overall_transfer_score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "transfer_strength": "negligible"
+      },
+      "cognitive_metrics": {
+        "domain_performances": {
+          "mathematics": 0.9977681605586906,
+          "snake_motor": 0.0,
+          "pong_spatial": -0.07611940298507475
+        },
+        "cognitive_synergy": {
+          "score": 0.0,
+          "confidence_interval": [
+            0.0,
+            0.0
+          ],
+          "strength": "negligible"
+        },
+        "emergent_intelligence": {
+          "score": 0.0,
+          "patterns": [],
+          "pattern_count": 0
+        },
+        "transfer_effectiveness": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "cross_domain_correlation": {
+          "average": 0.0,
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "statistical_validation": {
+          "overall_significance": false,
+          "significance_tests": {
+            "math_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            },
+            "motor_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            },
+            "spatial_significance": {
+              "significant": false,
+              "p_value": 1.0,
+              "t_statistic": 0.0
+            }
+          }
+        },
+        "overall_cognitive_score": -1.7053927854589957e-17,
+        "development_trend": {
+          "trend": "insufficient_data",
+          "strength": 0.0
+        },
+        "confidence_assessment": {
+          "level": "very_low",
+          "score": -1.0658704909118722e-17,
+          "significance_ratio": 0.0,
+          "score_confidence": -2.1317409818237445e-17
+        }
+      }
+    },
+    {
+      "episode": 3,
+      "time": 0.016132831573486328,
+      "mathematics": {
+        "problem": "Integral(x + y + z, (z, 0, 1), (y, 0, 1), (x, 0, 1))",
+        "difficulty": "basic",
+        "analytical_solution": 1.5,
+        "numerical_solution": 1.488921310453455,
+        "accuracy": 0.9926142069689701,
+        "quality_score": 0.9948720429019673,
+        "complexity": 1.0
+      },
+      "snake": {
+        "score": 0,
+        "steps": 30,
+        "total_reward": -10.7,
+        "final_length": 1,
+        "efficiency": 0.0
+      },
+      "pong": {
+        "left_score": 0,
+        "right_score": 1,
+        "steps": 67,
+        "total_reward": 1.5999999999999925,
+        "ball_control_time": 6.7,
+        "coordination_score": -0.07611940298507475
+      },
+      "transfer_learning": {
+        "cross_correlations": {
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "granger_causality": {
+          "math_causes_motor": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "math_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "motor_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          }
+        },
+        "information_transfer": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "emergent_patterns": [],
+        "statistical_significance": {
+          "math_significance": {
+            "significant": "True",
+            "p_value": 0.0,
+            "t_statistic": 1756.6429809143797,
+            "mean": 0.9980516852650061,
+            "std": 0.0004009644849392869
+          },
+          "motor_significance": {
+            "significant": true,
+            "p_value": 0.0,
+            "t_statistic": -Infinity,
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "spatial_significance": {
+            "significant": true,
+            "p_value": 0.0,
+            "t_statistic": -Infinity,
+            "mean": -0.07611940298507475,
+            "std": 0.0
+          }
+        },
+        "overall_transfer_score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "transfer_strength": "negligible"
+      },
+      "cognitive_metrics": {
+        "domain_performances": {
+          "mathematics": 0.9948720429019673,
+          "snake_motor": 0.0,
+          "pong_spatial": -0.07611940298507475
+        },
+        "cognitive_synergy": {
+          "score": 0.0,
+          "confidence_interval": [
+            0.0,
+            0.0
+          ],
+          "strength": "negligible"
+        },
+        "emergent_intelligence": {
+          "score": 0.0,
+          "patterns": [],
+          "pattern_count": 0
+        },
+        "transfer_effectiveness": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "cross_domain_correlation": {
+          "average": 0.0,
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "statistical_validation": {
+          "overall_significance": true,
+          "significance_tests": {
+            "math_significance": {
+              "significant": "True",
+              "p_value": 0.0,
+              "t_statistic": 1756.6429809143797,
+              "mean": 0.9980516852650061,
+              "std": 0.0004009644849392869
+            },
+            "motor_significance": {
+              "significant": true,
+              "p_value": 0.0,
+              "t_statistic": -Infinity,
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "spatial_significance": {
+              "significant": true,
+              "p_value": 0.0,
+              "t_statistic": -Infinity,
+              "mean": -0.07611940298507475,
+              "std": 0.0
+            }
+          }
+        },
+        "overall_cognitive_score": -1.7000338912847998e-17,
+        "development_trend": {
+          "trend": "insufficient_data",
+          "strength": 0.0
+        },
+        "confidence_assessment": {
+          "level": "low",
+          "score": 0.5,
+          "significance_ratio": 1.0,
+          "score_confidence": -2.1250423641059995e-17
+        }
+      }
+    },
+    {
+      "episode": 4,
+      "time": 0.012501716613769531,
+      "mathematics": {
+        "problem": "Integral(x + y + z, (z, 0, 1), (y, 0, 1), (x, 0, 1))",
+        "difficulty": "basic",
+        "analytical_solution": 1.5,
+        "numerical_solution": 1.503176850142957,
+        "accuracy": 0.9978820999046953,
+        "quality_score": 0.997525613689642,
+        "complexity": 1.0
+      },
+      "snake": {
+        "score": 0,
+        "steps": 12,
+        "total_reward": -10.5,
+        "final_length": 1,
+        "efficiency": 0.0
+      },
+      "pong": {
+        "left_score": 0,
+        "right_score": 0,
+        "steps": 200,
+        "total_reward": 30.0000000000001,
+        "ball_control_time": 20.0,
+        "coordination_score": 0.050000000000000495
+      },
+      "transfer_learning": {
+        "cross_correlations": {
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "granger_causality": {
+          "math_causes_motor": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "math_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "motor_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          }
+        },
+        "information_transfer": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "emergent_patterns": [],
+        "statistical_significance": {
+          "math_significance": {
+            "significant": "True",
+            "p_value": 0.0,
+            "t_statistic": 463.4184953642065,
+            "mean": 0.9969918044773265,
+            "std": 0.0018575328022321193
+          },
+          "motor_significance": {
+            "significant": true,
+            "p_value": 0.0,
+            "t_statistic": -Infinity,
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "spatial_significance": {
+            "significant": true,
+            "p_value": 0.0,
+            "t_statistic": -Infinity,
+            "mean": -0.07611940298507475,
+            "std": 0.0
+          }
+        },
+        "overall_transfer_score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "transfer_strength": "negligible"
+      },
+      "cognitive_metrics": {
+        "domain_performances": {
+          "mathematics": 0.997525613689642,
+          "snake_motor": 0.0,
+          "pong_spatial": 0.050000000000000495
+        },
+        "cognitive_synergy": {
+          "score": 0.0,
+          "confidence_interval": [
+            0.0,
+            0.0
+          ],
+          "strength": "negligible"
+        },
+        "emergent_intelligence": {
+          "score": 0.0,
+          "patterns": [],
+          "pattern_count": 0
+        },
+        "transfer_effectiveness": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "cross_domain_correlation": {
+          "average": 0.0,
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "statistical_validation": {
+          "overall_significance": true,
+          "significance_tests": {
+            "math_significance": {
+              "significant": "True",
+              "p_value": 0.0,
+              "t_statistic": 463.4184953642065,
+              "mean": 0.9969918044773265,
+              "std": 0.0018575328022321193
+            },
+            "motor_significance": {
+              "significant": true,
+              "p_value": 0.0,
+              "t_statistic": -Infinity,
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "spatial_significance": {
+              "significant": true,
+              "p_value": 0.0,
+              "t_statistic": -Infinity,
+              "mean": -0.07611940298507475,
+              "std": 0.0
+            }
+          }
+        },
+        "overall_cognitive_score": -1.938311758671397e-17,
+        "development_trend": {
+          "trend": "insufficient_data",
+          "strength": 0.0
+        },
+        "confidence_assessment": {
+          "level": "low",
+          "score": 0.5,
+          "significance_ratio": 1.0,
+          "score_confidence": -2.4228896983392462e-17
+        }
+      }
+    },
+    {
+      "episode": 5,
+      "time": 0.011194705963134766,
+      "mathematics": {
+        "problem": "Integral(x + y + z, (z, 0, 1), (y, 0, 1), (x, 0, 1))",
+        "difficulty": "basic",
+        "analytical_solution": 1.5,
+        "numerical_solution": 1.5029723016155407,
+        "accuracy": 0.9980184655896395,
+        "quality_score": 0.9976076118077315,
+        "complexity": 1.0
+      },
+      "snake": {
+        "score": 0,
+        "steps": 10,
+        "total_reward": -10.3,
+        "final_length": 1,
+        "efficiency": 0.0
+      },
+      "pong": {
+        "left_score": 0,
+        "right_score": 1,
+        "steps": 67,
+        "total_reward": 1.5999999999999925,
+        "ball_control_time": 6.7,
+        "coordination_score": -0.07611940298507475
+      },
+      "transfer_learning": {
+        "cross_correlations": {
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "granger_causality": {
+          "math_causes_motor": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "math_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          },
+          "motor_causes_spatial": {
+            "causality": false,
+            "strength": 0.0,
+            "p_value": 1.0
+          }
+        },
+        "information_transfer": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "emergent_patterns": [],
+        "statistical_significance": {
+          "math_significance": {
+            "significant": "True",
+            "p_value": 0.0,
+            "t_statistic": 645.6276328086124,
+            "mean": 0.9971252567804054,
+            "std": 0.001539975154464219
+          },
+          "motor_significance": {
+            "significant": true,
+            "p_value": 0.0,
+            "t_statistic": -Infinity,
+            "mean": 0.0,
+            "std": 0.0
+          },
+          "spatial_significance": {
+            "significant": "True",
+            "p_value": 0.002414740835841034,
+            "t_statistic": -7.757396449704104,
+            "mean": -0.04458955223880594,
+            "std": 0.06305970149253762
+          }
+        },
+        "overall_transfer_score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "transfer_strength": "negligible"
+      },
+      "cognitive_metrics": {
+        "domain_performances": {
+          "mathematics": 0.9976076118077315,
+          "snake_motor": 0.0,
+          "pong_spatial": -0.07611940298507475
+        },
+        "cognitive_synergy": {
+          "score": 0.0,
+          "confidence_interval": [
+            0.0,
+            0.0
+          ],
+          "strength": "negligible"
+        },
+        "emergent_intelligence": {
+          "score": 0.0,
+          "patterns": [],
+          "pattern_count": 0
+        },
+        "transfer_effectiveness": {
+          "math_to_games": 0.0,
+          "games_to_math": 0.0,
+          "motor_to_spatial": 0.0
+        },
+        "cross_domain_correlation": {
+          "average": 0.0,
+          "math_motor": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "math_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          },
+          "motor_spatial": {
+            "correlation": 0.0,
+            "p_value": 1.0,
+            "significant": false
+          }
+        },
+        "statistical_validation": {
+          "overall_significance": true,
+          "significance_tests": {
+            "math_significance": {
+              "significant": "True",
+              "p_value": 0.0,
+              "t_statistic": 645.6276328086124,
+              "mean": 0.9971252567804054,
+              "std": 0.001539975154464219
+            },
+            "motor_significance": {
+              "significant": true,
+              "p_value": 0.0,
+              "t_statistic": -Infinity,
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "spatial_significance": {
+              "significant": "True",
+              "p_value": 0.002414740835841034,
+              "t_statistic": -7.757396449704104,
+              "mean": -0.04458955223880594,
+              "std": 0.06305970149253762
+            }
+          }
+        },
+        "overall_cognitive_score": -1.705095710592513e-17,
+        "development_trend": {
+          "trend": "stable",
+          "strength": 0.004147388659628172,
+          "consistency": 0.0,
+          "domain_trends": {
+            "mathematics": -0.000169774319623014,
+            "motor": 0.0,
+            "spatial": 0.01261194029850753
+          }
+        },
+        "confidence_assessment": {
+          "level": "low",
+          "score": 0.5,
+          "significance_ratio": 1.0,
+          "score_confidence": -2.1313696382406413e-17
+        }
+      }
+    }
+  ],
+  "transfer_learning_analysis": {
+    "transfer_math_correlation": NaN,
+    "transfer_game_correlation": NaN,
+    "math_learning_curve": [
+      0.0004891273932740563,
+      -0.0021262838927191504,
+      0.9985395312116636
+    ],
+    "game_learning_curve": [
+      -0.004504264392324117,
+      0.024323027718550234,
+      -0.04706823027718561
+    ],
+    "final_transfer_score": 0.0,
+    "transfer_improvement": 0.0
+  },
+  "cognitive_development": {
+    "domain_performance": [
+      {
+        "mathematics": 0.9976076118077315,
+        "snake_motor": 0.0,
+        "pong_spatial": -0.07611940298507475
+      }
+    ],
+    "transfer_learning": [
+      {
+        "math_to_games": 0.0,
+        "games_to_math": 0.0,
+        "snake_to_pong": 0.0
+      }
+    ],
+    "cognitive_synergy": [
+      {
+        "score": 0.0,
+        "confidence_interval": [
+          0.0,
+          0.0
+        ],
+        "strength": "negligible"
+      }
+    ],
+    "emergent_intelligence": [
+      {
+        "score": 0.0,
+        "patterns": [],
+        "pattern_count": 0
+      }
+    ]
+  },
+  "end_time": "2025-11-17T20:42:42.837928"
+}

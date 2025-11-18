@@ -254,4 +254,3 @@ class IntrinsicRewardGenerator:
         for mod in self.modalities:
             self.last_predictions[mod] = 0.5
             self.last_entropies[mod] = 1.0</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/intrinsic_reward_generator.py

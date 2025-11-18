@@ -455,4 +455,3 @@ async def main():
 if __name__ == "__main__":
     # Run the demonstration
     asyncio.run(main())</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/examples/audio_visual_demo.py

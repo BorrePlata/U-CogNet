@@ -295,4 +295,3 @@ def main():
 
 if __name__ == "__main__":
     main()</content>
-<parameter name="filePath">/mnt/c/Users/desar/Documents/Science/UCogNet/generate_reports.py
