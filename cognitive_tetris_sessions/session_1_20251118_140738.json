@@ -1,0 +1,50 @@
+{
+  "session_number": 1,
+  "game_duration": 3.465007781982422,
+  "final_score": 0,
+  "final_lines": 0,
+  "final_level": 1,
+  "best_score": 0,
+  "metrics_history": [
+    {
+      "timestamp": 0.44846439361572266,
+      "game_metrics": {
+        "score": 0,
+        "lines_cleared": 0,
+        "level": 1,
+        "holes": 51,
+        "height_variance": 70.65,
+        "avg_column_height": 5.5,
+        "max_column_height": 19
+      },
+      "cognitive_metrics": {
+        "memory_size": 0,
+        "patterns_learned": 0,
+        "creativity_avg": 0.0,
+        "thinking_time_avg": 0.0,
+        "decision_quality_avg": 0.0,
+        "cognitive_load": 0.0
+      },
+      "decision_metrics": {
+        "thinking_time": 0.010099649429321289,
+        "fallback": true
+      },
+      "reasoning": {
+        "error": "'CognitiveTetrisPlayer' object has no attribute '_analyze_next_piece_setup'"
+      },
+      "action": {
+        "type": "random",
+        "rotation": 0,
+        "position": 5
+      }
+    }
+  ],
+  "cognitive_state": {
+    "memory_size": 0,
+    "patterns_learned": 0,
+    "creativity_avg": 0.0,
+    "thinking_time_avg": 0.0,
+    "decision_quality_avg": 0.0,
+    "cognitive_load": 0.0
+  }
+}

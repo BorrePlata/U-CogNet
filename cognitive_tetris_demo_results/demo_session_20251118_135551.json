@@ -1,0 +1,47 @@
+{
+  "session_info": {
+    "timestamp": "20251118_135551",
+    "duration": 2.5848677158355713,
+    "moves_completed": 5,
+    "final_score": 0,
+    "final_lines": 0,
+    "final_level": 1
+  },
+  "cognitive_metrics": {
+    "memory_size": 0,
+    "patterns_learned": 0,
+    "creativity_avg": 0.0,
+    "thinking_time_avg": 0.0,
+    "decision_quality_avg": 0.0,
+    "cognitive_load": 0.0
+  },
+  "performance_metrics": {
+    "score": 0,
+    "lines_cleared": 0,
+    "level": 1,
+    "holes": 5,
+    "height_variance": 9.65,
+    "avg_column_height": 2.5,
+    "max_column_height": 7
+  },
+  "learning_metrics": {
+    "patterns_learned": 0,
+    "memory_utilization": 0.0,
+    "adaptability_score": 0.0
+  },
+  "creativity_metrics": {
+    "creativity_index": 0.0,
+    "innovative_decisions": 0
+  },
+  "reasoning_metrics": {
+    "avg_confidence": 0.0,
+    "pattern_recognition_rate": 0,
+    "decision_speed": 0
+  },
+  "agi_evaluation": {
+    "adaptability": 0.0,
+    "reasoning_quality": 0.0,
+    "learning_efficiency": 0.0,
+    "overall_score": 0.0
+  }
+}
