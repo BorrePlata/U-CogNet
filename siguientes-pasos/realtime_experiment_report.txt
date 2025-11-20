@@ -1,0 +1,42 @@
+U-COGNET: REPORTE DE EXPERIMENTO EN TIEMPO REAL
+=======================================================
+
+Fecha: 2025-11-20 00:35:15
+Pasos ejecutados: 500
+Conceptos procesados: 16
+
+CONFIGURACIÓN:
+---------------
+max_steps: 500
+update_interval: 100
+embedding_dim: 512
+graph_threshold: 0.65
+initial_layers: 5
+initial_connections: 100
+initial_heads: 8
+concept_change_interval: 30
+memory_window: 8
+
+RESULTADOS FINALES (últimos 50 pasos):
+----------------------------------------
+Similitud multimodal promedio: 0.913
+Accuracy promedio: 0.948
+Latencia promedio: 45.5ms
+Estabilidad promedio: 1.000
+Grafo final: 16 nodos, 136 aristas
+Configuración final: 5 capas
+
+ANÁLISIS DE RENDIMIENTO:
+-------------------------
+• Similitud multimodal: Excelente
+• Accuracy: Excelente
+• Latencia: Buena
+• Estabilidad: Muy estable
+• Complejidad del grafo: 8.5 aristas por nodo
+
+ARCHIVOS GENERADOS:
+--------------------
+• realtime_experiment_final.png - Gráficas finales
+• realtime_graph_final.png - Grafo micelial final
+• realtime_experiment_data.csv - Datos completos
+• realtime_experiment_report.txt - Este reporte
